@@ -1,0 +1,89 @@
+{
+  "$schema": "./manifest.schema.json",
+  "version": 1,
+  "identity": {
+    "name": "ChenChess",
+    "product": "Coach",
+    "tagline": "Understand. Improve. Enjoy Chess."
+  },
+  "palette": {
+    "ricePaper": "#F7F2E8",
+    "warmIvory": "#FFF9ED",
+    "watercolorNavy": "#142B46",
+    "slateBlue": "#4D6F99",
+    "mistBlue": "#A8BED0",
+    "stone": "#C9C5BC",
+    "bamboo": "#718267",
+    "vermilion": "#A74836"
+  },
+  "appIcons": {
+    "dark180": "app-icons/app-icon-dark-180.png",
+    "dark512": "app-icons/app-icon-dark-512.png",
+    "darkSvg": "app-icons/app-icon-dark.svg",
+    "light180": "app-icons/app-icon-light-180.png",
+    "light512": "app-icons/app-icon-light-512.png",
+    "lightSvg": "app-icons/app-icon-light.svg"
+  },
+  "boardSurfaces": {
+    "frame": "board/watercolor-frame.webp",
+    "lightSquare": "board/watercolor-square-light.webp",
+    "darkSquare": "board/watercolor-square-dark.webp"
+  },
+  "chessPieces": {
+    "viewBox": "0 0 100 120",
+    "white": {
+      "king": "chess-pieces/white-king.svg",
+      "queen": "chess-pieces/white-queen.svg",
+      "bishop": "chess-pieces/white-bishop.svg",
+      "knight": "chess-pieces/white-knight.svg",
+      "rook": "chess-pieces/white-rook.svg",
+      "pawn": "chess-pieces/white-pawn.svg"
+    },
+    "black": {
+      "king": "chess-pieces/black-king.svg",
+      "queen": "chess-pieces/black-queen.svg",
+      "bishop": "chess-pieces/black-bishop.svg",
+      "knight": "chess-pieces/black-knight.svg",
+      "rook": "chess-pieces/black-rook.svg",
+      "pawn": "chess-pieces/black-pawn.svg"
+    }
+  },
+  "valueIcons": {
+    "see": "icons/see.svg",
+    "understand": "icons/understand.svg",
+    "improve": "icons/improve.svg",
+    "enjoy": "icons/enjoy.svg"
+  },
+  "illustrations": {
+    "reviewCompanions": {
+      "path": "illustrations/review-companions.webp",
+      "width": 1756,
+      "height": 896
+    },
+    "mountainMist": {
+      "path": "illustrations/mountain-mist.webp",
+      "width": 1774,
+      "height": 887
+    }
+  },
+  "motionMasks": {
+    "brushCircle": "motion/brush-circle.svg",
+    "watercolorControlFrame": "motion/watercolor-control-frame.svg",
+    "watercolorControlFrameWide": "motion/watercolor-control-frame-wide.svg",
+    "watercolorOutlineFrame": "motion/watercolor-outline-frame.svg",
+    "pigmentBloom": "motion/pigment-bloom.svg",
+    "washReveal": "motion/wash-reveal.svg",
+    "diffusionExit": "motion/diffusion-exit.svg",
+    "watercolorBrushHorizontal": "motion/watercolor-brush-h.svg",
+    "watercolorBrushVertical": "motion/watercolor-brush-v.svg",
+    "watercolorDot": "motion/watercolor-dot.svg"
+  },
+  "brushStrokes": {
+    "bannerSlab": "brush/brush-banner-slab.svg",
+    "strokeWide": "brush/brush-stroke-wide.svg",
+    "swoosh": "brush/brush-swoosh.svg",
+    "inkBlot": "brush/ink-blot.webp",
+    "inkSquare": "brush/ink-square.webp",
+    "cloudWash": "brush/cloud-wash.webp"
+  }
+}

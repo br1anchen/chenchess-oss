@@ -1,0 +1,207 @@
+/**
+ * The Review Session surface sheet. One ordered file under `surfaces`:
+ * descendant craft that StyleX cannot reach (headings, tone vars, the board
+ * wash) plus the two-column shell hooks. No class is defined twice. Column
+ * stacking uses the foundation 64rem cut, never 42 / 42.5rem.
+ */
+
+@layer surfaces {
+  .chen-review-session h1,
+  .chen-review-session h2,
+  .chen-review-session h3,
+  .chen-branded-review h1,
+  .chen-branded-review h2,
+  .chen-branded-review h3 {
+    color: var(--color-text-primary);
+    font-family: var(--font-family-heading);
+    font-weight: 520;
+  }
+
+  .chen-review-session .chen-review-moment-positive,
+  .chen-branded-review .chen-review-moment-positive {
+    --review-moment-color: var(--color-moment-positive);
+  }
+
+  .chen-review-session .chen-review-moment-improvement,
+  .chen-branded-review .chen-review-moment-improvement {
+    --review-moment-color: var(--color-moment-improvement);
+  }
+
+  .chen-review-session .chen-review-moment-selected,
+  .chen-branded-review .chen-review-moment-selected {
+    --review-moment-color: var(--color-ink-soft);
+  }
+
+  .chen-review-session .chen-review-graph-plot svg,
+  .chen-branded-review .chen-review-graph-plot svg {
+    background:
+      linear-gradient(
+        180deg,
+        color-mix(in srgb, var(--color-mist) 14%, transparent),
+        transparent 58%
+      ),
+      var(--color-background-surface);
+  }
+
+  /* The paper wash over the interactive board's squares. `--board-frame-width`
+     comes from WatercolorBoard.css; pieces sit above at z-index 2. */
+  .chen-review-session .chen-workspace-board::before,
+  .chen-branded-review .chen-workspace-board::before {
+    position: absolute;
+    z-index: 1;
+    inset: var(--board-frame-width);
+    background:
+      radial-gradient(
+        ellipse at 12% 18%,
+        color-mix(in srgb, var(--color-ink-soft) 13%, transparent),
+        transparent 24%
+      ),
+      radial-gradient(
+        ellipse at 84% 27%,
+        color-mix(in srgb, var(--color-paper-raised) 20%, transparent),
+        transparent 20%
+      ),
+      radial-gradient(
+        ellipse at 42% 73%,
+        color-mix(in srgb, var(--color-ink-soft) 9%, transparent),
+        transparent 29%
+      ),
+      linear-gradient(
+        112deg,
+        transparent 48%,
+        color-mix(in srgb, var(--color-ink) 3.5%, transparent) 76%
+      );
+    content: "";
+    mix-blend-mode: multiply;
+    pointer-events: none;
+  }
+
+  /* Desktop: the page does not scroll. The board fills leftover height under
+     the ply nav. The thread fills leftover height and only the messages
+     scroll, so the composer stays at the bottom. Foundation 64rem stack:
+     columns become one flow, board then thread. */
+  .chen-review-session[data-review-session-layout="columns"],
+  .chen-review-session[data-review-session-layout="widget"] {
+    min-height: 100vh;
+  }
+
+  @media (min-width: 64.01rem) {
+    .chen-review-session[data-review-session-layout="columns"],
+    .chen-review-session[data-review-session-layout="widget"] {
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    .chen-review-session[data-review-session-layout="columns"]
+      .chen-review-session-columns {
+      min-height: 0;
+      overflow: hidden;
+      flex: 1 1 auto;
+    }
+
+    .chen-review-session[data-review-session-layout="columns"]
+      .chen-review-session-board,
+    .chen-review-session[data-review-session-layout="widget"]
+      .chen-review-session-board {
+      display: flex;
+      min-height: 0;
+      flex: 1 1 auto;
+      flex-direction: column;
+      overflow: hidden;
+    }
+
+    .chen-review-session[data-review-session-layout="columns"]
+      .chen-review-session-thread {
+      min-height: 0;
+      overflow: hidden;
+    }
+
+    .chen-review-session[data-review-session-layout="columns"]
+      .chen-review-session-board
+      > *,
+    .chen-review-session[data-review-session-layout="columns"]
+      .chen-review-board-column,
+    .chen-review-session[data-review-session-layout="widget"]
+      .chen-review-session-board
+      > *,
+    .chen-review-session[data-review-session-layout="widget"]
+      .chen-review-board-column {
+      display: flex;
+      min-height: 0;
+      flex: 1 1 auto;
+      flex-direction: column;
+    }
+
+    .chen-review-session[data-review-session-layout="columns"]
+      .chen-review-board-fill,
+    .chen-review-session[data-review-session-layout="widget"]
+      .chen-review-board-fill {
+      display: flex;
+      min-width: 0;
+      min-height: 0;
+      flex: 1 1 auto;
+      flex-direction: column;
+      align-items: stretch;
+      align-self: stretch;
+      width: 100%;
+      container-type: size;
+    }
+
+    .chen-review-session[data-review-session-layout="columns"]
+      .chen-review-board-square,
+    .chen-review-session[data-review-session-layout="widget"]
+      .chen-review-board-square {
+      display: flex;
+      min-width: 0;
+      min-height: 0;
+      flex: 1 1 auto;
+      flex-direction: column;
+      align-items: stretch;
+      align-self: stretch;
+      width: 100%;
+    }
+
+    /* Board and row geometry live with the components: the interactive grid's
+       fill styles and the coach-app move-sequence board both size themselves
+       against this fill's 100cqh. No board width/height rules here. */
+
+    .chen-review-session[data-review-session-layout="columns"]
+      .chen-review-session-conversation {
+      display: flex;
+      min-height: 0;
+      flex: 1 1 auto;
+      flex-direction: column;
+    }
+
+    .chen-review-session[data-review-session-layout="columns"]
+      .chen-review-session-conversation
+      > * {
+      display: flex;
+      min-height: 0;
+      flex: 1 1 auto;
+      flex-direction: column;
+    }
+  }
+}
+
+/*
+ * Astryx stack utilities are unlayered and set flex-grow: 0. Leftover-height
+ * rules inside @layer surfaces lose that fight, so the fill collapses to the
+ * board's cyclic max-height (2px). These selectors stay unlayered so the
+ * leftover column actually receives the remaining height.
+ */
+@media (min-width: 64.01rem) {
+  .chen-review-session[data-review-session-layout="columns"]
+    .chen-review-session-board
+    .chen-review-board-column,
+  .chen-review-session[data-review-session-layout="widget"]
+    .chen-review-session-board
+    .chen-review-board-column,
+  .chen-review-session[data-review-session-layout="columns"]
+    .chen-review-board-fill,
+  .chen-review-session[data-review-session-layout="widget"]
+    .chen-review-board-fill {
+    min-height: 0;
+    flex: 1 1 0%;
+  }
+}

@@ -1,0 +1,193 @@
+{
+  "$schema": "https://turborepo.dev/schema.json",
+  "futureFlags": {
+    "experimentalCargoWorkspaces": true,
+    "experimentalTaskCommand": true
+  },
+  "tasks": {
+    "build": {
+      "dependsOn": [
+        "^build"
+      ],
+      "outputs": [
+        "dist/**"
+      ]
+    },
+    "@chenchess/central-host#build": {
+      "dependsOn": [
+        "^build"
+      ],
+      "env": [
+        "DEPLOYMENT_ENVIRONMENT"
+      ],
+      "outputs": [
+        "dist/**"
+      ]
+    },
+    "check": {
+      "dependsOn": [
+        "^build"
+      ]
+    },
+    "typecheck": {
+      "dependsOn": [
+        "^build"
+      ]
+    },
+    "lint": {
+      "dependsOn": [
+        "format"
+      ]
+    },
+    "test": {
+      "dependsOn": [
+        "^build"
+      ]
+    },
+    "format": {},
+    "dev": {
+      "cache": false,
+      "persistent": true
+    },
+    "@chenchess/scripts#test": {
+      "command": [
+        "bun",
+        "test",
+        "."
+      ],
+      "inputs": [
+        "$TURBO_DEFAULT$",
+        "$TURBO_ROOT$/services/maia/Dockerfile",
+        "$TURBO_ROOT$/skills/chenchess-coach/SKILL.md",
+        "$TURBO_ROOT$/package.json",
+        "$TURBO_ROOT$/turbo.json",
+        "$TURBO_ROOT$/bun.lock",
+        "$TURBO_ROOT$/apps/central-host/package.json",
+        "$TURBO_ROOT$/apps/coach-app/package.json",
+        "$TURBO_ROOT$/apps/*/src/**",
+        "$TURBO_ROOT$/apps/*/*.ts",
+        "$TURBO_ROOT$/packages/*/src/**",
+        "$TURBO_ROOT$/packages/*/stories/**",
+        "$TURBO_ROOT$/services/*/src/**"
+      ]
+    },
+    "@chenchess/scripts#typecheck": {
+      "command": [
+        "bun",
+        "x",
+        "tsc",
+        "--project",
+        "tsconfig.json"
+      ],
+      "inputs": [
+        "$TURBO_DEFAULT$",
+        "$TURBO_ROOT$/packages/coach-engine-sdk/src/**"
+      ]
+    },
+    "@chenchess/scripts#format": {
+      "cache": false
+    },
+    "@chenchess/maia#test": {
+      "inputs": [
+        "**/*.py",
+        "requirements.txt"
+      ]
+    },
+    "@chenchess/central-host#test": {
+      "dependsOn": [
+        "^build"
+      ]
+    },
+    "chenchess-rust#format": {
+      "command": [
+        "cargo",
+        "fmt",
+        "--all",
+        "--",
+        "--check"
+      ]
+    },
+    "chenchess-rust#lint": {
+      "dependsOn": [
+        "chenchess-rust#format"
+      ],
+      "command": [
+        "./tooling/cargo-cached",
+        "clippy",
+        "--workspace",
+        "--all-features",
+        "--all-targets",
+        "--",
+        "-D",
+        "warnings"
+      ]
+    },
+    "chenchess-rust#test": {
+      "dependsOn": [
+        "chenchess-rust#review-session-contract-drift",
+        "chenchess-rust#test-keys"
+      ],
+      "command": [
+        "./tooling/cargo-cached",
+        "test",
+        "--workspace",
+        "--all-features",
+        "--lib",
+        "--test",
+        "domain",
+        "--test",
+        "session",
+        "--test",
+        "boundary",
+        "--test",
+        "runtime",
+        "--test",
+        "corpus"
+      ]
+    },
+    "chenchess-rust#test-keys": {
+      "command": [
+        "bun",
+        "tooling/scripts/generate-auth-fixtures.ts"
+      ]
+    },
+    "chenchess-rust#review-session-contract-drift": {
+      "command": [
+        "./tooling/cargo-cached",
+        "run",
+        "-p",
+        "chen-chess-coach-engine",
+        "--bin",
+        "generate_review_session_contract",
+        "--",
+        "--check"
+      ]
+    },
+    "chenchess-rust#review-session-recording-integrity": {
+      "command": [
+        "./tooling/cargo-cached",
+        "run",
+        "-p",
+        "chen-chess-coach-engine",
+        "--bin",
+        "capture_review_session_recording",
+        "--",
+        "--check"
+      ]
+    },
+    "chenchess-rust#deterministic-evaluation": {
+      "command": [
+        "./tooling/cargo-cached",
+        "run",
+        "-p",
+        "chen-chess-coach-engine",
+        "--bin",
+        "chenchess",
+        "--",
+        "evaluate-fast",
+        "--corpus-dir",
+        "services/coach-engine/evaluation/corpus"
+      ]
+    }
+  }
+}

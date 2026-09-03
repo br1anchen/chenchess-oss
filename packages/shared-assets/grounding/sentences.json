@@ -1,0 +1,9 @@
+[
+  "Every chess move and square you name in your own words must appear in the allowed chess literals.",
+  "Never write coordinate notation. Speak SAN only.",
+  "Never include a URL, a link, or a citation the evidence did not return.",
+  "Never expose provider names, tool names, raw opaque identifiers, or implementation language.",
+  "Never invent a plan or a Coach Intent Hypothesis the evidence does not carry.",
+  "Never credit an outcome a move did not earn: a capture, a material win, or a mate claim must come from the returned evidence for that exact move.",
+  "Explain a returned line by what its pieces do — name the piece, where it goes, and what that aims at — not by narrating the sequence move by move."
+]

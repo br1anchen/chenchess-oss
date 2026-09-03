@@ -1,0 +1,104 @@
+[package]
+name = "chen-chess-coach-engine"
+version = "0.1.0"
+edition = "2021"
+license = "AGPL-3.0-or-later"
+autotests = false
+
+[[bin]]
+name = "chen-chess-coach-engine"
+path = "src/main.rs"
+test = false
+
+[[bin]]
+name = "capture_review_session_recording"
+path = "src/bin/capture_review_session_recording.rs"
+test = false
+
+[[bin]]
+name = "chenchess"
+path = "src/bin/chenchess.rs"
+test = false
+
+[[bin]]
+name = "generate_review_session_contract"
+path = "src/bin/generate_review_session_contract.rs"
+test = false
+
+[[bin]]
+name = "measure_review_session_primitives"
+path = "src/bin/measure_review_session_primitives.rs"
+test = false
+
+[[bin]]
+name = "evict_review_analysis_cache"
+path = "src/bin/evict_review_analysis_cache.rs"
+test = false
+
+
+[[test]]
+name = "domain"
+path = "tests/domain.rs"
+
+[[test]]
+name = "session"
+path = "tests/session.rs"
+
+[[test]]
+name = "boundary"
+path = "tests/boundary.rs"
+
+[[test]]
+name = "runtime"
+path = "tests/runtime.rs"
+
+# The pinned corpus replay. Its own target because its cost grows with the
+# corpus; `chenchess-rust#test` runs it, an edit-loop `--test domain` does not.
+[[test]]
+name = "corpus"
+path = "tests/corpus.rs"
+
+[dependencies]
+coach-engine-contract = { workspace = true }
+coach-engine-pipeline = { workspace = true }
+anyhow = { workspace = true }
+axum = { workspace = true }
+base64 = { workspace = true }
+chrono = { workspace = true }
+chrono-tz = "0.10"
+clap = { version = "4.5", features = ["derive"] }
+dotenvy = "0.15"
+flate2 = { workspace = true }
+fs2 = "0.4"
+jsonwebtoken = "9.3"
+petgraph = "0.8.3"
+reqwest = { workspace = true }
+regex = "1.11"
+ring = "0.17"
+schemars = { workspace = true }
+serde = { workspace = true }
+serde_json = { workspace = true }
+serde_json_canonicalizer = { workspace = true }
+serde_urlencoded = "0.7"
+sha2 = { workspace = true }
+shakmaty = { workspace = true }
+tar = "0.4"
+thiserror = { workspace = true }
+tokio = { workspace = true }
+tokio-stream = "0.1"
+tower-http = { version = "0.6", features = ["cors", "trace"] }
+tracing = { workspace = true }
+tracing-subscriber = { version = "0.3", features = ["env-filter", "json"] }
+tree-sitter = { workspace = true }
+tree-sitter-pgn = { workspace = true }
+ts-rs = { workspace = true }
+unicode-normalization = "0.1"
+uuid = { version = "1.10", features = ["serde", "v4"] }
+wait-timeout = "0.2"
+
+[target.'cfg(unix)'.dependencies]
+libc = "0.2"
+
+[dev-dependencies]
+tokio = { version = "1.40", features = ["test-util"] }
+tower = { version = "0.5", features = ["util"] }

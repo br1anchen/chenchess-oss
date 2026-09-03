@@ -1,0 +1,19 @@
+{
+  "eyebrow": "28 April 2026",
+  "gameCount": 1,
+  "ideas": [
+    {
+      "purpose": "improvement",
+      "resources": [
+        {
+          "href": "https://lichess.org/practice/fundamental-tactics/the-fork/Qj281y1p",
+          "label": "The Fork",
+          "role": "learn"
+        }
+      ],
+      "title": "The Fork"
+    }
+  ],
+  "source": "lichess · synthetic-white",
+  "title": "Saragossa Opening"
+}

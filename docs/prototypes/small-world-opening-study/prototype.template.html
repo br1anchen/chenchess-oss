@@ -1,0 +1,436 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Small-world opening study — ChenChess spike</title>
+<style>
+  :root {
+    --ink: #1d1b17;
+    --muted: #6b6459;
+    --paper: #f6f3ec;
+    --card: #fffdf8;
+    --line: #ded6c7;
+    --light: #eadfc8;
+    --dark: #b08d63;
+    --good: #3f7d4e;
+    --warn: #a8762a;
+    --bad: #a63d3d;
+    --accent: #3c5b8a;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; padding: 32px 24px 72px;
+    background: var(--paper); color: var(--ink);
+    font: 16px/1.55 ui-serif, Georgia, "Iowan Old Style", serif;
+  }
+  .wrap { max-width: 1060px; margin: 0 auto; }
+  header.top { margin-bottom: 28px; }
+  h1 { font-size: 26px; margin: 0 0 6px; letter-spacing: -0.01em; }
+  .sub { color: var(--muted); font-size: 15px; margin: 0; }
+  .stagebar { display: flex; gap: 6px; margin: 24px 0 20px; flex-wrap: wrap; }
+  .stagebar span {
+    font: 600 11px/1 ui-sans-serif, system-ui, sans-serif;
+    letter-spacing: 0.08em; text-transform: uppercase;
+    padding: 7px 11px; border-radius: 999px;
+    border: 1px solid var(--line); color: var(--muted); background: var(--card);
+  }
+  .stagebar span.on { background: var(--ink); border-color: var(--ink); color: var(--paper); }
+  .stagebar span.done { border-color: var(--good); color: var(--good); }
+  .cols { display: grid; grid-template-columns: minmax(320px, 460px) 1fr; gap: 32px; align-items: start; }
+  @media (max-width: 860px) { .cols { grid-template-columns: 1fr; } }
+
+  .board { width: 100%; aspect-ratio: 1; display: grid;
+    grid-template-columns: repeat(8, 1fr); border: 1px solid var(--line);
+    border-radius: 6px; overflow: hidden; user-select: none; }
+  .sq { position: relative; display: grid; place-items: center;
+    font-size: min(7.2vw, 42px); line-height: 1; }
+  .sq.l { background: var(--light); } .sq.d { background: var(--dark); }
+  .p { -webkit-text-stroke: 1.1px #2b2622; paint-order: stroke fill; }
+  .p.w { color: #fffdf7; }
+  .p.b { color: #26221d; -webkit-text-stroke-color: #14120f; }
+  .sq.drop { cursor: pointer; box-shadow: inset 0 0 0 3px var(--accent); }
+  .sq.drop:hover { box-shadow: inset 0 0 0 5px var(--accent); }
+  .sq.hit { box-shadow: inset 0 0 0 4px var(--good); }
+  .sq.miss { box-shadow: inset 0 0 0 4px var(--bad); }
+  .sq .co { position: absolute; bottom: 1px; right: 3px; font: 600 9px/1 ui-sans-serif, sans-serif;
+    color: rgba(0,0,0,.35); }
+
+  .card { background: var(--card); border: 1px solid var(--line);
+    border-radius: 10px; padding: 18px 20px; margin-bottom: 16px; }
+  .card h2 { font-size: 13px; letter-spacing: .09em; text-transform: uppercase;
+    color: var(--muted); margin: 0 0 10px; font-family: ui-sans-serif, system-ui, sans-serif; }
+  .prompt { font-size: 19px; margin: 0 0 14px; }
+  .tray { display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 12px; }
+  .chip { font-size: 30px; line-height: 1; padding: 8px 12px; border-radius: 8px;
+    border: 1px solid var(--line); background: var(--paper); cursor: pointer; }
+  .chip.sel { border-color: var(--accent); box-shadow: 0 0 0 2px rgba(60,91,138,.2); }
+  .chip.placed { opacity: .3; pointer-events: none; }
+  button.opt { display: block; width: 100%; text-align: left; margin-bottom: 8px;
+    padding: 12px 14px; border-radius: 8px; border: 1px solid var(--line);
+    background: var(--paper); font: inherit; cursor: pointer; }
+  button.opt:hover { border-color: var(--accent); }
+  button.opt .san { font-weight: 700; font-family: ui-monospace, monospace; }
+  button.opt.good { border-color: var(--good); background: #f0f7f1; }
+  button.opt.bad  { border-color: var(--bad);  background: #faf0f0; }
+  button.opt.mid  { border-color: var(--warn); background: #fbf5e9; }
+  button.opt .why { display: block; margin-top: 5px; font-size: 14px; color: var(--muted); }
+  .coach { border-left: 3px solid var(--accent); padding: 2px 0 2px 14px;
+    margin: 14px 0 0; color: var(--ink); font-size: 15px; }
+  .coach b { font: 600 11px/1.6 ui-sans-serif, sans-serif; letter-spacing: .08em;
+    text-transform: uppercase; color: var(--accent); display: block; }
+  .next { margin-top: 14px; padding: 10px 18px; border-radius: 8px; border: 1px solid var(--ink);
+    background: var(--ink); color: var(--paper); font: 600 14px ui-sans-serif, sans-serif; cursor: pointer; }
+  .next[disabled] { opacity: .3; cursor: default; }
+  .meta { font-size: 13px; color: var(--muted); font-family: ui-sans-serif, system-ui, sans-serif; }
+  .worldpick { display: flex; gap: 8px; margin-bottom: 18px; flex-wrap: wrap; }
+  .worldpick button { padding: 8px 13px; border-radius: 999px; border: 1px solid var(--line);
+    background: var(--card); font: 14px ui-sans-serif, sans-serif; cursor: pointer; }
+  .worldpick button.on { background: var(--ink); color: var(--paper); border-color: var(--ink); }
+  .tally { font-family: ui-sans-serif, sans-serif; font-size: 13px; color: var(--muted); }
+  .tally b { color: var(--ink); }
+  footer.note { margin-top: 34px; padding-top: 18px; border-top: 1px solid var(--line);
+    color: var(--muted); font-size: 14px; }
+  code { font-family: ui-monospace, SFMono-Regular, monospace; font-size: .92em;
+    background: #efe9dd; padding: 1px 5px; border-radius: 4px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <h1>Small-world opening study</h1>
+    <p class="sub">A ChenChess research spike. One opening, one tray, five stages — you build the world before you play in it.</p>
+  </header>
+
+  <div class="worldpick" id="worldpick"></div>
+  <div class="stagebar" id="stagebar"></div>
+
+  <div class="cols">
+    <div>
+      <div class="board" id="board"></div>
+      <p class="meta" id="boardmeta"></p>
+    </div>
+    <div id="panel"></div>
+  </div>
+
+  <footer class="note">
+    <strong>What this prototype is arguing.</strong> Nothing here is a line to
+    recall. Stage 1 makes you rebuild the position from its ideas, stage 2 asks
+    for the plan in your own words, stage 3 for the break the structure wants,
+    and stage 4 takes you off book around move seven — where the measured data
+    says a club player actually ends up. The session keeps no due dates
+    and no durable deck: the tray is the container, and you demolish it at the
+    end. Engine verdicts shown here are authored spike content; on the real
+    Coaching Board they would come from <code>evaluate_opening_continuation</code>.
+  </footer>
+</div>
+
+<script>
+const WORLDS = __WORLDS__;
+
+const SOLID = { king:"♚", queen:"♛", rook:"♜", bishop:"♝", knight:"♞", pawn:"♟" };
+const GLYPH = { white: SOLID, black: SOLID };
+const FILES = "abcdefgh";
+
+function boardFromFen(fen) {
+  const rows = fen.split(" ")[0].split("/");
+  const map = {};
+  rows.forEach((row, r) => {
+    let f = 0;
+    for (const ch of row) {
+      if (/\d/.test(ch)) { f += Number(ch); continue; }
+      const color = ch === ch.toUpperCase() ? "white" : "black";
+      const role = { k:"king", q:"queen", r:"rook", b:"bishop", n:"knight", p:"pawn" }[ch.toLowerCase()];
+      map[FILES[f] + (8 - r)] = { color, role };
+      f += 1;
+    }
+  });
+  return map;
+}
+
+const state = {
+  worldIndex: 0,
+  stage: 0,
+  placed: {},      // slot square -> square the learner chose
+  selected: null,  // slot square currently held
+  planText: "",
+  planShown: false,
+  breakPick: null,
+  devIndex: 0,
+  devPick: null,
+  tally: { right: 0, total: 0 },
+};
+
+const STAGES = ["Build the world", "Say the plan", "Choose the break", "Off book", "Demolish"];
+
+function world() { return WORLDS[state.worldIndex]; }
+
+function currentFen() {
+  const w = world();
+  if (state.stage === 0) return w.tabiyaFen;
+  if (state.stage === 1) return w.tabiyaFen;
+  if (state.stage === 2) {
+    if (state.breakPick) return w.breaks.find(b => b.san === state.breakPick).fen;
+    return w.decisionFen;
+  }
+  if (state.stage === 3) {
+    const dev = w.deviations[state.devIndex];
+    if (state.devPick === dev.answer) return dev.answerFen;
+    return dev.askFen;
+  }
+  return w.tabiyaFen;
+}
+
+function renderBoard() {
+  const w = world();
+  const flip = w.side === "black";
+  const el = document.getElementById("board");
+  el.innerHTML = "";
+
+  let pieces = boardFromFen(currentFen());
+  const building = state.stage === 0;
+  if (building) {
+    pieces = { ...pieces };
+    for (const slot of w.slots) {
+      if (!state.placed[slot.square]) delete pieces[slot.square];
+    }
+    for (const [slotSq, chosen] of Object.entries(state.placed)) {
+      const slot = w.slots.find(s => s.square === slotSq);
+      pieces[chosen] = boardFromFen(w.tabiyaFen)[slotSq];
+      pieces[chosen].verdict = slot.accepts.includes(chosen) ? "hit" : "miss";
+    }
+  }
+
+  const ranks = flip ? [1,2,3,4,5,6,7,8] : [8,7,6,5,4,3,2,1];
+  const files = flip ? [...FILES].reverse() : [...FILES];
+  for (const rank of ranks) {
+    for (const file of files) {
+      const name = file + rank;
+      const dark = (FILES.indexOf(file) + rank) % 2 === 1;
+      const sq = document.createElement("div");
+      sq.className = "sq " + (dark ? "d" : "l");
+      const piece = pieces[name];
+      if (piece) {
+        const span = document.createElement("span");
+        span.className = "p " + (piece.color === "white" ? "w" : "b");
+        span.textContent = GLYPH[piece.color][piece.role];
+        sq.appendChild(span);
+        if (piece.verdict) sq.classList.add(piece.verdict);
+      }
+      if (building && state.selected && !piece) {
+        sq.classList.add("drop");
+        sq.onclick = () => placeAt(name);
+      }
+      const co = document.createElement("span");
+      co.className = "co";
+      co.textContent = name;
+      sq.appendChild(co);
+      el.appendChild(sq);
+    }
+  }
+
+  const meta = document.getElementById("boardmeta");
+  meta.textContent = `${w.eco} · ${w.name} · ${w.path} · you play ${w.side}`;
+}
+
+function placeAt(square) {
+  const slotSq = state.selected;
+  state.selected = null;
+  state.placed[slotSq] = square;
+  const slot = world().slots.find(s => s.square === slotSq);
+  state.tally.total += 1;
+  if (slot.accepts.includes(square)) state.tally.right += 1;
+  render();
+}
+
+function renderStagebar() {
+  const bar = document.getElementById("stagebar");
+  bar.innerHTML = "";
+  STAGES.forEach((label, i) => {
+    const s = document.createElement("span");
+    s.textContent = `${i + 1}. ${label}`;
+    if (i === state.stage) s.className = "on";
+    else if (i < state.stage) s.className = "done";
+    bar.appendChild(s);
+  });
+}
+
+function renderWorldPick() {
+  const pick = document.getElementById("worldpick");
+  pick.innerHTML = "";
+  WORLDS.forEach((w, i) => {
+    const b = document.createElement("button");
+    b.textContent = w.name;
+    if (i === state.worldIndex) b.className = "on";
+    b.onclick = () => { state.worldIndex = i; resetSession(); };
+    pick.appendChild(b);
+  });
+}
+
+function card(title, inner) {
+  return `<div class="card"><h2>${title}</h2>${inner}</div>`;
+}
+
+function coach(text) {
+  return `<p class="coach"><b>Coach</b>${text}</p>`;
+}
+
+function renderPanel() {
+  const w = world();
+  const panel = document.getElementById("panel");
+  let html = "";
+
+  if (state.stage === 0) {
+    const remaining = w.slots.filter(s => !state.placed[s.square]);
+    const done = remaining.length === 0;
+    html += card("Stage 1 · Build the world", `
+      <p class="prompt">Put each piece where this structure wants it.</p>
+      <div class="tray">
+        ${w.slots.map(slot => {
+          const piece = boardFromFen(w.tabiyaFen)[slot.square];
+          const placed = state.placed[slot.square];
+          const cls = placed ? "chip placed" : (state.selected === slot.square ? "chip sel" : "chip");
+          const glyph = `<span class="p ${piece.color === "white" ? "w" : "b"}">${GLYPH[piece.color][piece.role]}</span>`;
+          return `<button class="${cls}" data-slot="${slot.square}">${glyph}</button>`;
+        }).join("")}
+      </div>
+      <p class="meta">${state.selected ? "Now click the square it belongs on." : (done ? "World built." : "Pick a piece from the tray.")}</p>
+      ${Object.entries(state.placed).map(([slotSq, chosen]) => {
+        const slot = w.slots.find(s => s.square === slotSq);
+        const ok = slot.accepts.includes(chosen);
+        return coach(`<b style="display:inline;color:${ok ? "var(--good)" : "var(--bad)"}">${ok ? "Yes" : "Not there"} — ${chosen}.</b> ${slot.why}`);
+      }).join("")}
+      ${done ? coach(`<b>The plan</b>${w.plan}`) : ""}
+      <button class="next" ${done ? "" : "disabled"} id="advance">Play in it →</button>
+    `);
+  }
+
+  if (state.stage === 1) {
+    html += card("Stage 2 · Say the plan", `
+      <p class="prompt">In your own words: what is your side trying to do here?</p>
+      <textarea id="plantext" rows="4" style="width:100%;padding:11px;border:1px solid var(--line);border-radius:8px;font:inherit;background:var(--paper)" placeholder="Type a sentence or two…">${state.planText.replace(/</g, "&lt;")}</textarea>
+      ${state.planShown ? `
+        <p class="meta" style="margin-top:14px">A host agent grades this against the position, not against a string. Here is what it would look for:</p>
+        <ul style="margin:8px 0 0;padding-left:20px">
+          ${w.rubric.map(r => `<li style="margin-bottom:4px">${r}</li>`).join("")}
+        </ul>
+        ${coach(`This is the card Chessable cannot have. Its only input channel is the board, so it can grade <em>which move</em> and nothing else. An agent sitting on the board can grade <em>why</em>.`)}
+      ` : ""}
+      <button class="next" id="${state.planShown ? "advance" : "gradeplan"}">${state.planShown ? "Choose the break →" : "Answer"}</button>
+    `);
+  }
+
+  if (state.stage === 2) {
+    const picked = state.breakPick;
+    html += card("Stage 3 · Choose the break", `
+      <p class="prompt">${w.decisionMove
+        ? `The opponent played <b>${w.decisionMove}</b>. Which pawn break does this structure want?`
+        : "Which pawn break is this whole set-up built for?"}</p>
+      ${w.breaks.map(b => {
+        let cls = "opt";
+        if (picked) {
+          cls += b.verdict === "primary" ? " good" : b.verdict === "mistake" ? " bad" : " mid";
+        }
+        return `<button class="${cls}" data-break="${b.san}">
+          <span class="san">${b.san}</span>
+          ${picked ? `<span class="why"><b>${b.verdict}</b> — ${b.why}</span>` : ""}
+        </button>`;
+      }).join("")}
+      ${picked ? coach("A break is a decision, not a move to recall. Notice the wrong ones are legal and reasonable-looking — that is what makes them worth a card.") : ""}
+      <button class="next" ${picked ? "" : "disabled"} id="advance">Take me off book →</button>
+    `);
+  }
+
+  if (state.stage === 3) {
+    const dev = w.deviations[state.devIndex];
+    const opts = [{ san: dev.answer, good: true, why: dev.principle }]
+      .concat(dev.distractors.map(d => ({ san: d.san, good: false, why: d.why })));
+    opts.sort((a, b) => a.san.localeCompare(b.san));
+    const picked = state.devPick;
+    const last = state.devIndex === w.deviations.length - 1;
+    html += card(`Stage 4 · Off book (${state.devIndex + 1} of ${w.deviations.length})`, `
+      <p class="prompt">${dev.after ? `You played <b>${dev.after}</b>. ` : ""}The opponent leaves the catalog with <b>${dev.san}</b>. This is not in any line you studied. What now?</p>
+      ${opts.map(o => {
+        let cls = "opt";
+        if (picked) cls += o.good ? " good" : " bad";
+        return `<button class="${cls}" data-dev="${o.san}">
+          <span class="san">${o.san}</span>
+          ${picked ? `<span class="why">${o.why}</span>` : ""}
+        </button>`;
+      }).join("")}
+      ${picked ? coach(`The answer came from the plan you built in stage 1, not from a line. That is the whole point of the tray: <em>${dev.principle}</em>`) : ""}
+      <button class="next" ${picked ? "" : "disabled"} id="advance">${last ? "Demolish the world →" : "Next deviation →"}</button>
+    `);
+  }
+
+  if (state.stage === 4) {
+    const { right, total } = state.tally;
+    html += card("Stage 5 · Demolish", `
+      <p class="prompt">The tray comes apart. Nothing is saved.</p>
+      <p>You got <b>${right} of ${total}</b> decisions in this world.</p>
+      <p class="meta">No cards were added to a deck. No interval was scheduled. Nothing is due tomorrow.
+      A small world is rebuilt from scratch next time — from the other side, or entered by a different
+      move order — because rebuilding is the practice. A deck of this session's answers would only
+      test whether you remember this session.</p>
+      ${coach("Next time we could enter this same structure through a different move order, and you would find out whether you learned the position or just this path to it.")}
+      <button class="next" id="restart">Rebuild it →</button>
+    `);
+  }
+
+  html += `<p class="tally">Session tally: <b>${state.tally.right}/${state.tally.total}</b> · nothing durable is written</p>`;
+  panel.innerHTML = html;
+
+  panel.querySelectorAll("[data-slot]").forEach(b => {
+    b.onclick = () => { state.selected = b.dataset.slot; render(); };
+  });
+  panel.querySelectorAll("[data-break]").forEach(b => {
+    b.onclick = () => {
+      if (state.breakPick) return;
+      state.breakPick = b.dataset.break;
+      state.tally.total += 1;
+      if (world().breaks.find(x => x.san === b.dataset.break).verdict === "primary") state.tally.right += 1;
+      render();
+    };
+  });
+  panel.querySelectorAll("[data-dev]").forEach(b => {
+    b.onclick = () => {
+      if (state.devPick) return;
+      state.devPick = b.dataset.dev;
+      state.tally.total += 1;
+      if (b.dataset.dev === world().deviations[state.devIndex].answer) state.tally.right += 1;
+      render();
+    };
+  });
+  const plantext = document.getElementById("plantext");
+  if (plantext) {
+    plantext.oninput = () => { state.planText = plantext.value; };
+    if (!state.planShown) plantext.focus();
+  }
+  const gradeplan = document.getElementById("gradeplan");
+  if (gradeplan) gradeplan.onclick = () => { state.planShown = true; render(); };
+  const advance = document.getElementById("advance");
+  if (advance) advance.onclick = () => {
+    if (state.stage === 3 && state.devIndex < world().deviations.length - 1) {
+      state.devIndex += 1; state.devPick = null;
+    } else {
+      state.stage += 1;
+    }
+    render();
+  };
+  const restart = document.getElementById("restart");
+  if (restart) restart.onclick = resetSession;
+}
+
+function resetSession() {
+  state.stage = 0; state.placed = {}; state.selected = null;
+  state.planText = ""; state.planShown = false;
+  state.breakPick = null; state.devIndex = 0; state.devPick = null;
+  state.tally = { right: 0, total: 0 };
+  render();
+}
+
+function render() { renderWorldPick(); renderStagebar(); renderBoard(); renderPanel(); }
+render();
+</script>
+</body>
+</html>

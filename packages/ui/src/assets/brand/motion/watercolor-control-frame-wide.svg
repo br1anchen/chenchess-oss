@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 96" preserveAspectRatio="none" aria-hidden="true">
+  <defs>
+    <filter id="dry" x="-3%" y="-30%" width="106%" height="160%" color-interpolation-filters="sRGB">
+      <feTurbulence type="fractalNoise" baseFrequency="0.006 0.05" numOctaves="2" seed="61" result="wander"/>
+      <feDisplacementMap in="SourceGraphic" in2="wander" scale="9" xChannelSelector="R" yChannelSelector="G" result="wandered"/>
+      <feTurbulence type="fractalNoise" baseFrequency="0.05 0.2" numOctaves="3" seed="12" result="bristles"/>
+      <feDisplacementMap in="wandered" in2="bristles" scale="7" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+  </defs>
+  <g filter="url(#dry)">
+    <rect x="12" y="10" width="1176" height="76" rx="5" fill="#fff"/>
+  </g>
+</svg>

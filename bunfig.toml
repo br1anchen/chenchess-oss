@@ -1,0 +1,5 @@
+[install]
+# Reject packages published in the last week so Storybook and other
+# toolchain pins cannot silently jump to a same-day release.
+# Documented in README.md.
+minimumReleaseAge = 604800

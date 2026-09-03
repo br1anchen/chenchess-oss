@@ -1,0 +1,112 @@
+/**
+ * ChenChess element-level styles.
+ *
+ * `globals.css` imports this into `chen-base`, declared before Astryx so
+ * Astryx wins. Left unlayered these rules would outrank every Astryx layer:
+ * `* { border-color }` would repaint component borders and the
+ * `:focus-visible` outline would replace component focus rings, both without
+ * a warning.
+ */
+:root {
+  background: var(--color-background-body);
+  color: var(--color-text-primary);
+  font-family: var(--font-family-body);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+}
+
+* {
+  border-color: var(--color-border);
+  box-sizing: border-box;
+}
+
+html {
+  background: var(--color-background-body);
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 20rem;
+  min-height: 100vh;
+  background:
+    linear-gradient(
+      color-mix(in srgb, var(--color-paper) 72%, transparent),
+      color-mix(in srgb, var(--color-paper) 54%, transparent)
+    ),
+    radial-gradient(
+      circle at 9% 3%,
+      color-mix(in srgb, var(--color-mist) 24%, transparent),
+      transparent 24rem
+    ),
+    radial-gradient(
+      circle at 93% 12%,
+      color-mix(in srgb, var(--color-bamboo) 16%, transparent),
+      transparent 28rem
+    ),
+    url("../assets/brand/illustrations/mountain-mist.webp") center bottom /
+      cover fixed no-repeat,
+    var(--color-background-body);
+  color: var(--color-text-primary);
+}
+
+button,
+select,
+textarea,
+input {
+  font: inherit;
+}
+
+button,
+select,
+label[for],
+input[type="checkbox"] {
+  touch-action: manipulation;
+}
+
+button,
+a,
+select,
+textarea,
+input {
+  outline-color: transparent;
+  outline-offset: 3px;
+}
+
+:where(button, a, select, textarea, input):focus-visible {
+  outline: 3px solid var(--focus-outline-color);
+}
+
+::selection {
+  background: var(--color-border);
+  color: var(--color-text-primary);
+}
+
+/* The heading family and scale come from the theme's own element rules. */
+h1,
+h2,
+h3 {
+  text-wrap: balance;
+}
+
+p {
+  text-wrap: pretty;
+}
+
+/* Reduced motion asks for fewer and gentler animations, not none. Smooth
+   scrolling is the one thing dropped globally; every animation and transition
+   carries its own reduced-motion answer where it is authored (a frame paints
+   in at 0s, the knight breathes instead of hopping, a hover snaps instead of
+   sweeping). A blanket 0.01ms duration here used to flatten those answers
+   into a snap as well. */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+  }
+}

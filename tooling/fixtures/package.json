@@ -1,0 +1,34 @@
+{
+  "name": "@chenchess/tooling-fixtures",
+  "private": true,
+  "license": "AGPL-3.0-or-later",
+  "version": "0.1.0",
+  "type": "module",
+  "exports": {
+    "./mcpjam/repro-contract": "./mcpjam/repro-contract.ts",
+    "./mcpjam/upstream-browser-harness": "./mcpjam/upstream-browser-harness.ts",
+    "./mcpjam/widget-artifacts": "./mcpjam/widget-artifacts.ts"
+  },
+  "scripts": {
+    "check": "bun run typecheck",
+    "test": "bun test .",
+    "typecheck": "bun x tsc --project tsconfig.json",
+    "lint": "oxlint mcpjam",
+    "format": "oxfmt --check mcpjam"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/express": "2.0.0",
+    "@modelcontextprotocol/ext-apps": "1.7.5",
+    "@modelcontextprotocol/node": "2.0.0",
+    "@modelcontextprotocol/sdk": "1.29.0",
+    "@modelcontextprotocol/server": "2.0.0",
+    "esbuild": "0.27.0",
+    "express": "5.2.1",
+    "typescript": "^5.7.2",
+    "zod": "4.4.3"
+  },
+  "devDependencies": {
+    "@types/bun": "^1.2.5",
+    "@types/express": "^5.0.6"
+  }
+}

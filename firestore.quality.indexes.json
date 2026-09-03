@@ -1,0 +1,30 @@
+{
+  "indexes": [
+    {
+      "collectionGroup": "captures",
+      "queryScope": "COLLECTION",
+      "fields": [
+        { "fieldPath": "environment", "order": "ASCENDING" },
+        { "fieldPath": "captureOrigin", "order": "ASCENDING" },
+        { "fieldPath": "captureTrigger", "order": "ASCENDING" },
+        { "fieldPath": "captureOutcome", "order": "ASCENDING" }
+      ]
+    },
+    {
+      "collectionGroup": "captures",
+      "queryScope": "COLLECTION",
+      "fields": [
+        { "fieldPath": "fingerprintDigest", "order": "ASCENDING" },
+        { "fieldPath": "captureOutcome", "order": "ASCENDING" }
+      ]
+    }
+  ],
+  "fieldOverrides": [
+    {
+      "collectionGroup": "captures",
+      "fieldPath": "purgeAt",
+      "ttl": true,
+      "indexes": []
+    }
+  ]
+}

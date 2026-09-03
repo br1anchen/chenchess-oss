@@ -1,0 +1,194 @@
+{
+  "description": "A 125-centipawn loss remains below the beginner automatic-selection threshold.",
+  "engineProvenance": {
+    "binarySha256": "bc0cac905ecdf2147fe22055c733bcd999b1e3f7c399fbaf7fb9055786563590",
+    "depth": 16,
+    "hashMib": 16,
+    "threads": 1,
+    "version": "18"
+  },
+  "evidence": [
+    {
+      "afterMove": {
+        "evaluation": {
+          "kind": "centipawns",
+          "value": -45
+        },
+        "kind": "analyzed",
+        "principal_variation": [
+          "e7e5",
+          "g1f3",
+          "b8c6",
+          "f1b5",
+          "a7a6",
+          "b5a4",
+          "g8f6",
+          "e1g1",
+          "b7b5",
+          "a4b3",
+          "f8e7",
+          "f1e1",
+          "d7d6",
+          "c2c3",
+          "c8g4",
+          "h2h3",
+          "g4h5",
+          "g2g4"
+        ]
+      },
+      "engineBefore": {
+        "bestMove": "e2e4",
+        "depth": 16,
+        "evaluation": {
+          "kind": "centipawns",
+          "value": 47
+        },
+        "principalVariation": [
+          "e2e4",
+          "c7c5",
+          "g1f3",
+          "e7e6",
+          "b1c3",
+          "a7a6",
+          "d2d4",
+          "c5d4",
+          "f3d4",
+          "d8c7",
+          "f1d3",
+          "b8c6"
+        ]
+      },
+      "humanBefore": {
+        "candidates": [
+          {
+            "probability": 0.3018,
+            "rank": 1,
+            "uci": "g1f3"
+          },
+          {
+            "probability": 0.2543,
+            "rank": 2,
+            "uci": "b1c3"
+          },
+          {
+            "probability": 0.0797,
+            "rank": 3,
+            "uci": "b1a3"
+          },
+          {
+            "probability": 0.0761,
+            "rank": 4,
+            "uci": "d2d4"
+          },
+          {
+            "probability": 0.0645,
+            "rank": 5,
+            "uci": "g1h3"
+          }
+        ],
+        "winProbability": 0.3905
+      },
+      "ply": 1
+    },
+    {
+      "afterMove": {
+        "evaluation": {
+          "kind": "centipawns",
+          "value": 170
+        },
+        "kind": "analyzed",
+        "principal_variation": [
+          "d2d4",
+          "h7h6",
+          "h2h4",
+          "g5h4",
+          "g1f3",
+          "d7d6",
+          "h1h4",
+          "g8f6",
+          "b1c3",
+          "c8g4",
+          "c1f4",
+          "c7c6",
+          "d1d2",
+          "h8g8",
+          "e1c1"
+        ]
+      },
+      "engineBefore": {
+        "bestMove": "e7e5",
+        "depth": 16,
+        "evaluation": {
+          "kind": "centipawns",
+          "value": -45
+        },
+        "principalVariation": [
+          "e7e5",
+          "g1f3",
+          "b8c6",
+          "f1b5",
+          "a7a6",
+          "b5a4",
+          "g8f6",
+          "e1g1",
+          "b7b5",
+          "a4b3",
+          "f8e7",
+          "f1e1",
+          "d7d6",
+          "c2c3",
+          "c8g4",
+          "h2h3",
+          "g4h5",
+          "g2g4"
+        ]
+      },
+      "humanBefore": {
+        "candidates": [
+          {
+            "probability": 0.3192,
+            "rank": 1,
+            "uci": "g8f6"
+          },
+          {
+            "probability": 0.2376,
+            "rank": 2,
+            "uci": "b8c6"
+          },
+          {
+            "probability": 0.0682,
+            "rank": 3,
+            "uci": "e7e5"
+          },
+          {
+            "probability": 0.0669,
+            "rank": 4,
+            "uci": "g8h6"
+          },
+          {
+            "probability": 0.0536,
+            "rank": 5,
+            "uci": "e7e6"
+          }
+        ],
+        "winProbability": 0.7033
+      },
+      "ply": 2
+    }
+  ],
+  "id": "beginner-below-threshold",
+  "input": {
+    "elo": 1199,
+    "operation": {
+      "kind": "game",
+      "reviewSide": "both"
+    },
+    "pgn": "1. e4 g5 *"
+  },
+  "provenance": {
+    "maiaImage": "maia-runtime@sha256:ab3b6dc16b75c3602f2e6c4002dc0f99ef77c8c042641cffea66fc1c23482972",
+    "maiaModel": "rapid",
+    "maiaPackage": "maia2==0.11.0",
+    "stockfish": "Stockfish 18 depth 16"
+  }
+}

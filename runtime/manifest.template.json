@@ -1,0 +1,23 @@
+{
+  "unitVersion": "GENERATED_BY_RELEASE_WORKFLOW",
+  "schemaVersion": 1,
+  "target": {
+    "os": "macos",
+    "arch": "aarch64"
+  },
+  "stockfish": {
+    "version": "18",
+    "url": "https://github.com/official-stockfish/Stockfish/releases/download/sf_18/stockfish-macos-m1-apple-silicon.tar",
+    "archiveSha256": "4d77c4aa3ad9bd1ea8111f2ac5a4620fe7ebf998d6893bf828d49ccd579c8cb0",
+    "binaryMember": "stockfish/stockfish-macos-m1-apple-silicon",
+    "licenseMembers": ["stockfish/Copying.txt"]
+  },
+  "maia": {
+    "image": "GENERATED_DIGEST_REFERENCE",
+    "package": "maia2==0.11.0",
+    "model": "rapid",
+    "modelSha256": "65aae8465eed5e65df66a24ea7370715579f9e5435098d06fe18bdb1e267e997",
+    "configSha256": "4b06a5e6917dba8a55defaf3947ce97a73edca3ae2c9d225779a620353c1371b",
+    "port": 38271
+  }
+}

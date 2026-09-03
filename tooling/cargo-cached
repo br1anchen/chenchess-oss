@@ -1,0 +1,35 @@
+#!/usr/bin/env bash
+# Runs a Cargo command through the mbx build cache.
+#
+# mbx caches by prefix invocation (`mbx test …`), not through RUSTC_WRAPPER, so
+# every cached Cargo call site goes through this script instead of naming
+# `cargo` directly.
+#
+# Two conditions send a build to plain Cargo instead:
+#
+# 1. CHENCHESS_UNCACHED_CARGO is set, which is how a build that must not read a
+#    cache reaches this seam and passes straight through it.
+# 2. mbx is not installed, which is the ordinary case on a machine that has not
+#    set it up.
+#
+# Both cases report themselves, because a silently uncached build looks exactly
+# like a cached one. Doc: docs/rust-build-cache.md
+set -euo pipefail
+
+if [ -n "${CHENCHESS_UNCACHED_CARGO:-}" ]; then
+  printf 'cargo-cached: release build; running `cargo %s` uncached.\n' "${1-}" >&2
+  exec cargo "$@"
+fi
+
+if ! command -v mbx >/dev/null 2>&1; then
+  printf 'cargo-cached: mbx is not installed; running `cargo %s` uncached.\n' "${1-}" >&2
+  printf 'cargo-cached: see docs/rust-build-cache.md\n' >&2
+  exec cargo "$@"
+fi
+
+# cargo-sweep owns target/ cleanup (`bun run sweep:targets`), so mbx must not
+# replace target/ with a symlink into its own store. Set here rather than only
+# per environment because the Claude cloud VM installs mbx with no environment
+# file to carry it.
+export MBX_TARGET_VIEWS=0
+exec mbx "$@"

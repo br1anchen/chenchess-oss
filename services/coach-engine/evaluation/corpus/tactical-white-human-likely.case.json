@@ -1,0 +1,218 @@
+{
+  "description": "An intermediate player's forcing opening capture is objectively costly but human-likely.",
+  "engineProvenance": {
+    "binarySha256": "bc0cac905ecdf2147fe22055c733bcd999b1e3f7c399fbaf7fb9055786563590",
+    "depth": 16,
+    "hashMib": 16,
+    "threads": 1,
+    "version": "18"
+  },
+  "evidence": [
+    {
+      "afterMove": {
+        "evaluation": {
+          "kind": "centipawns",
+          "value": -22
+        },
+        "kind": "analyzed",
+        "principal_variation": [
+          "d8g5",
+          "c4f7",
+          "e8d8",
+          "e1g1",
+          "g5e5",
+          "c2c3",
+          "d4e6",
+          "d2d3",
+          "e5f6",
+          "f7h5",
+          "g7g6",
+          "h5f3",
+          "f6f7",
+          "b1d2",
+          "d7d6"
+        ]
+      },
+      "engineBefore": {
+        "bestMove": "f3d4",
+        "depth": 16,
+        "evaluation": {
+          "kind": "centipawns",
+          "value": 126
+        },
+        "principalVariation": [
+          "f3d4",
+          "e5d4",
+          "e1g1",
+          "g8f6",
+          "f1e1",
+          "d7d6",
+          "c2c3",
+          "f8e7",
+          "c3d4",
+          "d6d5",
+          "e4d5",
+          "f6d5",
+          "b1c3",
+          "d5b6",
+          "d4d5",
+          "b6c4",
+          "d1a4",
+          "c8d7",
+          "a4c4"
+        ]
+      },
+      "humanBefore": {
+        "candidates": [
+          {
+            "probability": 0.3705,
+            "rank": 1,
+            "uci": "f3e5"
+          },
+          {
+            "probability": 0.306,
+            "rank": 2,
+            "uci": "f3d4"
+          },
+          {
+            "probability": 0.1249,
+            "rank": 3,
+            "uci": "c2c3"
+          },
+          {
+            "probability": 0.0724,
+            "rank": 4,
+            "uci": "d2d3"
+          },
+          {
+            "probability": 0.0445,
+            "rank": 5,
+            "uci": "e1g1"
+          }
+        ],
+        "winProbability": 0.5874
+      },
+      "ply": 1
+    }
+  ],
+  "id": "tactical-white-human-likely",
+  "input": {
+    "elo": 1200,
+    "operation": {
+      "kind": "game",
+      "reviewSide": "white"
+    },
+    "pgn": "[FEN \"r1bqkbnr/pppp1ppp/8/4p3/2BnP3/5N2/PPPP1PPP/RNBQK2R w KQkq - 4 4\"]\n\n4. Nxe5 *"
+  },
+  "multiPvEvidence": [
+    {
+      "output": {
+        "provenance": {
+          "binarySha256": "bc0cac905ecdf2147fe22055c733bcd999b1e3f7c399fbaf7fb9055786563590",
+          "depth": 16,
+          "hashMib": 16,
+          "threads": 1,
+          "version": "18"
+        },
+        "requestedVariations": 3,
+        "variations": [
+          {
+            "analysis": {
+              "bestMove": "f3d4",
+              "depth": 16,
+              "evaluation": {
+                "kind": "centipawns",
+                "value": 132
+              },
+              "principalVariation": [
+                "f3d4",
+                "e5d4",
+                "e1g1",
+                "g8f6",
+                "f1e1",
+                "d7d6",
+                "c2c3",
+                "f6g4",
+                "h2h3",
+                "g4e5",
+                "c3d4",
+                "e5c4",
+                "d1a4",
+                "c8d7",
+                "a4c4",
+                "b7b5",
+                "c4b3"
+              ]
+            },
+            "rank": 1
+          },
+          {
+            "analysis": {
+              "bestMove": "e1g1",
+              "depth": 16,
+              "evaluation": {
+                "kind": "centipawns",
+                "value": 111
+              },
+              "principalVariation": [
+                "e1g1",
+                "d4f3",
+                "d1f3",
+                "d8f6",
+                "f3g3",
+                "f8c5",
+                "b1c3",
+                "c7c6",
+                "d2d3",
+                "g8e7",
+                "c1g5",
+                "f6g6",
+                "g3e5",
+                "c5d6",
+                "e5a5"
+              ]
+            },
+            "rank": 2
+          },
+          {
+            "analysis": {
+              "bestMove": "b1c3",
+              "depth": 16,
+              "evaluation": {
+                "kind": "centipawns",
+                "value": 80
+              },
+              "principalVariation": [
+                "b1c3",
+                "c7c6",
+                "e1g1",
+                "d4f3",
+                "d1f3",
+                "d8f6",
+                "f3g3",
+                "h7h5",
+                "h2h4",
+                "b7b5",
+                "c4b3",
+                "a7a5",
+                "a2a4",
+                "b5b4",
+                "c3e2",
+                "f8d6",
+                "d2d3"
+              ]
+            },
+            "rank": 3
+          }
+        ]
+      },
+      "ply": 1
+    }
+  ],
+  "provenance": {
+    "maiaImage": "maia-runtime@sha256:ab3b6dc16b75c3602f2e6c4002dc0f99ef77c8c042641cffea66fc1c23482972",
+    "maiaModel": "rapid",
+    "maiaPackage": "maia2==0.11.0",
+    "stockfish": "Stockfish 18 depth 16"
+  }
+}

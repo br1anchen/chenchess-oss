@@ -1,0 +1,8 @@
+/**
+ * The Astryx foundation: reset, component CSS, then the ink-wash tokens, in the
+ * layer order `layers.css` declares.
+ */
+@import "../styles/layers.css";
+@import "@astryxdesign/core/reset.css";
+@import "@astryxdesign/core/astryx.css";
+@import "./theme.css";

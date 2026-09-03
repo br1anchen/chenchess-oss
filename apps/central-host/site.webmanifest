@@ -1,0 +1,25 @@
+{
+  "background_color": "#F7F2E8",
+  "description": "Grounded chess game review, run locally.",
+  "display": "standalone",
+  "icons": [
+    {
+      "purpose": "any",
+      "sizes": "any",
+      "src": "/brand/app-icon-light.svg",
+      "type": "image/svg+xml"
+    },
+    {
+      "purpose": "any",
+      "sizes": "512x512",
+      "src": "/brand/app-icon-light-512.png",
+      "type": "image/png"
+    }
+  ],
+  "id": "/app/board",
+  "name": "ChenChess",
+  "scope": "/",
+  "short_name": "ChenChess",
+  "start_url": "/app/board",
+  "theme_color": "#142B46"
+}

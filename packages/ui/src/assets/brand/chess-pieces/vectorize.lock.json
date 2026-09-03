@@ -1,0 +1,32 @@
+{
+  "alphaCutoff": 40,
+  "sources": {
+    "white-king.webp": "sha256:5039e6de3aab419780816cf779f9b5d23c422610ee5f6d4e8a38cfdfd919b669",
+    "white-queen.webp": "sha256:d35c5c1e026d2b9d4032d9a209b8f7b2f72d9f6292b9f8c6c0e6bb1c770942c6",
+    "white-bishop.webp": "sha256:5156f9d2af36fef0a64f049477a72c454c38ef2013625e684e84061f61de8a31",
+    "white-knight.webp": "sha256:fee8e74f41093109a38cba7d6f860206737250b00b3db51a995888eca52e00b1",
+    "white-rook.webp": "sha256:8cf2129aeebdafdbe839041126017885eff67738dcaae3b3f171f8779b4395d0",
+    "white-pawn.webp": "sha256:c9a84faa5267e5d09ce37cc76c9272ef11cb167745654d5579aa3a13debc9632",
+    "black-king.webp": "sha256:71915a70ab4d3c09faad99fe6c9f57f59515b200086784921a87192df6306e6d",
+    "black-queen.webp": "sha256:c8b8ec978f92496ef44da23017b92262f09a66634875f7f4d363d8449ad42a22",
+    "black-bishop.webp": "sha256:71fc42b711b43cab513fe3ea75d46c90bb2364a1f37fbe9d44cc294e8e0ad0fb",
+    "black-knight.webp": "sha256:0638737f4f5a8f5d017671f7782f2f3d24f2a44f3e6295f10ffedb593175bc12",
+    "black-rook.webp": "sha256:a333a3a1943815c0c504a212c02886216906050f9cb1b31e01f233642f08ff56",
+    "black-pawn.webp": "sha256:4a4c3139f8849b2b53f307fac364b84155bf34e55eeb3d291869c32376dcd3f7"
+  },
+  "svgo": {
+    "cleanupIds": false,
+    "keepRoleAttr": true,
+    "preset": "default"
+  },
+  "viewBox": "0 0 100 120",
+  "vtracer": {
+    "colormode": "color",
+    "color_precision": 6,
+    "filter_speckle": 3,
+    "gradient_step": 16,
+    "hierarchical": "stacked",
+    "mode": "spline",
+    "path_precision": 2
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "name": "chen-chess-coach",
+  "private": true,
+  "license": "AGPL-3.0-or-later",
+  "workspaces": [
+    "apps/*",
+    "services/*",
+    "packages/*",
+    "tooling/*"
+  ],
+  "type": "module",
+  "scripts": {
+    "prepare": "./scripts/prepare-effect.sh",
+    "dev": "concurrently -k \"bun run dev:coach-engine\" \"bun run dev:central-host\"",
+    "dev:coach-engine": "./tooling/cargo-cached run -p chen-chess-coach-engine",
+    "dev:central-host": "turbo run dev --filter=@chenchess/central-host",
+    "prepare:effect": "./scripts/prepare-effect.sh",
+    "build": "turbo run build",
+    "check": "turbo run check",
+    "test": "turbo run test",
+    "keys:test": "bun tooling/scripts/generate-auth-fixtures.ts",
+    "local:up": "bun tooling/scripts/local-up.ts",
+    "local:seed": "bun tooling/scripts/local-seed.ts",
+    "smoke:local": "bun tooling/scripts/local-smoke.ts",
+    "sweep:targets": "bun tooling/scripts/sweep-targets.ts",
+    "typecheck": "turbo run typecheck",
+    "format": "turbo run format",
+    "format:write": "oxfmt .",
+    "lint": "turbo run lint"
+  },
+  "devDependencies": {
+    "@oxlint/plugins": "1.75.0",
+    "@stylexjs/babel-plugin": "^0.19.0",
+    "@types/bun": "^1.2.5",
+    "concurrently": "^9.1.0",
+    "firebase-tools": "15.24.0",
+    "oxfmt": "0.60.0",
+    "oxlint": "1.75.0",
+    "turbo": "2.10.5",
+    "typescript": "^5.7.2"
+  },
+  "packageManager": "bun@1.3.14"
+}

@@ -1,0 +1,25 @@
+{
+  "name": "@chenchess/review-projection",
+  "private": true,
+  "license": "AGPL-3.0-or-later",
+  "version": "0.1.0",
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "scripts": {
+    "check": "tsc --project tsconfig.json",
+    "typecheck": "tsc --project tsconfig.json",
+    "lint": "oxlint .",
+    "format": "oxfmt --check .",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "@chenchess/coach-engine-sdk": "workspace:*",
+    "chessops": "0.15.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.2",
+    "vitest": "^2.1.8"
+  }
+}

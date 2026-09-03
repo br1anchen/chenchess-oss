@@ -1,0 +1,79 @@
+{
+  "description": "A Player-selected forced king move that is sound and achieves nothing concrete, producing the two-reason Neutral.",
+  "evidence": [
+    {
+      "afterMove": {
+        "evaluation": {
+          "kind": "centipawns",
+          "value": 386
+        },
+        "kind": "analyzed",
+        "principal_variation": [
+          "a8b8",
+          "h2g3",
+          "b8c7",
+          "g3f2",
+          "c7c6",
+          "f2e2",
+          "a1a2",
+          "e2f1",
+          "c6d5",
+          "f1g1",
+          "a2a1",
+          "g1f2",
+          "d5e4",
+          "f2g3"
+        ]
+      },
+      "engineBefore": {
+        "bestMove": "h1h2",
+        "depth": 16,
+        "evaluation": {
+          "kind": "centipawns",
+          "value": -384
+        },
+        "principalVariation": [
+          "h1h2",
+          "a8b7",
+          "h2g3",
+          "b7c6",
+          "g3g4",
+          "a1a2",
+          "g4g3",
+          "c6c5",
+          "g3h2",
+          "c5d5",
+          "h2h1",
+          "d5e5",
+          "h1g1"
+        ]
+      },
+      "humanBefore": {
+        "candidates": [
+          {
+            "probability": 1.0,
+            "rank": 1,
+            "uci": "h1h2"
+          }
+        ],
+        "winProbability": 0.2557
+      },
+      "ply": 1
+    }
+  ],
+  "id": "selected-forced-and-sound",
+  "input": {
+    "elo": 1500,
+    "operation": {
+      "kind": "selectedMoment",
+      "selectedPly": 1
+    },
+    "pgn": "[FEN \"k7/8/8/8/8/7P/6P1/r6K w - - 0 1\"]\n\n1. Kh2 *"
+  },
+  "provenance": {
+    "maiaImage": "maia-runtime@sha256:ab3b6dc16b75c3602f2e6c4002dc0f99ef77c8c042641cffea66fc1c23482972",
+    "maiaModel": "rapid",
+    "maiaPackage": "maia2==0.11.0",
+    "stockfish": "Stockfish 18 depth 16"
+  }
+}

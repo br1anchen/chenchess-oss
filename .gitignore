@@ -1,0 +1,60 @@
+target/
+node_modules/
+.turbo/
+.firebase/
+.repos/effect
+dist/
+dist-ssr/
+.astro/
+preview-dist/
+move-sequence-dist/
+server-dist/
+.env
+.DS_Store
+*.tsbuildinfo
+**/vitest.config.ts.timestamp-*.mjs
+__pycache__/
+*.pyc
+
+.env.local
+.agent/evidence/
+.repos/effect
+services/coach-engine/evaluation/**/last-accepted.diff
+**/provider-recordings/last-accepted.diff
+services/coach-engine/evaluation/gotham/raw/
+services/coach-engine/evaluation/gotham/runs/
+services/coach-engine/evaluation/gotham/evaluations/
+
+.terraform/
+*.tfstate
+*.tfstate.*
+*.tfvars
+*.tfvars.json
+crash.log
+crash.*.log
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+preview-shots/
+.layout-verify/
+.agent/
+.scratch/
+
+# `gotham review --force` writes <review>.json.regenerating beside each review
+# and deletes it when the episode lands. It exists only while a re-review is in
+# flight, and a snapshot taken mid-run would otherwise commit one.
+*.json.regenerating
+
+# The local emulator export `local:up` writes and restores. Never checked in
+# (ADR 0060): it is opaque, pinned to an emulator jar version, and rots
+# silently against contract changes.
+.local-emulator/
+# The emulators write their own logs beside whatever directory they start in.
+*-debug.log
+firebase-export-*/
+
+# The RSA pair Coach Engine's tests sign with, made by `bun run keys:test`.
+# Generated rather than committed: push protection refuses a PEM private key,
+# and nothing here needs one particular key.
+services/coach-engine/certification-fixtures/

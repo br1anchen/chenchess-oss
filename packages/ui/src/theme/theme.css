@@ -1,0 +1,13 @@
+/**
+ * Token-only entry point, for surfaces that paint with tokens but render no
+ * Astryx component — the Coach App's pre-hydration static shell, for one.
+ *
+ * The built theme scopes its tokens to `[data-astryx-theme="ink-wash"]`, so the
+ * document that loads this must carry that attribute on `<html>`. The root
+ * `Theme` provider syncs it once React mounts; the attribute in the HTML source
+ * is what makes the tokens resolve before that.
+ */
+@import "../styles/layers.css";
+@import "./generated/inkWash.css";
+@import "./chenTokens.css";
+@import "./generated/watercolorShapes.css";

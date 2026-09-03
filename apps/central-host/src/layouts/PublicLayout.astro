@@ -1,0 +1,35 @@
+---
+import "@chenchess/ui/styles.css"
+import "@chenchess/ui/surfaces.css"
+
+import BrandHead from "./BrandHead.astro"
+import { canonicalUrl, isProductionSite } from "../siteOrigin"
+
+interface Props {
+  canonical?: boolean
+  description: string
+  indexable?: boolean
+  pathname: string
+  title: string
+}
+
+const { description, pathname, title } = Astro.props
+const indexable = Astro.props.indexable ?? isProductionSite()
+const canonical =
+  Astro.props.canonical === false ? undefined : canonicalUrl(pathname)
+---
+
+<!doctype html>
+<html lang="en" data-astryx-theme="ink-wash" data-theme="light">
+  <head>
+    <BrandHead
+      canonical={canonical}
+      description={description}
+      indexable={indexable}
+      title={title}
+    />
+  </head>
+  <body>
+    <slot />
+  </body>
+</html>

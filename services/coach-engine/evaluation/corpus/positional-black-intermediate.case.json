@@ -1,0 +1,305 @@
+{
+  "description": "A quiet black opening concession crosses the intermediate mistake threshold.",
+  "engineProvenance": {
+    "binarySha256": "bc0cac905ecdf2147fe22055c733bcd999b1e3f7c399fbaf7fb9055786563590",
+    "depth": 16,
+    "hashMib": 16,
+    "threads": 1,
+    "version": "18"
+  },
+  "evidence": [
+    {
+      "afterMove": {
+        "evaluation": {
+          "kind": "centipawns",
+          "value": -45
+        },
+        "kind": "analyzed",
+        "principal_variation": [
+          "e7e5",
+          "g1f3",
+          "b8c6",
+          "f1b5",
+          "a7a6",
+          "b5a4",
+          "g8f6",
+          "e1g1",
+          "b7b5",
+          "a4b3",
+          "f8e7",
+          "f1e1",
+          "d7d6",
+          "c2c3",
+          "c8g4",
+          "h2h3",
+          "g4h5",
+          "g2g4"
+        ]
+      },
+      "engineBefore": {
+        "bestMove": "e2e4",
+        "depth": 16,
+        "evaluation": {
+          "kind": "centipawns",
+          "value": 47
+        },
+        "principalVariation": [
+          "e2e4",
+          "c7c5",
+          "g1f3",
+          "e7e6",
+          "b1c3",
+          "a7a6",
+          "d2d4",
+          "c5d4",
+          "f3d4",
+          "d8c7",
+          "f1d3",
+          "b8c6"
+        ]
+      },
+      "humanBefore": {
+        "candidates": [
+          {
+            "probability": 0.3071,
+            "rank": 1,
+            "uci": "g1f3"
+          },
+          {
+            "probability": 0.253,
+            "rank": 2,
+            "uci": "b1c3"
+          },
+          {
+            "probability": 0.0901,
+            "rank": 3,
+            "uci": "b1a3"
+          },
+          {
+            "probability": 0.071,
+            "rank": 4,
+            "uci": "d2d4"
+          },
+          {
+            "probability": 0.0639,
+            "rank": 5,
+            "uci": "g1h3"
+          }
+        ],
+        "winProbability": 0.4079
+      },
+      "ply": 1
+    },
+    {
+      "afterMove": {
+        "evaluation": {
+          "kind": "centipawns",
+          "value": 170
+        },
+        "kind": "analyzed",
+        "principal_variation": [
+          "d2d4",
+          "h7h6",
+          "h2h4",
+          "g5h4",
+          "g1f3",
+          "d7d6",
+          "h1h4",
+          "g8f6",
+          "b1c3",
+          "c8g4",
+          "c1f4",
+          "c7c6",
+          "d1d2",
+          "h8g8",
+          "e1c1"
+        ]
+      },
+      "engineBefore": {
+        "bestMove": "e7e5",
+        "depth": 16,
+        "evaluation": {
+          "kind": "centipawns",
+          "value": -45
+        },
+        "principalVariation": [
+          "e7e5",
+          "g1f3",
+          "b8c6",
+          "f1b5",
+          "a7a6",
+          "b5a4",
+          "g8f6",
+          "e1g1",
+          "b7b5",
+          "a4b3",
+          "f8e7",
+          "f1e1",
+          "d7d6",
+          "c2c3",
+          "c8g4",
+          "h2h3",
+          "g4h5",
+          "g2g4"
+        ]
+      },
+      "humanBefore": {
+        "candidates": [
+          {
+            "probability": 0.3207,
+            "rank": 1,
+            "uci": "g8f6"
+          },
+          {
+            "probability": 0.2441,
+            "rank": 2,
+            "uci": "b8c6"
+          },
+          {
+            "probability": 0.0671,
+            "rank": 3,
+            "uci": "g8h6"
+          },
+          {
+            "probability": 0.0637,
+            "rank": 4,
+            "uci": "e7e5"
+          },
+          {
+            "probability": 0.0515,
+            "rank": 5,
+            "uci": "e7e6"
+          }
+        ],
+        "winProbability": 0.7109
+      },
+      "ply": 2
+    }
+  ],
+  "id": "positional-black-intermediate",
+  "input": {
+    "elo": 1200,
+    "operation": {
+      "kind": "game",
+      "reviewSide": "black"
+    },
+    "pgn": "1. e4 g5 *"
+  },
+  "multiPvEvidence": [
+    {
+      "output": {
+        "provenance": {
+          "binarySha256": "bc0cac905ecdf2147fe22055c733bcd999b1e3f7c399fbaf7fb9055786563590",
+          "depth": 16,
+          "hashMib": 16,
+          "threads": 1,
+          "version": "18"
+        },
+        "requestedVariations": 3,
+        "variations": [
+          {
+            "analysis": {
+              "bestMove": "e7e5",
+              "depth": 16,
+              "evaluation": {
+                "kind": "centipawns",
+                "value": -30
+              },
+              "principalVariation": [
+                "e7e5",
+                "g1f3",
+                "b8c6",
+                "d2d4",
+                "e5d4",
+                "f3d4",
+                "g8f6",
+                "d4c6",
+                "b7c6",
+                "f1d3",
+                "d7d5",
+                "b1c3",
+                "d5e4",
+                "c3e4",
+                "f6e4",
+                "d1e2",
+                "f7f5",
+                "d3e4",
+                "f8b4",
+                "c2c3",
+                "f5e4",
+                "c3b4"
+              ]
+            },
+            "rank": 1
+          },
+          {
+            "analysis": {
+              "bestMove": "e7e6",
+              "depth": 16,
+              "evaluation": {
+                "kind": "centipawns",
+                "value": -34
+              },
+              "principalVariation": [
+                "e7e6",
+                "d2d4",
+                "d7d5",
+                "b1c3",
+                "g8f6",
+                "c1g5",
+                "d5e4",
+                "c3e4",
+                "f8e7",
+                "e4f6",
+                "e7f6",
+                "g5f6",
+                "d8f6",
+                "g1f3",
+                "e8g8",
+                "d1d2",
+                "f8d8",
+                "e1c1"
+              ]
+            },
+            "rank": 2
+          },
+          {
+            "analysis": {
+              "bestMove": "c7c6",
+              "depth": 16,
+              "evaluation": {
+                "kind": "centipawns",
+                "value": -39
+              },
+              "principalVariation": [
+                "c7c6",
+                "d2d4",
+                "d7d5",
+                "e4e5",
+                "c8f5",
+                "h2h4",
+                "h7h5",
+                "c2c4",
+                "e7e6",
+                "g1f3",
+                "f8e7",
+                "b1c3",
+                "g8h6",
+                "c1h6",
+                "h8h6"
+              ]
+            },
+            "rank": 3
+          }
+        ]
+      },
+      "ply": 2
+    }
+  ],
+  "provenance": {
+    "maiaImage": "maia-runtime@sha256:ab3b6dc16b75c3602f2e6c4002dc0f99ef77c8c042641cffea66fc1c23482972",
+    "maiaModel": "rapid",
+    "maiaPackage": "maia2==0.11.0",
+    "stockfish": "Stockfish 18 depth 16"
+  }
+}

@@ -1,0 +1,216 @@
+{
+  "description": "An advanced player's quiet opening concession crosses the 70-centipawn threshold.",
+  "engineProvenance": {
+    "binarySha256": "bc0cac905ecdf2147fe22055c733bcd999b1e3f7c399fbaf7fb9055786563590",
+    "depth": 16,
+    "hashMib": 16,
+    "threads": 1,
+    "version": "18"
+  },
+  "evidence": [
+    {
+      "afterMove": {
+        "evaluation": {
+          "kind": "centipawns",
+          "value": 126
+        },
+        "kind": "analyzed",
+        "principal_variation": [
+          "d7d5",
+          "h2h3",
+          "h7h5",
+          "g4h5",
+          "e7e5",
+          "d2d4",
+          "e5d4",
+          "g1f3",
+          "c7c5",
+          "c2c3",
+          "b8c6",
+          "c3d4",
+          "h8h5",
+          "d4c5",
+          "f8c5",
+          "b1c3",
+          "d5d4"
+        ]
+      },
+      "engineBefore": {
+        "bestMove": "e2e4",
+        "depth": 16,
+        "evaluation": {
+          "kind": "centipawns",
+          "value": 47
+        },
+        "principalVariation": [
+          "e2e4",
+          "c7c5",
+          "g1f3",
+          "e7e6",
+          "b1c3",
+          "a7a6",
+          "d2d4",
+          "c5d4",
+          "f3d4",
+          "d8c7",
+          "f1d3",
+          "b8c6"
+        ]
+      },
+      "humanBefore": {
+        "candidates": [
+          {
+            "probability": 0.4393,
+            "rank": 1,
+            "uci": "g1f3"
+          },
+          {
+            "probability": 0.1881,
+            "rank": 2,
+            "uci": "b1c3"
+          },
+          {
+            "probability": 0.0769,
+            "rank": 3,
+            "uci": "d2d4"
+          },
+          {
+            "probability": 0.0506,
+            "rank": 4,
+            "uci": "e2e4"
+          },
+          {
+            "probability": 0.0451,
+            "rank": 5,
+            "uci": "b1a3"
+          }
+        ],
+        "winProbability": 0.4812
+      },
+      "ply": 1
+    }
+  ],
+  "id": "advanced-both-threshold",
+  "input": {
+    "elo": 1900,
+    "operation": {
+      "kind": "game",
+      "reviewSide": "both"
+    },
+    "pgn": "1. g4 *"
+  },
+  "multiPvEvidence": [
+    {
+      "output": {
+        "provenance": {
+          "binarySha256": "bc0cac905ecdf2147fe22055c733bcd999b1e3f7c399fbaf7fb9055786563590",
+          "depth": 16,
+          "hashMib": 16,
+          "threads": 1,
+          "version": "18"
+        },
+        "requestedVariations": 3,
+        "variations": [
+          {
+            "analysis": {
+              "bestMove": "e2e4",
+              "depth": 16,
+              "evaluation": {
+                "kind": "centipawns",
+                "value": 50
+              },
+              "principalVariation": [
+                "e2e4",
+                "c7c6",
+                "d2d4",
+                "d7d5",
+                "b1c3",
+                "d5e4",
+                "c3e4",
+                "g8f6",
+                "e4g3",
+                "c8g4",
+                "d1d3",
+                "e7e6"
+              ]
+            },
+            "rank": 1
+          },
+          {
+            "analysis": {
+              "bestMove": "d2d4",
+              "depth": 16,
+              "evaluation": {
+                "kind": "centipawns",
+                "value": 32
+              },
+              "principalVariation": [
+                "d2d4",
+                "g8f6",
+                "c2c4",
+                "e7e6",
+                "g1f3",
+                "d7d5",
+                "c1g5",
+                "f8e7",
+                "e2e3",
+                "e8g8",
+                "b1c3",
+                "h7h6",
+                "g5f6",
+                "e7f6",
+                "a1c1",
+                "b7b6"
+              ]
+            },
+            "rank": 2
+          },
+          {
+            "analysis": {
+              "bestMove": "g1f3",
+              "depth": 16,
+              "evaluation": {
+                "kind": "centipawns",
+                "value": 31
+              },
+              "principalVariation": [
+                "g1f3",
+                "d7d5",
+                "d2d4",
+                "g8f6",
+                "c2c4",
+                "e7e6",
+                "c1g5",
+                "f8e7",
+                "e2e3",
+                "h7h6",
+                "g5h4",
+                "e8g8",
+                "b1c3",
+                "f6e4",
+                "h4e7",
+                "d8e7",
+                "d1c2",
+                "e4c3",
+                "c2c3",
+                "d5c4",
+                "f1c4",
+                "c7c5",
+                "d4c5",
+                "e7c5"
+              ]
+            },
+            "rank": 3
+          }
+        ]
+      },
+      "ply": 1
+    }
+  ],
+  "provenance": {
+    "maiaImage": "maia-runtime@sha256:ab3b6dc16b75c3602f2e6c4002dc0f99ef77c8c042641cffea66fc1c23482972",
+    "maiaModel": "rapid",
+    "maiaPackage": "maia2==0.11.0",
+    "stockfish": "Stockfish 18 depth 16"
+  }
+}

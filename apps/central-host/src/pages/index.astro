@@ -1,0 +1,33 @@
+---
+import PublicLayout from "../layouts/PublicLayout.astro"
+
+/**
+ * The root page.
+ *
+ * This snapshot serves one product surface — the Coaching Board — so the root
+ * is a plain static description and a way in. It costs no JavaScript, and
+ * `verify:public-build` holds it to a static heading and the legal links.
+ */
+const description =
+  "ChenChess reviews a finished chess game and coaches you through it. Every claim in the coaching traces back to engine evidence."
+---
+
+<PublicLayout description={description} pathname="/" title="ChenChess">
+  <main>
+    <h1>ChenChess</h1>
+    <p>{description}</p>
+    <p>
+      Import a finished Lichess or Chess.com game, or paste a PGN, and study it
+      on the Coaching Board. A model connected to the page over WebMCP can drive
+      the same board you are looking at.
+    </p>
+    <p><a href="/app/board">Open the Coaching Board</a></p>
+    <nav aria-label="Legal and support">
+      <a href="/privacy/">Privacy</a> · <a href="/terms/">Terms</a> ·
+      <a href="/support/">Support</a>
+    </nav>
+    <p>
+      <a href="https://github.com/br1anchen/chenchess-oss">Source</a>
+    </p>
+  </main>
+</PublicLayout>

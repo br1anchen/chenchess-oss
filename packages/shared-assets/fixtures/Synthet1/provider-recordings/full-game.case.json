@@ -1,0 +1,8356 @@
+{
+  "description": "Synthetic canonical completed Game at Elo Profile 1246 and Review Side Black.",
+  "engineProvenance": {
+    "binarySha256": "bc0cac905ecdf2147fe22055c733bcd999b1e3f7c399fbaf7fb9055786563590",
+    "depth": 16,
+    "hashMib": 16,
+    "threads": 1,
+    "version": "18"
+  },
+  "evidence": [
+    {
+      "afterMove": {
+        "evaluation": {
+          "kind": "centipawns",
+          "value": -10
+        },
+        "kind": "analyzed",
+        "principal_variation": [
+          "d7d5",
+          "d2d4",
+          "e7e6",
+          "c1f4",
+          "c7c5",
+          "e2e3",
+          "b8c6",
+          "g1f3",
+          "g8f6",
+          "f1e2",
+          "f8d6",
+          "d4c5",
+          "d6c5",
+          "b1d2",
+          "e8g8"
+        ]
+      },
+      "engineBefore": {
+        "bestMove": "e2e4",
+        "depth": 16,
+        "evaluation": {
+          "kind": "centipawns",
+          "value": 47
+        },
+        "principalVariation": [
+          "e2e4",
+          "c7c5",
+          "g1f3",
+          "e7e6",
+          "b1c3",
+          "a7a6",
+          "d2d4",
+          "c5d4",
+          "f3d4",
+          "d8c7",
+          "f1d3",
+          "b8c6"
+        ]
+      },
+      "humanBefore": {
+        "candidates": [
+          {
+            "probability": 0.3071,
+            "rank": 1,
+            "uci": "g1f3"
+          },
+          {
+            "probability": 0.253,
+            "rank": 2,
+            "uci": "b1c3"
+          },
+          {
+            "probability": 0.0901,
+            "rank": 3,
+            "uci": "b1a3"
+          },
+          {
+            "probability": 0.071,
+            "rank": 4,
+            "uci": "d2d4"
+          },
+          {
+            "probability": 0.0639,
+            "rank": 5,
+            "uci": "g1h3"
+          }
+        ],
+        "winProbability": 0.4079
+      },
+      "ply": 1
+    },
+    {
+      "afterMove": {
+        "evaluation": {
+          "kind": "centipawns",
+          "value": 15
+        },
+        "kind": "analyzed",
+        "principal_variation": [
+          "d2d4",
+          "e7e6",
+          "g1f3",
+          "c7c5",
+          "c1f4",
+          "f8e7",
+          "e2e3",
+          "b8c6",
+          "d4c5",
+          "e7c5",
+          "b1d2",
+          "d7d5",
+          "f1e2",
+          "e8g8",
+          "e1g1",
+          "c5d6",
+          "f4d6",
+          "d8d6"
+        ]
+      },
+      "engineBefore": {
+        "bestMove": "d7d5",
+        "depth": 16,
+        "evaluation": {
+          "kind": "centipawns",
+          "value": -10
+        },
+        "principalVariation": [
+          "d7d5",
+          "d2d4",
+          "e7e6",
+          "c1f4",
+          "c7c5",
+          "e2e3",
+          "b8c6",
+          "g1f3",
+          "g8f6",
+          "f1e2",
+          "f8d6",
+          "d4c5",
+          "d6c5",
+          "b1d2",
+          "e8g8"
+        ]
+      },
+      "humanBefore": {
+        "candidates": [
+          {
+            "probability": 0.2946,
+            "rank": 1,
+            "uci": "g8f6"
+          },
+          {
+            "probability": 0.2425,
+            "rank": 2,
+            "uci": "b8c6"
+          },
+          {
+            "probability": 0.0884,
+            "rank": 3,
+            "uci": "b8a6"
+          },
+          {
+            "probability": 0.0821,
+            "rank": 4,
+            "uci": "d7d5"
+          },
+          {
+            "probability": 0.0546,
+            "rank": 5,
+            "uci": "g8h6"
+          }
+        ],
+        "winProbability": 0.6305
+      },
+      "ply": 2
+    },
+    {
+      "afterMove": {
+        "evaluation": {
+          "kind": "centipawns",
+          "value": -12
+        },
+        "kind": "analyzed",
+        "principal_variation": [
+          "d7d5",
+          "g1f3",
+          "c7c6",
+          "c1f4",
+          "f6h5",
+          "f4d2",
+          "h5f6",
+          "d2g5",
+          "f6e4",
+          "g5h4",
+          "c8f5"
+        ]
+      },
+      "engineBefore": {
+        "bestMove": "d2d4",
+        "depth": 16,
+        "evaluation": {
+          "kind": "centipawns",
+          "value": 15
+        },
+        "principalVariation": [
+          "d2d4",
+          "e7e6",
+          "g1f3",
+          "c7c5",
+          "c1f4",
+          "f8e7",
+          "e2e3",
+          "b8c6",
+          "d4c5",
+          "e7c5",
+          "b1d2",
+          "d7d5",
+          "f1e2",
+          "e8g8",
+          "e1g1",
+          "c5d6",
+          "f4d6",
+          "d8d6"
+        ]
+      },
+      "humanBefore": {
+        "candidates": [
+          {
+            "probability": 0.1563,
+            "rank": 1,
+            "uci": "b1a3"
+          },
+          {
+            "probability": 0.1194,
+            "rank": 2,
+            "uci": "d1b3"
+          },
+          {
+            "probability": 0.1154,
+            "rank": 3,
+            "uci": "d1a4"
+          },
+          {
+            "probability": 0.1021,
+            "rank": 4,
+            "uci": "d1c2"
+          },
+          {
+            "probability": 0.1009,
+            "rank": 5,
+            "uci": "d2d4"
+          }
+        ],
+        "winProbability": 0.4449
+      },
+      "ply": 3
+    },
+    {
+      "afterMove": {
+        "evaluation": {
+          "kind": "centipawns",
+          "value": 40
+        },
+        "kind": "analyzed",
+        "principal_variation": [
+          "b1d2",
+          "g7g6",
+          "e2e4",
+          "f8g7",
+          "f1d3",
+          "c7c5",
+          "g1e2",
+          "e8g8",
+          "e1g1",
+          "c5d4",
+          "c3d4"
+        ]
+      },
+      "engineBefore": {
+        "bestMove": "d7d5",
+        "depth": 16,
+        "evaluation": {
+          "kind": "centipawns",
+          "value": -12
+        },
+        "principalVariation": [
+          "d7d5",
+          "g1f3",
+          "c7c6",
+          "c1f4",
+          "f6h5",
+          "f4d2",
+          "h5f6",
+          "d2g5",
+          "f6e4",
+          "g5h4",
+          "c8f5"
+        ]
+      },
+      "humanBefore": {
+        "candidates": [
+          {
+            "probability": 0.7864,
+            "rank": 1,
+            "uci": "f6g8"
+          },
+          {
+            "probability": 0.0448,
+            "rank": 2,
+            "uci": "b8c6"
+          },
+          {
+            "probability": 0.0358,
+            "rank": 3,
+            "uci": "f6e4"
+          },
+          {
+            "probability": 0.0248,
+            "rank": 4,
+            "uci": "f6d5"
+          },
+          {
+            "probability": 0.0237,
+            "rank": 5,
+            "uci": "d7d5"
+          }
+        ],
+        "winProbability": 0.5856
+      },
+      "ply": 4
+    },
+    {
+      "afterMove": {
+        "evaluation": {
+          "kind": "centipawns",
+          "value": -7
+        },
+        "kind": "analyzed",
+        "principal_variation": [
+          "g7g6",
+          "g1f3",
+          "f8g7",
+          "e2e3",
+          "e8g8",
+          "f1e2",
+          "b8d7",
+          "h2h3",
+          "b7b6",
+          "a2a4",
+          "a7a6",
+          "e1g1",
+          "c8b7",
+          "c3c4",
+          "f8e8"
+        ]
+      },
+      "engineBefore": {
+        "bestMove": "b1d2",
+        "depth": 16,
+        "evaluation": {
+          "kind": "centipawns",
+          "value": 40
+        },
+        "principalVariation": [
+          "b1d2",
+          "g7g6",
+          "e2e4",
+          "f8g7",
+          "f1d3",
+          "c7c5",
+          "g1e2",
+          "e8g8",
+          "e1g1",
+          "c5d4",
+          "c3d4"
+        ]
+      },
+      "humanBefore": {
+        "candidates": [
+          {
+            "probability": 0.1686,
+            "rank": 1,
+            "uci": "c1g5"
+          },
+          {
+            "probability": 0.1586,
+            "rank": 2,
+            "uci": "e2e3"
+          },
+          {
+            "probability": 0.1189,
+            "rank": 3,
+            "uci": "f2f3"
+          },
+          {
+            "probability": 0.098,
+            "rank": 4,
+            "uci": "g1f3"
+          },
+          {
+            "probability": 0.053,
+            "rank": 5,
+            "uci": "d1a4"
+          }
+        ],
+        "winProbability": 0.442
+      },
+      "ply": 5
+    },
+    {
+      "afterMove": {
+        "evaluation": {
+          "kind": "centipawns",
+          "value": 15
+        },
+        "kind": "analyzed",
+        "principal_variation": [
+          "b1d2",
+          "b8d7",
+          "g1f3",
+          "f6h5",
+          "f4g5",
+          "h7h6",
+          "g5h4",
+          "d7f6",
+          "e2e4",
+          "f8g7",
+          "f1c4",
+          "e8g8"
+        ]
+      },
+      "engineBefore": {
+        "bestMove": "g7g6",
+        "depth": 16,
+        "evaluation": {
+          "kind": "centipawns",
+          "value": -7
+        },
+        "principalVariation": [
+          "g7g6",
+          "g1f3",
+          "f8g7",
+          "e2e3",
+          "e8g8",
+          "f1e2",
+          "b8d7",
+          "h2h3",
+          "b7b6",
+          "a2a4",
+          "a7a6",
+          "e1g1",
+          "c8b7",
+          "c3c4",
+          "f8e8"
+        ]
+      },
+      "humanBefore": {
+        "candidates": [
+          {
+            "probability": 0.1804,
+            "rank": 1,
+            "uci": "b8c6"
+          },
+          {
+            "probability": 0.1387,
+            "rank": 2,
+            "uci": "c8f5"
+          },
+          {
+            "probability": 0.1005,
+            "rank": 3,
+            "uci": "e7e5"
+          },
+          {
+            "probability": 0.077,
+            "rank": 4,
+            "uci": "g7g6"
+          },
+          {
+            "probability": 0.0707,
+            "rank": 5,
+            "uci": "e7e6"
+          }
+        ],
+        "winProbability": 0.5639
+      },
+      "ply": 6
+    },
+    {
+      "afterMove": {
+        "evaluation": {
+          "kind": "centipawns",
+          "value": -8
+        },
+        "kind": "analyzed",
+        "principal_variation": [
+          "f8g7",
+          "e2e3",
+          "e8g8",
+          "f1e2",
+          "b8d7",
+          "h2h3",
+          "e7e5",
+          "f4h2",
+          "a7a5",
+          "g1f3",
+          "d8e7",
+          "e1g1",
+          "b7b6",
+          "b1d2",
+          "c8b7",
+          "f1e1",
+          "f8d8",
+          "e2b5"
+        ]
+      },
+      "engineBefore": {
+        "bestMove": "b1d2",
+        "depth": 16,
+        "evaluation": {
+          "kind": "centipawns",
+          "value": 15
+        },
+        "principalVariation": [
+          "b1d2",
+          "b8d7",
+          "g1f3",
+          "f6h5",
+          "f4g5",
+          "h7h6",
+          "g5h4",
+          "d7f6",
+          "e2e4",
+          "f8g7",
+          "f1c4",
+          "e8g8"
+        ]
+      },
+      "humanBefore": {
+        "candidates": [
+          {
+            "probability": 0.4914,
+            "rank": 1,
+            "uci": "e2e3"
+          },
+          {
+            "probability": 0.1373,
+            "rank": 2,
+            "uci": "g1f3"
+          },
+          {
+            "probability": 0.1264,
+            "rank": 3,
+            "uci": "b1d2"
+          },
+          {
+            "probability": 0.067,
+            "rank": 4,
+            "uci": "h2h3"
+          },
+          {
+            "probability": 0.0493,
+            "rank": 5,
+            "uci": "f2f3"
+          }
+        ],
+        "winProbability": 0.4528
+      },
+      "ply": 7
+    },
+    {
+      "afterMove": {
+        "evaluation": {
+          "kind": "centipawns",
+          "value": 0
+        },
+        "kind": "analyzed",
+        "principal_variation": [
+          "e2e3",
+          "e8g8",
+          "f1e2",
+          "b8c6",
+          "h2h3",
+          "e7e5",
+          "f4h2",
+          "e5d4",
+          "c3d4",
+          "c6b4",
+          "g1f3",
+          "c8f5",
+          "e1g1",
+          "b4c2",
+          "g2g4",
+          "f5e4",
+          "a1a2",
+          "c2b4",
+          "a2a1"
+        ]
+      },
+      "engineBefore": {
+        "bestMove": "f8g7",
+        "depth": 16,
+        "evaluation": {
+          "kind": "centipawns",
+          "value": -8
+        },
+        "principalVariation": [
+          "f8g7",
+          "e2e3",
+          "e8g8",
+          "f1e2",
+          "b8d7",
+          "h2h3",
+          "e7e5",
+          "f4h2",
+          "a7a5",
+          "g1f3",
+          "d8e7",
+          "e1g1",
+          "b7b6",
+          "b1d2",
+          "c8b7",
+          "f1e1",
+          "f8d8",
+          "e2b5"
+        ]
+      },
+      "humanBefore": {
+        "candidates": [
+          {
+            "probability": 0.7439,
+            "rank": 1,
+            "uci": "f8g7"
+          },
+          {
+            "probability": 0.0351,
+            "rank": 2,
+            "uci": "a7a5"
+          },
+          {
+            "probability": 0.0327,
+            "rank": 3,
+            "uci": "b8d7"
+          },
+          {
+            "probability": 0.03,
+            "rank": 4,
+            "uci": "b8c6"
+          },
+          {
+            "probability": 0.0291,
+            "rank": 5,
+            "uci": "c8f5"
+          }
+        ],
+        "winProbability": 0.4341
+      },
+      "ply": 8
+    },
+    {
+      "afterMove": {
+        "evaluation": {
+          "kind": "centipawns",
+          "value": 39
+        },
+        "kind": "analyzed",
+        "principal_variation": [
+          "f6e4",
+          "g1f3",
+          "c7c5",
+          "d4c5",
+          "e4c5",
+          "b1d2",
+          "e8g8",
+          "e2e4",
+          "c8d7",
+          "h2h4",
+          "d7c6",
+          "d1c2",
+          "b8d7",
+          "h4h5",
+          "d7f6",
+          "h5h6",
+          "g7h8",
+          "e4e5",
+          "d6e5",
+          "f3e5"
+        ]
+      },
+      "engineBefore": {
+        "bestMove": "e2e3",
+        "depth": 16,
+        "evaluation": {
+          "kind": "centipawns",
+          "value": 0
+        },
+        "principalVariation": [
+          "e2e3",
+          "e8g8",
+          "f1e2",
+          "b8c6",
+          "h2h3",
+          "e7e5",
+          "f4h2",
+          "e5d4",
+          "c3d4",
+          "c6b4",
+          "g1f3",
+          "c8f5",
+          "e1g1",
+          "b4c2",
+          "g2g4",
+          "f5e4",
+          "a1a2",
+          "c2b4",
+          "a2a1"
+        ]
+      },
+      "humanBefore": {
+        "candidates": [
+          {
+            "probability": 0.2611,
+            "rank": 1,
+            "uci": "e2e3"
+          },
+          {
+            "probability": 0.132,
+            "rank": 2,
+            "uci": "h2h3"
+          },
+          {
+            "probability": 0.0926,
+            "rank": 3,
+            "uci": "f2f3"
+          },
+          {
+            "probability": 0.0729,
+            "rank": 4,
+            "uci": "g1f3"
+          },
+          {
+            "probability": 0.0709,
+            "rank": 5,
+            "uci": "b2b4"
+          }
+        ],
+        "winProbability": 0.4322
+      },
+      "ply": 9
+    },
+    {
+      "afterMove": {
+        "evaluation": {
+          "kind": "centipawns",
+          "value": -15
+        },
+        "kind": "analyzed",
+        "principal_variation": [
+          "b1d2",
+          "c7c5",
+          "d4c5",
+          "d6c5",
+          "g1f3",
+          "b8c6",
+          "e2e4",
+          "f6h5",
+          "d2c4",
+          "h5g3",
+          "d1d8",
+          "f8d8",
+          "h2g3",
+          "a8b8"
+        ]
+      },
+      "engineBefore": {
+        "bestMove": "f6e4",
+        "depth": 16,
+        "evaluation": {
+          "kind": "centipawns",
+          "value": 39
+        },
+        "principalVariation": [
+          "f6e4",
+          "g1f3",
+          "c7c5",
+          "d4c5",
+          "e4c5",
+          "b1d2",
+          "e8g8",
+          "e2e4",
+          "c8d7",
+          "h2h4",
+          "d7c6",
+          "d1c2",
+          "b8d7",
+          "h4h5",
+          "d7f6",
+          "h5h6",
+          "g7h8",
+          "e4e5",
+          "d6e5",
+          "f3e5"
+        ]
+      },
+      "humanBefore": {
+        "candidates": [
+          {
+            "probability": 0.5419,
+            "rank": 1,
+            "uci": "e8g8"
+          },
+          {
+            "probability": 0.081,
+            "rank": 2,
+            "uci": "b8d7"
+          },
+          {
+            "probability": 0.0677,
+            "rank": 3,
+            "uci": "b8c6"
+          },
+          {
+            "probability": 0.045,
+            "rank": 4,
+            "uci": "c8f5"
+          },
+          {
+            "probability": 0.0374,
+            "rank": 5,
+            "uci": "f6e4"
+          }
+        ],
+        "winProbability": 0.4616
+      },
+      "ply": 10
+    },
+    {
+      "afterMove": {
+        "evaluation": {
+          "kind": "centipawns",
+          "value": 23
+        },
+        "kind": "analyzed",
+        "principal_variation": [
+          "f6h5",
+          "g3h4",
+          "c7c5",
+          "d4c5",
+          "d6c5",
+          "g1f3",
+          "b8c6",
+          "e2e3",
+          "g7f6",
+          "f1e2",
+          "d8c7",
+          "h4f6",
+          "h5f6",
+          "d1b3"
+        ]
+      },
+      "engineBefore": {
+        "bestMove": "b1d2",
+        "depth": 16,
+        "evaluation": {
+          "kind": "centipawns",
+          "value": -15
+        },
+        "principalVariation": [
+          "b1d2",
+          "c7c5",
+          "d4c5",
+          "d6c5",
+          "g1f3",
+          "b8c6",
+          "e2e4",
+          "f6h5",
+          "d2c4",
+          "h5g3",
+          "d1d8",
+          "f8d8",
+          "h2g3",
+          "a8b8"
+        ]
+      },
+      "humanBefore": {
+        "candidates": [
+          {
+            "probability": 0.3242,
+            "rank": 1,
+            "uci": "e2e3"
+          },
+          {
+            "probability": 0.1008,
+            "rank": 2,
+            "uci": "h2h3"
+          },
+          {
+            "probability": 0.081,
+            "rank": 3,
+            "uci": "h2h4"
+          },
+          {
+            "probability": 0.08,
+            "rank": 4,
+            "uci": "f2f3"
+          },
+          {
+            "probability": 0.0775,
+            "rank": 5,
+            "uci": "b2b4"
+          }
+        ],
+        "winProbability": 0.4438
+      },
+      "ply": 11
+    },
+    {
+      "afterMove": {
+        "evaluation": {
+          "kind": "centipawns",
+          "value": -30
+        },
+        "kind": "analyzed",
+        "principal_variation": [
+          "g1f3",
+          "c7c5",
+          "e2e3",
+          "c5d4",
+          "e3d4",
+          "c8b7",
+          "a4a5",
+          "b6a5",
+          "d2c4",
+          "b7d5",
+          "c4e3",
+          "d5c6",
+          "f1e2",
+          "a5a4",
+          "e1g1",
+          "d8b6"
+        ]
+      },
+      "engineBefore": {
+        "bestMove": "f6h5",
+        "depth": 16,
+        "evaluation": {
+          "kind": "centipawns",
+          "value": 23
+        },
+        "principalVariation": [
+          "f6h5",
+          "g3h4",
+          "c7c5",
+          "d4c5",
+          "d6c5",
+          "g1f3",
+          "b8c6",
+          "e2e3",
+          "g7f6",
+          "f1e2",
+          "d8c7",
+          "h4f6",
+          "h5f6",
+          "d1b3"
+        ]
+      },
+      "humanBefore": {
+        "candidates": [
+          {
+            "probability": 0.2112,
+            "rank": 1,
+            "uci": "b8d7"
+          },
+          {
+            "probability": 0.1517,
+            "rank": 2,
+            "uci": "b8c6"
+          },
+          {
+            "probability": 0.0918,
+            "rank": 3,
+            "uci": "f8e8"
+          },
+          {
+            "probability": 0.0887,
+            "rank": 4,
+            "uci": "c7c5"
+          },
+          {
+            "probability": 0.074,
+            "rank": 5,
+            "uci": "c8f5"
+          }
+        ],
+        "winProbability": 0.4485
+      },
+      "ply": 12
+    },
+    {
+      "afterMove": {
+        "evaluation": {
+          "kind": "centipawns",
+          "value": 32
+        },
+        "kind": "analyzed",
+        "principal_variation": [
+          "c8b7",
+          "f2f3",
+          "f6h5",
+          "g3h4",
+          "d6d5",
+          "g1h3",
+          "c7c5",
+          "d4c5",
+          "b8d7",
+          "c5b6",
+          "d8b6",
+          "h4f2",
+          "b6c7",
+          "e4d5",
+          "b7d5",
+          "f1b5",
+          "a7a6"
+        ]
+      },
+      "engineBefore": {
+        "bestMove": "g1f3",
+        "depth": 16,
+        "evaluation": {
+          "kind": "centipawns",
+          "value": -30
+        },
+        "principalVariation": [
+          "g1f3",
+          "c7c5",
+          "e2e3",
+          "c5d4",
+          "e3d4",
+          "c8b7",
+          "a4a5",
+          "b6a5",
+          "d2c4",
+          "b7d5",
+          "c4e3",
+          "d5c6",
+          "f1e2",
+          "a5a4",
+          "e1g1",
+          "d8b6"
+        ]
+      },
+      "humanBefore": {
+        "candidates": [
+          {
+            "probability": 0.25,
+            "rank": 1,
+            "uci": "e2e3"
+          },
+          {
+            "probability": 0.1739,
+            "rank": 2,
+            "uci": "e2e4"
+          },
+          {
+            "probability": 0.1464,
+            "rank": 3,
+            "uci": "b2b4"
+          },
+          {
+            "probability": 0.1342,
+            "rank": 4,
+            "uci": "a4a5"
+          },
+          {
+            "probability": 0.0848,
+            "rank": 5,
+            "uci": "g1f3"
+          }
+        ],
+        "winProbability": 0.457
+      },
+      "ply": 13
+    },
+    {
+      "afterMove": {
+        "evaluation": {
+          "kind": "centipawns",
+          "value": 31
+        },
+        "kind": "analyzed",
+        "principal_variation": [
+          "g1f3",
+          "c8b7",
+          "f1d3",
+          "f6h5",
+          "a4a5",
+          "a7a6",
+          "a5b6",
+          "c7b6",
+          "e1g1",
+          "h5g3",
+          "h2g3",
+          "b8d7",
+          "f1e1",
+          "b6b5",
+          "d2b3",
+          "a8b8",
+          "b3a5",
+          "b7a8",
+          "d1e2"
+        ]
+      },
+      "engineBefore": {
+        "bestMove": "c8b7",
+        "depth": 16,
+        "evaluation": {
+          "kind": "centipawns",
+          "value": 32
+        },
+        "principalVariation": [
+          "c8b7",
+          "f2f3",
+          "f6h5",
+          "g3h4",
+          "d6d5",
+          "g1h3",
+          "c7c5",
+          "d4c5",
+          "b8d7",
+          "c5b6",
+          "d8b6",
+          "h4f2",
+          "b6c7",
+          "e4d5",
+          "b7d5",
+          "f1b5",
+          "a7a6"
+        ]
+      },
+      "humanBefore": {
+        "candidates": [
+          {
+            "probability": 0.7246,
+            "rank": 1,
+            "uci": "c8b7"
+          },
+          {
+            "probability": 0.1,
+            "rank": 2,
+            "uci": "c7c5"
+          },
+          {
+            "probability": 0.058,
+            "rank": 3,
+            "uci": "a7a5"
+          },
+          {
+            "probability": 0.0265,
+            "rank": 4,
+            "uci": "b8d7"
+          },
+          {
+            "probability": 0.0146,
+            "rank": 5,
+            "uci": "c8a6"
+          }
+        ],
+        "winProbability": 0.4737
+      },
+      "ply": 14
+    },
+    {
+      "afterMove": {
+        "evaluation": {
+          "kind": "centipawns",
+          "value": -38
+        },
+        "kind": "analyzed",
+        "principal_variation": [
+          "c8b7",
+          "d1c2",
+          "e7e5",
+          "g3h4",
+          "d8e7",
+          "f1d3",
+          "e5d4",
+          "c3d4",
+          "b8c6",
+          "e1g1",
+          "c6b4",
+          "c2b3",
+          "b4d3",
+          "b3d3"
+        ]
+      },
+      "engineBefore": {
+        "bestMove": "g1f3",
+        "depth": 16,
+        "evaluation": {
+          "kind": "centipawns",
+          "value": 31
+        },
+        "principalVariation": [
+          "g1f3",
+          "c8b7",
+          "f1d3",
+          "f6h5",
+          "a4a5",
+          "a7a6",
+          "a5b6",
+          "c7b6",
+          "e1g1",
+          "h5g3",
+          "h2g3",
+          "b8d7",
+          "f1e1",
+          "b6b5",
+          "d2b3",
+          "a8b8",
+          "b3a5",
+          "b7a8",
+          "d1e2"
+        ]
+      },
+      "humanBefore": {
+        "candidates": [
+          {
+            "probability": 0.1472,
+            "rank": 1,
+            "uci": "g1f3"
+          },
+          {
+            "probability": 0.1421,
+            "rank": 2,
+            "uci": "b2b4"
+          },
+          {
+            "probability": 0.111,
+            "rank": 3,
+            "uci": "e4e5"
+          },
+          {
+            "probability": 0.1053,
+            "rank": 4,
+            "uci": "a4a5"
+          },
+          {
+            "probability": 0.103,
+            "rank": 5,
+            "uci": "f1d3"
+          }
+        ],
+        "winProbability": 0.4886
+      },
+      "ply": 15
+    },
+    {
+      "afterMove": {
+        "evaluation": {
+          "kind": "centipawns",
+          "value": 46
+        },
+        "kind": "analyzed",
+        "principal_variation": [
+          "f1c4",
+          "c8b7",
+          "d1c2",
+          "a7a6",
+          "e1g1",
+          "e7e6",
+          "g3h4",
+          "d8e8",
+          "c4d3",
+          "f6h5",
+          "f1e1",
+          "a6a5"
+        ]
+      },
+      "engineBefore": {
+        "bestMove": "c8b7",
+        "depth": 16,
+        "evaluation": {
+          "kind": "centipawns",
+          "value": -38
+        },
+        "principalVariation": [
+          "c8b7",
+          "d1c2",
+          "e7e5",
+          "g3h4",
+          "d8e7",
+          "f1d3",
+          "e5d4",
+          "c3d4",
+          "b8c6",
+          "e1g1",
+          "c6b4",
+          "c2b3",
+          "b4d3",
+          "b3d3"
+        ]
+      },
+      "humanBefore": {
+        "candidates": [
+          {
+            "probability": 0.4115,
+            "rank": 1,
+            "uci": "c8b7"
+          },
+          {
+            "probability": 0.1126,
+            "rank": 2,
+            "uci": "h6d2"
+          },
+          {
+            "probability": 0.0928,
+            "rank": 3,
+            "uci": "c7c5"
+          },
+          {
+            "probability": 0.0882,
+            "rank": 4,
+            "uci": "a7a5"
+          },
+          {
+            "probability": 0.0717,
+            "rank": 5,
+            "uci": "c8g4"
+          }
+        ],
+        "winProbability": 0.5069
+      },
+      "ply": 16
+    },
+    {
+      "afterMove": {
+        "evaluation": {
+          "kind": "centipawns",
+          "value": -44
+        },
+        "kind": "analyzed",
+        "principal_variation": [
+          "c7c5",
+          "d4d5",
+          "f6h5",
+          "f1c4",
+          "f7f6",
+          "e1g1",
+          "d7e5",
+          "f3e5",
+          "f6e5",
+          "a1a2",
+          "f8f4",
+          "h4g3",
+          "f4f8",
+          "c4e2",
+          "a8b8",
+          "d2c4"
+        ]
+      },
+      "engineBefore": {
+        "bestMove": "f1c4",
+        "depth": 16,
+        "evaluation": {
+          "kind": "centipawns",
+          "value": 46
+        },
+        "principalVariation": [
+          "f1c4",
+          "c8b7",
+          "d1c2",
+          "a7a6",
+          "e1g1",
+          "e7e6",
+          "g3h4",
+          "d8e8",
+          "c4d3",
+          "f6h5",
+          "f1e1",
+          "a6a5"
+        ]
+      },
+      "humanBefore": {
+        "candidates": [
+          {
+            "probability": 0.1718,
+            "rank": 1,
+            "uci": "f1d3"
+          },
+          {
+            "probability": 0.1543,
+            "rank": 2,
+            "uci": "b2b4"
+          },
+          {
+            "probability": 0.1314,
+            "rank": 3,
+            "uci": "e4e5"
+          },
+          {
+            "probability": 0.1259,
+            "rank": 4,
+            "uci": "a4a5"
+          },
+          {
+            "probability": 0.1,
+            "rank": 5,
+            "uci": "f1b5"
+          }
+        ],
+        "winProbability": 0.5047
+      },
+      "ply": 17
+    },
+    {
+      "afterMove": {
+        "evaluation": {
+          "kind": "centipawns",
+          "value": 59
+        },
+        "kind": "analyzed",
+        "principal_variation": [
+          "f1d3",
+          "f6h5",
+          "e1g1",
+          "f7f6",
+          "f1e1",
+          "e7e5",
+          "a4a5",
+          "b6b5",
+          "b2b4",
+          "a8b8",
+          "c3c4",
+          "b5c4",
+          "d2c4",
+          "b8b4",
+          "d3f1",
+          "g8h8",
+          "c4e3",
+          "b4b8",
+          "d1c2",
+          "c8b7"
+        ]
+      },
+      "engineBefore": {
+        "bestMove": "c7c5",
+        "depth": 16,
+        "evaluation": {
+          "kind": "centipawns",
+          "value": -44
+        },
+        "principalVariation": [
+          "c7c5",
+          "d4d5",
+          "f6h5",
+          "f1c4",
+          "f7f6",
+          "e1g1",
+          "d7e5",
+          "f3e5",
+          "f6e5",
+          "a1a2",
+          "f8f4",
+          "h4g3",
+          "f4f8",
+          "c4e2",
+          "a8b8",
+          "d2c4"
+        ]
+      },
+      "humanBefore": {
+        "candidates": [
+          {
+            "probability": 0.6789,
+            "rank": 1,
+            "uci": "c8b7"
+          },
+          {
+            "probability": 0.0815,
+            "rank": 2,
+            "uci": "h6d2"
+          },
+          {
+            "probability": 0.0508,
+            "rank": 3,
+            "uci": "a7a5"
+          },
+          {
+            "probability": 0.0505,
+            "rank": 4,
+            "uci": "c7c5"
+          },
+          {
+            "probability": 0.0368,
+            "rank": 5,
+            "uci": "e7e5"
+          }
+        ],
+        "winProbability": 0.487
+      },
+      "ply": 18
+    },
+    {
+      "afterMove": {
+        "evaluation": {
+          "kind": "centipawns",
+          "value": -32
+        },
+        "kind": "analyzed",
+        "principal_variation": [
+          "c8b7",
+          "c4d3",
+          "f6h5",
+          "e1g1",
+          "h5f4",
+          "d3c4",
+          "d8e8",
+          "h4g5",
+          "h6g5",
+          "f3g5",
+          "h7h6",
+          "g5f3",
+          "e7e5",
+          "f1e1",
+          "a6a5",
+          "c4f1",
+          "e8e7",
+          "g2g3",
+          "f4e6",
+          "f1b5",
+          "e6g5"
+        ]
+      },
+      "engineBefore": {
+        "bestMove": "f1d3",
+        "depth": 16,
+        "evaluation": {
+          "kind": "centipawns",
+          "value": 59
+        },
+        "principalVariation": [
+          "f1d3",
+          "f6h5",
+          "e1g1",
+          "f7f6",
+          "f1e1",
+          "e7e5",
+          "a4a5",
+          "b6b5",
+          "b2b4",
+          "a8b8",
+          "c3c4",
+          "b5c4",
+          "d2c4",
+          "b8b4",
+          "d3f1",
+          "g8h8",
+          "c4e3",
+          "b4b8",
+          "d1c2",
+          "c8b7"
+        ]
+      },
+      "humanBefore": {
+        "candidates": [
+          {
+            "probability": 0.1727,
+            "rank": 1,
+            "uci": "f1c4"
+          },
+          {
+            "probability": 0.1591,
+            "rank": 2,
+            "uci": "f1d3"
+          },
+          {
+            "probability": 0.1159,
+            "rank": 3,
+            "uci": "e4e5"
+          },
+          {
+            "probability": 0.1076,
+            "rank": 4,
+            "uci": "b2b4"
+          },
+          {
+            "probability": 0.0707,
+            "rank": 5,
+            "uci": "h4f6"
+          }
+        ],
+        "winProbability": 0.4925
+      },
+      "ply": 19
+    },
+    {
+      "afterMove": {
+        "evaluation": {
+          "kind": "centipawns",
+          "value": 67
+        },
+        "kind": "analyzed",
+        "principal_variation": [
+          "e1g1",
+          "c8b7",
+          "f3g5",
+          "d7f6",
+          "e4e5",
+          "f6d5",
+          "e5e6",
+          "h6g5",
+          "e6f7",
+          "g8g7",
+          "h4g5",
+          "h7h6",
+          "c4d5",
+          "b7d5",
+          "g5e3",
+          "b6b5",
+          "b2b3",
+          "d5f7",
+          "c3c4",
+          "b5c4"
+        ]
+      },
+      "engineBefore": {
+        "bestMove": "c8b7",
+        "depth": 16,
+        "evaluation": {
+          "kind": "centipawns",
+          "value": -32
+        },
+        "principalVariation": [
+          "c8b7",
+          "c4d3",
+          "f6h5",
+          "e1g1",
+          "h5f4",
+          "d3c4",
+          "d8e8",
+          "h4g5",
+          "h6g5",
+          "f3g5",
+          "h7h6",
+          "g5f3",
+          "e7e5",
+          "f1e1",
+          "a6a5",
+          "c4f1",
+          "e8e7",
+          "g2g3",
+          "f4e6",
+          "f1b5",
+          "e6g5"
+        ]
+      },
+      "humanBefore": {
+        "candidates": [
+          {
+            "probability": 0.6664,
+            "rank": 1,
+            "uci": "c8b7"
+          },
+          {
+            "probability": 0.0728,
+            "rank": 2,
+            "uci": "c7c5"
+          },
+          {
+            "probability": 0.0676,
+            "rank": 3,
+            "uci": "h6d2"
+          },
+          {
+            "probability": 0.0301,
+            "rank": 4,
+            "uci": "a6a5"
+          },
+          {
+            "probability": 0.0271,
+            "rank": 5,
+            "uci": "e7e5"
+          }
+        ],
+        "winProbability": 0.5246
+      },
+      "ply": 20
+    },
+    {
+      "afterMove": {
+        "evaluation": {
+          "kind": "centipawns",
+          "value": -12
+        },
+        "kind": "analyzed",
+        "principal_variation": [
+          "e7e6",
+          "d2f3",
+          "d8e8",
+          "e1g1",
+          "c8b7",
+          "f1e1",
+          "h6g7",
+          "f3d2",
+          "e6e5",
+          "g5f3",
+          "h7h6",
+          "c4f1",
+          "f7f5",
+          "e4f5",
+          "g6f5",
+          "d4e5",
+          "d6e5",
+          "b2b4"
+        ]
+      },
+      "engineBefore": {
+        "bestMove": "e1g1",
+        "depth": 16,
+        "evaluation": {
+          "kind": "centipawns",
+          "value": 67
+        },
+        "principalVariation": [
+          "e1g1",
+          "c8b7",
+          "f3g5",
+          "d7f6",
+          "e4e5",
+          "f6d5",
+          "e5e6",
+          "h6g5",
+          "e6f7",
+          "g8g7",
+          "h4g5",
+          "h7h6",
+          "c4d5",
+          "b7d5",
+          "g5e3",
+          "b6b5",
+          "b2b3",
+          "d5f7",
+          "c3c4",
+          "b5c4"
+        ]
+      },
+      "humanBefore": {
+        "candidates": [
+          {
+            "probability": 0.3158,
+            "rank": 1,
+            "uci": "e1g1"
+          },
+          {
+            "probability": 0.126,
+            "rank": 2,
+            "uci": "f3g5"
+          },
+          {
+            "probability": 0.0854,
+            "rank": 3,
+            "uci": "b2b4"
+          },
+          {
+            "probability": 0.0727,
+            "rank": 4,
+            "uci": "e4e5"
+          },
+          {
+            "probability": 0.0555,
+            "rank": 5,
+            "uci": "c4d5"
+          }
+        ],
+        "winProbability": 0.5294
+      },
+      "ply": 21
+    },
+    {
+      "afterMove": {
+        "evaluation": {
+          "kind": "centipawns",
+          "value": 61
+        },
+        "kind": "analyzed",
+        "principal_variation": [
+          "a4b5",
+          "d7b6",
+          "c4e2",
+          "h5f4",
+          "e1g1",
+          "e7e6",
+          "g5f3",
+          "g6g5",
+          "h4g3",
+          "f4e2",
+          "d1e2",
+          "g5g4",
+          "f3e1",
+          "d8g5",
+          "b5a6"
+        ]
+      },
+      "engineBefore": {
+        "bestMove": "e7e6",
+        "depth": 16,
+        "evaluation": {
+          "kind": "centipawns",
+          "value": -12
+        },
+        "principalVariation": [
+          "e7e6",
+          "d2f3",
+          "d8e8",
+          "e1g1",
+          "c8b7",
+          "f1e1",
+          "h6g7",
+          "f3d2",
+          "e6e5",
+          "g5f3",
+          "h7h6",
+          "c4f1",
+          "f7f5",
+          "e4f5",
+          "g6f5",
+          "d4e5",
+          "d6e5",
+          "b2b4"
+        ]
+      },
+      "humanBefore": {
+        "candidates": [
+          {
+            "probability": 0.2558,
+            "rank": 1,
+            "uci": "c8b7"
+          },
+          {
+            "probability": 0.2228,
+            "rank": 2,
+            "uci": "h6g5"
+          },
+          {
+            "probability": 0.1452,
+            "rank": 3,
+            "uci": "e7e6"
+          },
+          {
+            "probability": 0.0768,
+            "rank": 4,
+            "uci": "h5f4"
+          },
+          {
+            "probability": 0.0665,
+            "rank": 5,
+            "uci": "d7f6"
+          }
+        ],
+        "winProbability": 0.52
+      },
+      "ply": 22
+    },
+    {
+      "afterMove": {
+        "evaluation": {
+          "kind": "centipawns",
+          "value": -63
+        },
+        "kind": "analyzed",
+        "principal_variation": [
+          "d7b6",
+          "c4e2",
+          "h5f4",
+          "e1g1",
+          "d8e8",
+          "b5a6",
+          "b6a4",
+          "a1a2",
+          "f4e2",
+          "d1e2",
+          "c8a6",
+          "c3c4",
+          "a6b7",
+          "f1a1",
+          "a4b2",
+          "a2a8",
+          "b7a8",
+          "d2f1"
+        ]
+      },
+      "engineBefore": {
+        "bestMove": "a4b5",
+        "depth": 16,
+        "evaluation": {
+          "kind": "centipawns",
+          "value": 61
+        },
+        "principalVariation": [
+          "a4b5",
+          "d7b6",
+          "c4e2",
+          "h5f4",
+          "e1g1",
+          "e7e6",
+          "g5f3",
+          "g6g5",
+          "h4g3",
+          "f4e2",
+          "d1e2",
+          "g5g4",
+          "f3e1",
+          "d8g5",
+          "b5a6"
+        ]
+      },
+      "humanBefore": {
+        "candidates": [
+          {
+            "probability": 0.8638,
+            "rank": 1,
+            "uci": "a4b5"
+          },
+          {
+            "probability": 0.0305,
+            "rank": 2,
+            "uci": "c4d5"
+          },
+          {
+            "probability": 0.0294,
+            "rank": 3,
+            "uci": "c4b3"
+          },
+          {
+            "probability": 0.0197,
+            "rank": 4,
+            "uci": "c4f7"
+          },
+          {
+            "probability": 0.0131,
+            "rank": 5,
+            "uci": "g5f7"
+          }
+        ],
+        "winProbability": 0.534
+      },
+      "ply": 23
+    },
+    {
+      "afterMove": {
+        "evaluation": {
+          "kind": "centipawns",
+          "value": 197
+        },
+        "kind": "analyzed",
+        "principal_variation": [
+          "e1g1",
+          "d7b6",
+          "c4e2",
+          "h5f4",
+          "g5f3",
+          "c8d7",
+          "a1a6",
+          "a7a6",
+          "b5a6",
+          "b6a4",
+          "f1e1",
+          "a4b2",
+          "d1b3",
+          "f4e2",
+          "e1e2",
+          "b2a4",
+          "e2e1",
+          "d8a8",
+          "h4e7"
+        ]
+      },
+      "engineBefore": {
+        "bestMove": "d7b6",
+        "depth": 16,
+        "evaluation": {
+          "kind": "centipawns",
+          "value": -63
+        },
+        "principalVariation": [
+          "d7b6",
+          "c4e2",
+          "h5f4",
+          "e1g1",
+          "d8e8",
+          "b5a6",
+          "b6a4",
+          "a1a2",
+          "f4e2",
+          "d1e2",
+          "c8a6",
+          "c3c4",
+          "a6b7",
+          "f1a1",
+          "a4b2",
+          "a2a8",
+          "b7a8",
+          "d2f1"
+        ]
+      },
+      "humanBefore": {
+        "candidates": [
+          {
+            "probability": 0.2483,
+            "rank": 1,
+            "uci": "c8b7"
+          },
+          {
+            "probability": 0.1907,
+            "rank": 2,
+            "uci": "d7b6"
+          },
+          {
+            "probability": 0.1341,
+            "rank": 3,
+            "uci": "h6g5"
+          },
+          {
+            "probability": 0.1208,
+            "rank": 4,
+            "uci": "a6a5"
+          },
+          {
+            "probability": 0.0699,
+            "rank": 5,
+            "uci": "h5f4"
+          }
+        ],
+        "winProbability": 0.5975
+      },
+      "ply": 24
+    },
+    {
+      "afterMove": {
+        "evaluation": {
+          "kind": "centipawns",
+          "value": -174
+        },
+        "kind": "analyzed",
+        "principal_variation": [
+          "d7b6",
+          "c4e2",
+          "h5f4",
+          "f1e1",
+          "f4e2",
+          "d1e2",
+          "e7e5",
+          "g5f3",
+          "g6g5",
+          "h4g3",
+          "g5g4",
+          "f3h4",
+          "e5d4",
+          "c3d4",
+          "f8e8",
+          "f2f4",
+          "h6f4",
+          "g3f4",
+          "d8h4",
+          "e2e3",
+          "a7a8",
+          "d4d5",
+          "h4h5"
+        ]
+      },
+      "engineBefore": {
+        "bestMove": "e1g1",
+        "depth": 16,
+        "evaluation": {
+          "kind": "centipawns",
+          "value": 197
+        },
+        "principalVariation": [
+          "e1g1",
+          "d7b6",
+          "c4e2",
+          "h5f4",
+          "g5f3",
+          "c8d7",
+          "a1a6",
+          "a7a6",
+          "b5a6",
+          "b6a4",
+          "f1e1",
+          "a4b2",
+          "d1b3",
+          "f4e2",
+          "e1e2",
+          "b2a4",
+          "e2e1",
+          "d8a8",
+          "h4e7"
+        ]
+      },
+      "humanBefore": {
+        "candidates": [
+          {
+            "probability": 0.3138,
+            "rank": 1,
+            "uci": "b5a6"
+          },
+          {
+            "probability": 0.1357,
+            "rank": 2,
+            "uci": "d1f3"
+          },
+          {
+            "probability": 0.0943,
+            "rank": 3,
+            "uci": "e1g1"
+          },
+          {
+            "probability": 0.0866,
+            "rank": 4,
+            "uci": "d2f3"
+          },
+          {
+            "probability": 0.0693,
+            "rank": 5,
+            "uci": "g5f7"
+          }
+        ],
+        "winProbability": 0.54
+      },
+      "ply": 25
+    },
+    {
+      "afterMove": {
+        "evaluation": {
+          "kind": "centipawns",
+          "value": 187
+        },
+        "kind": "analyzed",
+        "principal_variation": [
+          "c4b3",
+          "a7a8",
+          "f2f4",
+          "d6d5",
+          "e4d5",
+          "b6d5",
+          "d1f3",
+          "c8b7",
+          "b5a6",
+          "a8a6",
+          "a1a6",
+          "b7a6",
+          "f3d5",
+          "d8d5",
+          "b3d5",
+          "a6f1",
+          "g1f1",
+          "h5f4"
+        ]
+      },
+      "engineBefore": {
+        "bestMove": "d7b6",
+        "depth": 16,
+        "evaluation": {
+          "kind": "centipawns",
+          "value": -174
+        },
+        "principalVariation": [
+          "d7b6",
+          "c4e2",
+          "h5f4",
+          "f1e1",
+          "f4e2",
+          "d1e2",
+          "e7e5",
+          "g5f3",
+          "g6g5",
+          "h4g3",
+          "g5g4",
+          "f3h4",
+          "e5d4",
+          "c3d4",
+          "f8e8",
+          "f2f4",
+          "h6f4",
+          "g3f4",
+          "d8h4",
+          "e2e3",
+          "a7a8",
+          "d4d5",
+          "h4h5"
+        ]
+      },
+      "humanBefore": {
+        "candidates": [
+          {
+            "probability": 0.2018,
+            "rank": 1,
+            "uci": "h6g5"
+          },
+          {
+            "probability": 0.1748,
+            "rank": 2,
+            "uci": "d7b6"
+          },
+          {
+            "probability": 0.1512,
+            "rank": 3,
+            "uci": "a6a5"
+          },
+          {
+            "probability": 0.0854,
+            "rank": 4,
+            "uci": "d7f6"
+          },
+          {
+            "probability": 0.069,
+            "rank": 5,
+            "uci": "h5f4"
+          }
+        ],
+        "winProbability": 0.6426
+      },
+      "ply": 26
+    },
+    {
+      "afterMove": {
+        "evaluation": {
+          "kind": "centipawns",
+          "value": -206
+        },
+        "kind": "analyzed",
+        "principal_variation": [
+          "a7a8",
+          "f2f4",
+          "a6b5",
+          "a1a8",
+          "b6a8",
+          "g2g4",
+          "h6g5",
+          "h4g5",
+          "h5g7",
+          "f4f5",
+          "c7c5",
+          "d1f3",
+          "c5c4",
+          "b3c2",
+          "f7f6",
+          "g5h6",
+          "a8b6",
+          "f3g3",
+          "d6d5"
+        ]
+      },
+      "engineBefore": {
+        "bestMove": "c4b3",
+        "depth": 16,
+        "evaluation": {
+          "kind": "centipawns",
+          "value": 187
+        },
+        "principalVariation": [
+          "c4b3",
+          "a7a8",
+          "f2f4",
+          "d6d5",
+          "e4d5",
+          "b6d5",
+          "d1f3",
+          "c8b7",
+          "b5a6",
+          "a8a6",
+          "a1a6",
+          "b7a6",
+          "f3d5",
+          "d8d5",
+          "b3d5",
+          "a6f1",
+          "g1f1",
+          "h5f4"
+        ]
+      },
+      "humanBefore": {
+        "candidates": [
+          {
+            "probability": 0.3117,
+            "rank": 1,
+            "uci": "b5a6"
+          },
+          {
+            "probability": 0.1433,
+            "rank": 2,
+            "uci": "c4e2"
+          },
+          {
+            "probability": 0.0949,
+            "rank": 3,
+            "uci": "c4b3"
+          },
+          {
+            "probability": 0.0811,
+            "rank": 4,
+            "uci": "c4d3"
+          },
+          {
+            "probability": 0.0607,
+            "rank": 5,
+            "uci": "g5f7"
+          }
+        ],
+        "winProbability": 0.5591
+      },
+      "ply": 27
+    },
+    {
+      "afterMove": {
+        "evaluation": {
+          "kind": "centipawns",
+          "value": 207
+        },
+        "kind": "analyzed",
+        "principal_variation": [
+          "f2f4",
+          "a6b5",
+          "a1a8",
+          "b6a8",
+          "g2g4",
+          "h6g5",
+          "h4g5",
+          "h5f6",
+          "f4f5",
+          "g6f5",
+          "e4f5",
+          "g8h8",
+          "g5h6",
+          "f8g8",
+          "g4g5"
+        ]
+      },
+      "engineBefore": {
+        "bestMove": "a7a8",
+        "depth": 16,
+        "evaluation": {
+          "kind": "centipawns",
+          "value": -206
+        },
+        "principalVariation": [
+          "a7a8",
+          "f2f4",
+          "a6b5",
+          "a1a8",
+          "b6a8",
+          "g2g4",
+          "h6g5",
+          "h4g5",
+          "h5g7",
+          "f4f5",
+          "c7c5",
+          "d1f3",
+          "c5c4",
+          "b3c2",
+          "f7f6",
+          "g5h6",
+          "a8b6",
+          "f3g3",
+          "d6d5"
+        ]
+      },
+      "humanBefore": {
+        "candidates": [
+          {
+            "probability": 0.2061,
+            "rank": 1,
+            "uci": "a6a5"
+          },
+          {
+            "probability": 0.1808,
+            "rank": 2,
+            "uci": "h6g5"
+          },
+          {
+            "probability": 0.1166,
+            "rank": 3,
+            "uci": "h5f4"
+          },
+          {
+            "probability": 0.0964,
+            "rank": 4,
+            "uci": "e7e6"
+          },
+          {
+            "probability": 0.0413,
+            "rank": 5,
+            "uci": "b6d7"
+          }
+        ],
+        "winProbability": 0.5963
+      },
+      "ply": 28
+    },
+    {
+      "afterMove": {
+        "evaluation": {
+          "kind": "centipawns",
+          "value": -188
+        },
+        "kind": "analyzed",
+        "principal_variation": [
+          "d6d5",
+          "d1e2",
+          "a6a5",
+          "g2g4",
+          "h5f6",
+          "e4e5",
+          "c8g4",
+          "e2g2",
+          "g4d7",
+          "e5f6",
+          "e7f6",
+          "g5h3",
+          "a5a4"
+        ]
+      },
+      "engineBefore": {
+        "bestMove": "f2f4",
+        "depth": 16,
+        "evaluation": {
+          "kind": "centipawns",
+          "value": 207
+        },
+        "principalVariation": [
+          "f2f4",
+          "a6b5",
+          "a1a8",
+          "b6a8",
+          "g2g4",
+          "h6g5",
+          "h4g5",
+          "h5f6",
+          "f4f5",
+          "g6f5",
+          "e4f5",
+          "g8h8",
+          "g5h6",
+          "f8g8",
+          "g4g5"
+        ]
+      },
+      "humanBefore": {
+        "candidates": [
+          {
+            "probability": 0.274,
+            "rank": 1,
+            "uci": "b5a6"
+          },
+          {
+            "probability": 0.144,
+            "rank": 2,
+            "uci": "d1f3"
+          },
+          {
+            "probability": 0.1256,
+            "rank": 3,
+            "uci": "d2f3"
+          },
+          {
+            "probability": 0.0637,
+            "rank": 4,
+            "uci": "g5f3"
+          },
+          {
+            "probability": 0.0515,
+            "rank": 5,
+            "uci": "c3c4"
+          }
+        ],
+        "winProbability": 0.5394
+      },
+      "ply": 29
+    },
+    {
+      "afterMove": {
+        "evaluation": {
+          "kind": "centipawns",
+          "value": 239
+        },
+        "kind": "analyzed",
+        "principal_variation": [
+          "d1f3",
+          "a6a5",
+          "g2g4",
+          "a5a4",
+          "g4h5",
+          "a4b3",
+          "a1a8",
+          "b6a8",
+          "f3g3",
+          "d8e8",
+          "e4e5",
+          "h6g7",
+          "g5e4",
+          "e8b5",
+          "e4f6",
+          "g7f6",
+          "h4f6"
+        ]
+      },
+      "engineBefore": {
+        "bestMove": "d6d5",
+        "depth": 16,
+        "evaluation": {
+          "kind": "centipawns",
+          "value": -188
+        },
+        "principalVariation": [
+          "d6d5",
+          "d1e2",
+          "a6a5",
+          "g2g4",
+          "h5f6",
+          "e4e5",
+          "c8g4",
+          "e2g2",
+          "g4d7",
+          "e5f6",
+          "e7f6",
+          "g5h3",
+          "a5a4"
+        ]
+      },
+      "humanBefore": {
+        "candidates": [
+          {
+            "probability": 0.4852,
+            "rank": 1,
+            "uci": "a6b5"
+          },
+          {
+            "probability": 0.1159,
+            "rank": 2,
+            "uci": "a6a5"
+          },
+          {
+            "probability": 0.0759,
+            "rank": 3,
+            "uci": "h6g5"
+          },
+          {
+            "probability": 0.0595,
+            "rank": 4,
+            "uci": "e7e6"
+          },
+          {
+            "probability": 0.0492,
+            "rank": 5,
+            "uci": "c8b7"
+          }
+        ],
+        "winProbability": 0.6199
+      },
+      "ply": 30
+    },
+    {
+      "afterMove": {
+        "evaluation": {
+          "kind": "centipawns",
+          "value": -205
+        },
+        "kind": "analyzed",
+        "principal_variation": [
+          "d8e8",
+          "g4h3",
+          "e8b5",
+          "e4e5",
+          "b6d5",
+          "c3c4",
+          "h5f4",
+          "h3f3",
+          "b5b6",
+          "c4d5",
+          "b6d4",
+          "g1h1"
+        ]
+      },
+      "engineBefore": {
+        "bestMove": "d1f3",
+        "depth": 16,
+        "evaluation": {
+          "kind": "centipawns",
+          "value": 239
+        },
+        "principalVariation": [
+          "d1f3",
+          "a6a5",
+          "g2g4",
+          "a5a4",
+          "g4h5",
+          "a4b3",
+          "a1a8",
+          "b6a8",
+          "f3g3",
+          "d8e8",
+          "e4e5",
+          "h6g7",
+          "g5e4",
+          "e8b5",
+          "e4f6",
+          "g7f6",
+          "h4f6"
+        ]
+      },
+      "humanBefore": {
+        "candidates": [
+          {
+            "probability": 0.1888,
+            "rank": 1,
+            "uci": "b5a6"
+          },
+          {
+            "probability": 0.1018,
+            "rank": 2,
+            "uci": "f4f5"
+          },
+          {
+            "probability": 0.0808,
+            "rank": 3,
+            "uci": "g2g4"
+          },
+          {
+            "probability": 0.0753,
+            "rank": 4,
+            "uci": "g5e6"
+          },
+          {
+            "probability": 0.0623,
+            "rank": 5,
+            "uci": "e4e5"
+          }
+        ],
+        "winProbability": 0.5932
+      },
+      "ply": 31
+    },
+    {
+      "afterMove": {
+        "evaluation": {
+          "kind": "centipawns",
+          "value": 167
+        },
+        "kind": "analyzed",
+        "principal_variation": [
+          "g4h3",
+          "e8b5",
+          "e4e5",
+          "d6e5",
+          "f4e5",
+          "f7f5",
+          "g2g4",
+          "h6g5",
+          "h4g5",
+          "h5g7",
+          "h3h6",
+          "c8b7",
+          "g5f6",
+          "f8f7",
+          "g4f5",
+          "g7f5"
+        ]
+      },
+      "engineBefore": {
+        "bestMove": "d8e8",
+        "depth": 16,
+        "evaluation": {
+          "kind": "centipawns",
+          "value": -205
+        },
+        "principalVariation": [
+          "d8e8",
+          "g4h3",
+          "e8b5",
+          "e4e5",
+          "b6d5",
+          "c3c4",
+          "h5f4",
+          "h3f3",
+          "b5b6",
+          "c4d5",
+          "b6d4",
+          "g1h1"
+        ]
+      },
+      "humanBefore": {
+        "candidates": [
+          {
+            "probability": 0.3085,
+            "rank": 1,
+            "uci": "e6e5"
+          },
+          {
+            "probability": 0.1624,
+            "rank": 2,
+            "uci": "a6b5"
+          },
+          {
+            "probability": 0.15,
+            "rank": 3,
+            "uci": "h5f6"
+          },
+          {
+            "probability": 0.0722,
+            "rank": 4,
+            "uci": "h6g5"
+          },
+          {
+            "probability": 0.0542,
+            "rank": 5,
+            "uci": "f7f6"
+          }
+        ],
+        "winProbability": 0.5521
+      },
+      "ply": 32
+    },
+    {
+      "afterMove": {
+        "evaluation": {
+          "kind": "centipawns",
+          "value": -108
+        },
+        "kind": "analyzed",
+        "principal_variation": [
+          "e8b5",
+          "e4e5",
+          "a6a5",
+          "g4h3",
+          "a5a4",
+          "g2g4",
+          "c8b7",
+          "g4h5",
+          "a4b3",
+          "a1e1",
+          "b5d5",
+          "d2e4",
+          "f7f5",
+          "e5f6",
+          "d5f5",
+          "h5g6",
+          "h7g6",
+          "h3g3",
+          "b7d5",
+          "f6f7",
+          "g8g7",
+          "c3c4",
+          "d5e4",
+          "g5e4",
+          "f8f7"
+        ]
+      },
+      "engineBefore": {
+        "bestMove": "g4h3",
+        "depth": 16,
+        "evaluation": {
+          "kind": "centipawns",
+          "value": 167
+        },
+        "principalVariation": [
+          "g4h3",
+          "e8b5",
+          "e4e5",
+          "d6e5",
+          "f4e5",
+          "f7f5",
+          "g2g4",
+          "h6g5",
+          "h4g5",
+          "h5g7",
+          "h3h6",
+          "c8b7",
+          "g5f6",
+          "f8f7",
+          "g4f5",
+          "g7f5"
+        ]
+      },
+      "humanBefore": {
+        "candidates": [
+          {
+            "probability": 0.2679,
+            "rank": 1,
+            "uci": "b5a6"
+          },
+          {
+            "probability": 0.1939,
+            "rank": 2,
+            "uci": "f4f5"
+          },
+          {
+            "probability": 0.0984,
+            "rank": 3,
+            "uci": "c3c4"
+          },
+          {
+            "probability": 0.079,
+            "rank": 4,
+            "uci": "e4e5"
+          },
+          {
+            "probability": 0.0419,
+            "rank": 5,
+            "uci": "d2f3"
+          }
+        ],
+        "winProbability": 0.5948
+      },
+      "ply": 33
+    },
+    {
+      "afterMove": {
+        "evaluation": {
+          "kind": "centipawns",
+          "value": 123
+        },
+        "kind": "analyzed",
+        "principal_variation": [
+          "g4e2",
+          "a5a4",
+          "b3a2",
+          "a4a3",
+          "b2b4",
+          "b6a4",
+          "a1c1",
+          "f7f6",
+          "g5h3",
+          "g8h8",
+          "e4e5",
+          "f6e5",
+          "d4e5",
+          "h5f4",
+          "h3f4",
+          "g6g5",
+          "e2e4",
+          "g5h4",
+          "e4a8",
+          "h6f4"
+        ]
+      },
+      "engineBefore": {
+        "bestMove": "e8b5",
+        "depth": 16,
+        "evaluation": {
+          "kind": "centipawns",
+          "value": -108
+        },
+        "principalVariation": [
+          "e8b5",
+          "e4e5",
+          "a6a5",
+          "g4h3",
+          "a5a4",
+          "g2g4",
+          "c8b7",
+          "g4h5",
+          "a4b3",
+          "a1e1",
+          "b5d5",
+          "d2e4",
+          "f7f5",
+          "e5f6",
+          "d5f5",
+          "h5g6",
+          "h7g6",
+          "h3g3",
+          "b7d5",
+          "f6f7",
+          "g8g7",
+          "c3c4",
+          "d5e4",
+          "g5e4",
+          "f8f7"
+        ]
+      },
+      "humanBefore": {
+        "candidates": [
+          {
+            "probability": 0.3895,
+            "rank": 1,
+            "uci": "e8b5"
+          },
+          {
+            "probability": 0.2799,
+            "rank": 2,
+            "uci": "a6b5"
+          },
+          {
+            "probability": 0.1624,
+            "rank": 3,
+            "uci": "e6e5"
+          },
+          {
+            "probability": 0.0453,
+            "rank": 4,
+            "uci": "a6a5"
+          },
+          {
+            "probability": 0.0271,
+            "rank": 5,
+            "uci": "h5f6"
+          }
+        ],
+        "winProbability": 0.4588
+      },
+      "ply": 34
+    },
+    {
+      "afterMove": {
+        "evaluation": {
+          "kind": "centipawns",
+          "value": -140
+        },
+        "kind": "analyzed",
+        "principal_variation": [
+          "a5a4",
+          "b3c2",
+          "f7f6",
+          "e5f6",
+          "h5f6",
+          "g4e2",
+          "f6d5",
+          "h4g3",
+          "a4a3",
+          "c3c4",
+          "d5b4",
+          "d2f3"
+        ]
+      },
+      "engineBefore": {
+        "bestMove": "g4e2",
+        "depth": 16,
+        "evaluation": {
+          "kind": "centipawns",
+          "value": 123
+        },
+        "principalVariation": [
+          "g4e2",
+          "a5a4",
+          "b3a2",
+          "a4a3",
+          "b2b4",
+          "b6a4",
+          "a1c1",
+          "f7f6",
+          "g5h3",
+          "g8h8",
+          "e4e5",
+          "f6e5",
+          "d4e5",
+          "h5f4",
+          "h3f4",
+          "g6g5",
+          "e2e4",
+          "g5h4",
+          "e4a8",
+          "h6f4"
+        ]
+      },
+      "humanBefore": {
+        "candidates": [
+          {
+            "probability": 0.2199,
+            "rank": 1,
+            "uci": "c3c4"
+          },
+          {
+            "probability": 0.1745,
+            "rank": 2,
+            "uci": "f4f5"
+          },
+          {
+            "probability": 0.0911,
+            "rank": 3,
+            "uci": "a1f1"
+          },
+          {
+            "probability": 0.0888,
+            "rank": 4,
+            "uci": "e4e5"
+          },
+          {
+            "probability": 0.0496,
+            "rank": 5,
+            "uci": "d2c4"
+          }
+        ],
+        "winProbability": 0.594
+      },
+      "ply": 35
+    },
+    {
+      "afterMove": {
+        "evaluation": {
+          "kind": "centipawns",
+          "value": 242
+        },
+        "kind": "analyzed",
+        "principal_variation": [
+          "f4e5",
+          "e8b5",
+          "a1f1",
+          "b5d3",
+          "d2e4",
+          "b6d5",
+          "e4c5",
+          "d3e3",
+          "g1h1",
+          "a5a4",
+          "b3a4",
+          "a8a4",
+          "c5a4",
+          "c8a6",
+          "f1a1",
+          "h5f4"
+        ]
+      },
+      "engineBefore": {
+        "bestMove": "a5a4",
+        "depth": 16,
+        "evaluation": {
+          "kind": "centipawns",
+          "value": -140
+        },
+        "principalVariation": [
+          "a5a4",
+          "b3c2",
+          "f7f6",
+          "e5f6",
+          "h5f6",
+          "g4e2",
+          "f6d5",
+          "h4g3",
+          "a4a3",
+          "c3c4",
+          "d5b4",
+          "d2f3"
+        ]
+      },
+      "humanBefore": {
+        "candidates": [
+          {
+            "probability": 0.4284,
+            "rank": 1,
+            "uci": "e8b5"
+          },
+          {
+            "probability": 0.2267,
+            "rank": 2,
+            "uci": "a5a4"
+          },
+          {
+            "probability": 0.1003,
+            "rank": 3,
+            "uci": "d6d5"
+          },
+          {
+            "probability": 0.0897,
+            "rank": 4,
+            "uci": "d6e5"
+          },
+          {
+            "probability": 0.0268,
+            "rank": 5,
+            "uci": "f7f5"
+          }
+        ],
+        "winProbability": 0.5368
+      },
+      "ply": 36
+    },
+    {
+      "afterMove": {
+        "evaluation": {
+          "kind": "centipawns",
+          "value": 71
+        },
+        "kind": "analyzed",
+        "principal_variation": [
+          "a5a4",
+          "b3c2",
+          "h5f4",
+          "e2e1",
+          "e8b5",
+          "d4e5",
+          "f4d5",
+          "c3c4",
+          "b5b4",
+          "c2d3",
+          "c8a6",
+          "f2f3",
+          "d5e7",
+          "d2e4",
+          "b4e1",
+          "a1e1",
+          "a6c4"
+        ]
+      },
+      "engineBefore": {
+        "bestMove": "f4e5",
+        "depth": 16,
+        "evaluation": {
+          "kind": "centipawns",
+          "value": 242
+        },
+        "principalVariation": [
+          "f4e5",
+          "e8b5",
+          "a1f1",
+          "b5d3",
+          "d2e4",
+          "b6d5",
+          "e4c5",
+          "d3e3",
+          "g1h1",
+          "a5a4",
+          "b3a4",
+          "a8a4",
+          "c5a4",
+          "c8a6",
+          "f1a1",
+          "h5f4"
+        ]
+      },
+      "humanBefore": {
+        "candidates": [
+          {
+            "probability": 0.7488,
+            "rank": 1,
+            "uci": "f4e5"
+          },
+          {
+            "probability": 0.2222,
+            "rank": 2,
+            "uci": "d4e5"
+          },
+          {
+            "probability": 0.013,
+            "rank": 3,
+            "uci": "d2e4"
+          },
+          {
+            "probability": 0.0031,
+            "rank": 4,
+            "uci": "g5e4"
+          },
+          {
+            "probability": 0.0019,
+            "rank": 5,
+            "uci": "a1f1"
+          }
+        ],
+        "winProbability": 0.632
+      },
+      "ply": 37
+    },
+    {
+      "afterMove": {
+        "evaluation": {
+          "kind": "centipawns",
+          "value": 39
+        },
+        "kind": "analyzed",
+        "principal_variation": [
+          "f4e5",
+          "a4b3",
+          "a1a8",
+          "b6a8",
+          "d2e4",
+          "c8b7",
+          "e4c5",
+          "h6g5"
+        ]
+      },
+      "engineBefore": {
+        "bestMove": "a5a4",
+        "depth": 16,
+        "evaluation": {
+          "kind": "centipawns",
+          "value": 71
+        },
+        "principalVariation": [
+          "a5a4",
+          "b3c2",
+          "h5f4",
+          "e2e1",
+          "e8b5",
+          "d4e5",
+          "f4d5",
+          "c3c4",
+          "b5b4",
+          "c2d3",
+          "c8a6",
+          "f2f3",
+          "d5e7",
+          "d2e4",
+          "b4e1",
+          "a1e1",
+          "a6c4"
+        ]
+      },
+      "humanBefore": {
+        "candidates": [
+          {
+            "probability": 0.3928,
+            "rank": 1,
+            "uci": "h5f4"
+          },
+          {
+            "probability": 0.34,
+            "rank": 2,
+            "uci": "e5f4"
+          },
+          {
+            "probability": 0.1106,
+            "rank": 3,
+            "uci": "e5d4"
+          },
+          {
+            "probability": 0.0593,
+            "rank": 4,
+            "uci": "a5a4"
+          },
+          {
+            "probability": 0.0309,
+            "rank": 5,
+            "uci": "h6g5"
+          }
+        ],
+        "winProbability": 0.4792
+      },
+      "ply": 38
+    },
+    {
+      "afterMove": {
+        "evaluation": {
+          "kind": "centipawns",
+          "value": 45
+        },
+        "kind": "analyzed",
+        "principal_variation": [
+          "e5f4",
+          "g2g4",
+          "f4g3",
+          "h2g3",
+          "a4a3",
+          "b2a3",
+          "b6d5",
+          "f2f7",
+          "f8f7",
+          "a2d5",
+          "h6g5",
+          "d5a8",
+          "g5h4",
+          "g3h4",
+          "c8d7",
+          "a8g2",
+          "h5f4",
+          "e2e5",
+          "f7f5",
+          "e5c7",
+          "f4g2",
+          "g1g2",
+          "d7b5",
+          "d2e4"
+        ]
+      },
+      "engineBefore": {
+        "bestMove": "f4e5",
+        "depth": 16,
+        "evaluation": {
+          "kind": "centipawns",
+          "value": 39
+        },
+        "principalVariation": [
+          "f4e5",
+          "a4b3",
+          "a1a8",
+          "b6a8",
+          "d2e4",
+          "c8b7",
+          "e4c5",
+          "h6g5"
+        ]
+      },
+      "humanBefore": {
+        "candidates": [
+          {
+            "probability": 0.2543,
+            "rank": 1,
+            "uci": "f4e5"
+          },
+          {
+            "probability": 0.2082,
+            "rank": 2,
+            "uci": "d4e5"
+          },
+          {
+            "probability": 0.1969,
+            "rank": 3,
+            "uci": "b3c2"
+          },
+          {
+            "probability": 0.1542,
+            "rank": 4,
+            "uci": "b3a2"
+          },
+          {
+            "probability": 0.0701,
+            "rank": 5,
+            "uci": "e2e5"
+          }
+        ],
+        "winProbability": 0.5228
+      },
+      "ply": 39
+    },
+    {
+      "afterMove": {
+        "evaluation": {
+          "kind": "centipawns",
+          "value": 32
+        },
+        "kind": "analyzed",
+        "principal_variation": [
+          "d2e4",
+          "a4a3",
+          "b2a3",
+          "b6d5",
+          "a2d5",
+          "e6d5",
+          "e2h5",
+          "g6h5",
+          "e4f6",
+          "g8g7",
+          "f6e8",
+          "f8e8",
+          "c3d4",
+          "c8d7",
+          "f2b2",
+          "a8a4",
+          "a1c1",
+          "a4c4"
+        ]
+      },
+      "engineBefore": {
+        "bestMove": "e5f4",
+        "depth": 16,
+        "evaluation": {
+          "kind": "centipawns",
+          "value": 45
+        },
+        "principalVariation": [
+          "e5f4",
+          "g2g4",
+          "f4g3",
+          "h2g3",
+          "a4a3",
+          "b2a3",
+          "b6d5",
+          "f2f7",
+          "f8f7",
+          "a2d5",
+          "h6g5",
+          "d5a8",
+          "g5h4",
+          "g3h4",
+          "c8d7",
+          "a8g2",
+          "h5f4",
+          "e2e5",
+          "f7f5",
+          "e5c7",
+          "f4g2",
+          "g1g2",
+          "d7b5",
+          "d2e4"
+        ]
+      },
+      "humanBefore": {
+        "candidates": [
+          {
+            "probability": 0.4021,
+            "rank": 1,
+            "uci": "h5f4"
+          },
+          {
+            "probability": 0.3424,
+            "rank": 2,
+            "uci": "e5f4"
+          },
+          {
+            "probability": 0.1122,
+            "rank": 3,
+            "uci": "e5d4"
+          },
+          {
+            "probability": 0.0278,
+            "rank": 4,
+            "uci": "h6g5"
+          },
+          {
+            "probability": 0.0251,
+            "rank": 5,
+            "uci": "b6d5"
+          }
+        ],
+        "winProbability": 0.4464
+      },
+      "ply": 40
+    },
+    {
+      "afterMove": {
+        "evaluation": {
+          "kind": "centipawns",
+          "value": 70
+        },
+        "kind": "analyzed",
+        "principal_variation": [
+          "a4a3",
+          "b2a3",
+          "a8a3",
+          "f4f5",
+          "b6d5",
+          "f5g6",
+          "h7g6",
+          "d2c4",
+          "a3a8",
+          "a1f1",
+          "f7f6",
+          "g5e4",
+          "f6f5",
+          "h4g5",
+          "h6g7",
+          "c4e5",
+          "f5e4",
+          "f2f8",
+          "g7f8",
+          "a2c4",
+          "f8g7",
+          "e2e4"
+        ]
+      },
+      "engineBefore": {
+        "bestMove": "d2e4",
+        "depth": 16,
+        "evaluation": {
+          "kind": "centipawns",
+          "value": 32
+        },
+        "principalVariation": [
+          "d2e4",
+          "a4a3",
+          "b2a3",
+          "b6d5",
+          "a2d5",
+          "e6d5",
+          "e2h5",
+          "g6h5",
+          "e4f6",
+          "g8g7",
+          "f6e8",
+          "f8e8",
+          "c3d4",
+          "c8d7",
+          "f2b2",
+          "a8a4",
+          "a1c1",
+          "a4c4"
+        ]
+      },
+      "humanBefore": {
+        "candidates": [
+          {
+            "probability": 0.7596,
+            "rank": 1,
+            "uci": "c3d4"
+          },
+          {
+            "probability": 0.0802,
+            "rank": 2,
+            "uci": "c3c4"
+          },
+          {
+            "probability": 0.0484,
+            "rank": 3,
+            "uci": "d2e4"
+          },
+          {
+            "probability": 0.0207,
+            "rank": 4,
+            "uci": "g2g4"
+          },
+          {
+            "probability": 0.0137,
+            "rank": 5,
+            "uci": "g5e4"
+          }
+        ],
+        "winProbability": 0.4852
+      },
+      "ply": 41
+    },
+    {
+      "afterMove": {
+        "evaluation": {
+          "kind": "centipawns",
+          "value": 16
+        },
+        "kind": "analyzed",
+        "principal_variation": [
+          "g2g4",
+          "h5f6",
+          "g5e6",
+          "f7e6",
+          "g4g5",
+          "h6g7",
+          "a2e6",
+          "g8h8",
+          "g5f6",
+          "g7f6",
+          "h4f6",
+          "f8f6",
+          "a1e1",
+          "b7d5",
+          "e6d5",
+          "e8e2",
+          "f2e2",
+          "b6d5",
+          "e2e5",
+          "d5f4",
+          "d2e4",
+          "f6f5",
+          "e5f5",
+          "g6f5",
+          "e4f6",
+          "h8g7"
+        ]
+      },
+      "engineBefore": {
+        "bestMove": "a4a3",
+        "depth": 16,
+        "evaluation": {
+          "kind": "centipawns",
+          "value": 70
+        },
+        "principalVariation": [
+          "a4a3",
+          "b2a3",
+          "a8a3",
+          "f4f5",
+          "b6d5",
+          "f5g6",
+          "h7g6",
+          "d2c4",
+          "a3a8",
+          "a1f1",
+          "f7f6",
+          "g5e4",
+          "f6f5",
+          "h4g5",
+          "h6g7",
+          "c4e5",
+          "f5e4",
+          "f2f8",
+          "g7f8",
+          "a2c4",
+          "f8g7",
+          "e2e4"
+        ]
+      },
+      "humanBefore": {
+        "candidates": [
+          {
+            "probability": 0.2371,
+            "rank": 1,
+            "uci": "b6d5"
+          },
+          {
+            "probability": 0.1347,
+            "rank": 2,
+            "uci": "a4a3"
+          },
+          {
+            "probability": 0.1059,
+            "rank": 3,
+            "uci": "c8b7"
+          },
+          {
+            "probability": 0.0871,
+            "rank": 4,
+            "uci": "c8d7"
+          },
+          {
+            "probability": 0.0857,
+            "rank": 5,
+            "uci": "a8a5"
+          }
+        ],
+        "winProbability": 0.5072
+      },
+      "ply": 42
+    },
+    {
+      "afterMove": {
+        "evaluation": {
+          "kind": "centipawns",
+          "value": 118
+        },
+        "kind": "analyzed",
+        "principal_variation": [
+          "b7d5",
+          "a2b1",
+          "e8e7",
+          "d2e4",
+          "a4a3",
+          "b2a3",
+          "f7f6",
+          "g5h3",
+          "e7a3",
+          "e4c5",
+          "a3c3",
+          "b1e4",
+          "a8a2",
+          "e2d1",
+          "f8a8",
+          "f2a2",
+          "a8a2",
+          "e4d5",
+          "b6d5",
+          "c5e6",
+          "h5f4",
+          "e6f4"
+        ]
+      },
+      "engineBefore": {
+        "bestMove": "g2g4",
+        "depth": 16,
+        "evaluation": {
+          "kind": "centipawns",
+          "value": 16
+        },
+        "principalVariation": [
+          "g2g4",
+          "h5f6",
+          "g5e6",
+          "f7e6",
+          "g4g5",
+          "h6g7",
+          "a2e6",
+          "g8h8",
+          "g5f6",
+          "g7f6",
+          "h4f6",
+          "f8f6",
+          "a1e1",
+          "b7d5",
+          "e6d5",
+          "e8e2",
+          "f2e2",
+          "b6d5",
+          "e2e5",
+          "d5f4",
+          "d2e4",
+          "f6f5",
+          "e5f5",
+          "g6f5",
+          "e4f6",
+          "h8g7"
+        ]
+      },
+      "humanBefore": {
+        "candidates": [
+          {
+            "probability": 0.1658,
+            "rank": 1,
+            "uci": "d2e4"
+          },
+          {
+            "probability": 0.1493,
+            "rank": 2,
+            "uci": "g2g4"
+          },
+          {
+            "probability": 0.1003,
+            "rank": 3,
+            "uci": "a1c1"
+          },
+          {
+            "probability": 0.073,
+            "rank": 4,
+            "uci": "a1f1"
+          },
+          {
+            "probability": 0.0622,
+            "rank": 5,
+            "uci": "g5e4"
+          }
+        ],
+        "winProbability": 0.4782
+      },
+      "ply": 43
+    },
+    {
+      "afterMove": {
+        "evaluation": {
+          "kind": "centipawns",
+          "value": -101
+        },
+        "kind": "analyzed",
+        "principal_variation": [
+          "g2g3",
+          "h6g7",
+          "d2f3",
+          "h5f6",
+          "f3e5",
+          "a4a3",
+          "b2a3",
+          "a8a3",
+          "e2b2",
+          "e8a8",
+          "a2b3",
+          "a8a5",
+          "g5f3",
+          "a5b4",
+          "b3c4",
+          "b4b2",
+          "f2b2",
+          "d5f4",
+          "h4f6"
+        ]
+      },
+      "engineBefore": {
+        "bestMove": "b7d5",
+        "depth": 16,
+        "evaluation": {
+          "kind": "centipawns",
+          "value": 118
+        },
+        "principalVariation": [
+          "b7d5",
+          "a2b1",
+          "e8e7",
+          "d2e4",
+          "a4a3",
+          "b2a3",
+          "f7f6",
+          "g5h3",
+          "e7a3",
+          "e4c5",
+          "a3c3",
+          "b1e4",
+          "a8a2",
+          "e2d1",
+          "f8a8",
+          "f2a2",
+          "a8a2",
+          "e4d5",
+          "b6d5",
+          "c5e6",
+          "h5f4",
+          "e6f4"
+        ]
+      },
+      "humanBefore": {
+        "candidates": [
+          {
+            "probability": 0.3493,
+            "rank": 1,
+            "uci": "b6d5"
+          },
+          {
+            "probability": 0.1567,
+            "rank": 2,
+            "uci": "a4a3"
+          },
+          {
+            "probability": 0.0879,
+            "rank": 3,
+            "uci": "b7d5"
+          },
+          {
+            "probability": 0.0658,
+            "rank": 4,
+            "uci": "h6g5"
+          },
+          {
+            "probability": 0.0577,
+            "rank": 5,
+            "uci": "a8a5"
+          }
+        ],
+        "winProbability": 0.4936
+      },
+      "ply": 44
+    },
+    {
+      "afterMove": {
+        "evaluation": {
+          "kind": "centipawns",
+          "value": 104
+        },
+        "kind": "analyzed",
+        "principal_variation": [
+          "h6g7",
+          "g5f3",
+          "h5f6",
+          "f3e5",
+          "a4a3",
+          "d2b3",
+          "a3b2",
+          "e2b2",
+          "f6e4",
+          "e1e4",
+          "a8a2",
+          "b2a2",
+          "d5c3",
+          "a2a7",
+          "b7e4",
+          "a7c5",
+          "c3a4",
+          "c5c7",
+          "e8b5",
+          "b3d2",
+          "e4b7",
+          "c7d7",
+          "a4c3",
+          "d7b5",
+          "c3b5",
+          "h4e7"
+        ]
+      },
+      "engineBefore": {
+        "bestMove": "g2g3",
+        "depth": 16,
+        "evaluation": {
+          "kind": "centipawns",
+          "value": -101
+        },
+        "principalVariation": [
+          "g2g3",
+          "h6g7",
+          "d2f3",
+          "h5f6",
+          "f3e5",
+          "a4a3",
+          "b2a3",
+          "a8a3",
+          "e2b2",
+          "e8a8",
+          "a2b3",
+          "a8a5",
+          "g5f3",
+          "a5b4",
+          "b3c4",
+          "b4b2",
+          "f2b2",
+          "d5f4",
+          "h4f6"
+        ]
+      },
+      "humanBefore": {
+        "candidates": [
+          {
+            "probability": 0.3346,
+            "rank": 1,
+            "uci": "a2d5"
+          },
+          {
+            "probability": 0.1022,
+            "rank": 2,
+            "uci": "f4f5"
+          },
+          {
+            "probability": 0.1001,
+            "rank": 3,
+            "uci": "d2e4"
+          },
+          {
+            "probability": 0.0519,
+            "rank": 4,
+            "uci": "g2g3"
+          },
+          {
+            "probability": 0.0487,
+            "rank": 5,
+            "uci": "g2g4"
+          }
+        ],
+        "winProbability": 0.4254
+      },
+      "ply": 45
+    },
+    {
+      "afterMove": {
+        "evaluation": {
+          "kind": "centipawns",
+          "value": -83
+        },
+        "kind": "analyzed",
+        "principal_variation": [
+          "d2e4",
+          "h6g7",
+          "g5f3",
+          "d5f6",
+          "e4c5",
+          "b7f3",
+          "e2f3",
+          "e8b5",
+          "b2a3",
+          "f6g4",
+          "f3g4"
+        ]
+      },
+      "engineBefore": {
+        "bestMove": "h6g7",
+        "depth": 16,
+        "evaluation": {
+          "kind": "centipawns",
+          "value": 104
+        },
+        "principalVariation": [
+          "h6g7",
+          "g5f3",
+          "h5f6",
+          "f3e5",
+          "a4a3",
+          "d2b3",
+          "a3b2",
+          "e2b2",
+          "f6e4",
+          "e1e4",
+          "a8a2",
+          "b2a2",
+          "d5c3",
+          "a2a7",
+          "b7e4",
+          "a7c5",
+          "c3a4",
+          "c5c7",
+          "e8b5",
+          "b3d2",
+          "e4b7",
+          "c7d7",
+          "a4c3",
+          "d7b5",
+          "c3b5",
+          "h4e7"
+        ]
+      },
+      "humanBefore": {
+        "candidates": [
+          {
+            "probability": 0.3361,
+            "rank": 1,
+            "uci": "d5b4"
+          },
+          {
+            "probability": 0.2376,
+            "rank": 2,
+            "uci": "a4a3"
+          },
+          {
+            "probability": 0.089,
+            "rank": 3,
+            "uci": "a8a5"
+          },
+          {
+            "probability": 0.0716,
+            "rank": 4,
+            "uci": "c7c6"
+          },
+          {
+            "probability": 0.0687,
+            "rank": 5,
+            "uci": "h6g5"
+          }
+        ],
+        "winProbability": 0.4499
+      },
+      "ply": 46
+    },
+    {
+      "afterMove": {
+        "evaluation": {
+          "kind": "centipawns",
+          "value": 125
+        },
+        "kind": "analyzed",
+        "principal_variation": [
+          "h5f6",
+          "f3e5",
+          "h6g7",
+          "g5f3",
+          "f6d7",
+          "e1c1",
+          "d7e5",
+          "f3e5",
+          "d5b4",
+          "b2a3",
+          "a8a3",
+          "a2c4",
+          "b4d5",
+          "c4d5",
+          "b7d5",
+          "c1c7",
+          "e8a8",
+          "h4e7",
+          "a3a1",
+          "f2f1"
+        ]
+      },
+      "engineBefore": {
+        "bestMove": "d2e4",
+        "depth": 16,
+        "evaluation": {
+          "kind": "centipawns",
+          "value": -83
+        },
+        "principalVariation": [
+          "d2e4",
+          "h6g7",
+          "g5f3",
+          "d5f6",
+          "e4c5",
+          "b7f3",
+          "e2f3",
+          "e8b5",
+          "b2a3",
+          "f6g4",
+          "f3g4"
+        ]
+      },
+      "humanBefore": {
+        "candidates": [
+          {
+            "probability": 0.6828,
+            "rank": 1,
+            "uci": "b2a3"
+          },
+          {
+            "probability": 0.1655,
+            "rank": 2,
+            "uci": "b2b3"
+          },
+          {
+            "probability": 0.0336,
+            "rank": 3,
+            "uci": "d2c4"
+          },
+          {
+            "probability": 0.0301,
+            "rank": 4,
+            "uci": "a2d5"
+          },
+          {
+            "probability": 0.0259,
+            "rank": 5,
+            "uci": "d2e4"
+          }
+        ],
+        "winProbability": 0.454
+      },
+      "ply": 47
+    },
+    {
+      "afterMove": {
+        "evaluation": {
+          "kind": "centipawns",
+          "value": -54
+        },
+        "kind": "analyzed",
+        "principal_variation": [
+          "h4g5",
+          "d5b4",
+          "g3g4",
+          "h5g7",
+          "f4f5",
+          "f7f6",
+          "f5e6",
+          "b4a2",
+          "e6e7",
+          "f8f7",
+          "e2c4",
+          "a3b2",
+          "g5f6",
+          "a2c3"
+        ]
+      },
+      "engineBefore": {
+        "bestMove": "h5f6",
+        "depth": 16,
+        "evaluation": {
+          "kind": "centipawns",
+          "value": 125
+        },
+        "principalVariation": [
+          "h5f6",
+          "f3e5",
+          "h6g7",
+          "g5f3",
+          "f6d7",
+          "e1c1",
+          "d7e5",
+          "f3e5",
+          "d5b4",
+          "b2a3",
+          "a8a3",
+          "a2c4",
+          "b4d5",
+          "c4d5",
+          "b7d5",
+          "c1c7",
+          "e8a8",
+          "h4e7",
+          "a3a1",
+          "f2f1"
+        ]
+      },
+      "humanBefore": {
+        "candidates": [
+          {
+            "probability": 0.6338,
+            "rank": 1,
+            "uci": "a3b2"
+          },
+          {
+            "probability": 0.1619,
+            "rank": 2,
+            "uci": "d5b4"
+          },
+          {
+            "probability": 0.0356,
+            "rank": 3,
+            "uci": "c7c6"
+          },
+          {
+            "probability": 0.0281,
+            "rank": 4,
+            "uci": "h6g5"
+          },
+          {
+            "probability": 0.0153,
+            "rank": 5,
+            "uci": "a8a5"
+          }
+        ],
+        "winProbability": 0.4078
+      },
+      "ply": 48
+    },
+    {
+      "afterMove": {
+        "evaluation": {
+          "kind": "centipawns",
+          "value": 56
+        },
+        "kind": "analyzed",
+        "principal_variation": [
+          "d5b4",
+          "b2a3",
+          "b4a2",
+          "e2a2",
+          "e8b5",
+          "g3g4",
+          "b7d5",
+          "a2a1",
+          "h5g7",
+          "g5e7",
+          "f8e8",
+          "e7b4",
+          "e6e5",
+          "f3e5",
+          "f7f6",
+          "f4f5",
+          "g6f5",
+          "g4f5",
+          "f6e5",
+          "f5f6",
+          "b5d7",
+          "d4e5"
+        ]
+      },
+      "engineBefore": {
+        "bestMove": "h4g5",
+        "depth": 16,
+        "evaluation": {
+          "kind": "centipawns",
+          "value": -54
+        },
+        "principalVariation": [
+          "h4g5",
+          "d5b4",
+          "g3g4",
+          "h5g7",
+          "f4f5",
+          "f7f6",
+          "f5e6",
+          "b4a2",
+          "e6e7",
+          "f8f7",
+          "e2c4",
+          "a3b2",
+          "g5f6",
+          "a2c3"
+        ]
+      },
+      "humanBefore": {
+        "candidates": [
+          {
+            "probability": 0.6134,
+            "rank": 1,
+            "uci": "h4g5"
+          },
+          {
+            "probability": 0.2002,
+            "rank": 2,
+            "uci": "f3g5"
+          },
+          {
+            "probability": 0.1055,
+            "rank": 3,
+            "uci": "f4g5"
+          },
+          {
+            "probability": 0.064,
+            "rank": 4,
+            "uci": "b2a3"
+          },
+          {
+            "probability": 0.0076,
+            "rank": 5,
+            "uci": "b2b3"
+          }
+        ],
+        "winProbability": 0.4788
+      },
+      "ply": 49
+    },
+    {
+      "afterMove": {
+        "evaluation": {
+          "kind": "centipawns",
+          "value": -40
+        },
+        "kind": "analyzed",
+        "principal_variation": [
+          "f4f5",
+          "g7f5",
+          "g3g4",
+          "f5d6",
+          "g5h6",
+          "a3b2",
+          "e2b2",
+          "e8e7",
+          "h6f8",
+          "a8f8",
+          "b2d2",
+          "d5f6",
+          "d2f4",
+          "f6e4",
+          "f2c2",
+          "f8a8",
+          "a2c4",
+          "a8a3",
+          "e1f1",
+          "e7d8",
+          "h2h4",
+          "d6c4",
+          "c2c4",
+          "e4c3",
+          "f4c7",
+          "c3e2",
+          "g1f2",
+          "d8c7",
+          "c4c7",
+          "b7f3",
+          "b5b6"
+        ]
+      },
+      "engineBefore": {
+        "bestMove": "d5b4",
+        "depth": 16,
+        "evaluation": {
+          "kind": "centipawns",
+          "value": 56
+        },
+        "principalVariation": [
+          "d5b4",
+          "b2a3",
+          "b4a2",
+          "e2a2",
+          "e8b5",
+          "g3g4",
+          "b7d5",
+          "a2a1",
+          "h5g7",
+          "g5e7",
+          "f8e8",
+          "e7b4",
+          "e6e5",
+          "f3e5",
+          "f7f6",
+          "f4f5",
+          "g6f5",
+          "g4f5",
+          "f6e5",
+          "f5f6",
+          "b5d7",
+          "d4e5"
+        ]
+      },
+      "humanBefore": {
+        "candidates": [
+          {
+            "probability": 0.727,
+            "rank": 1,
+            "uci": "a3b2"
+          },
+          {
+            "probability": 0.1391,
+            "rank": 2,
+            "uci": "d5b4"
+          },
+          {
+            "probability": 0.0279,
+            "rank": 3,
+            "uci": "c7c6"
+          },
+          {
+            "probability": 0.019,
+            "rank": 4,
+            "uci": "a8a5"
+          },
+          {
+            "probability": 0.0166,
+            "rank": 5,
+            "uci": "f7f6"
+          }
+        ],
+        "winProbability": 0.4216
+      },
+      "ply": 50
+    },
+    {
+      "afterMove": {
+        "evaluation": {
+          "kind": "centipawns",
+          "value": 82
+        },
+        "kind": "analyzed",
+        "principal_variation": [
+          "d5b4",
+          "b2a3",
+          "b4a2",
+          "e2a2",
+          "f7f6",
+          "g5h6",
+          "e8b5",
+          "a2c2",
+          "b5d7",
+          "e1e3",
+          "f8f7",
+          "h2h3",
+          "g7e8",
+          "f4f5",
+          "e6f5",
+          "g4f5",
+          "g6g5",
+          "h3h4",
+          "g5g4",
+          "f3d2",
+          "g8h8"
+        ]
+      },
+      "engineBefore": {
+        "bestMove": "f4f5",
+        "depth": 16,
+        "evaluation": {
+          "kind": "centipawns",
+          "value": -40
+        },
+        "principalVariation": [
+          "f4f5",
+          "g7f5",
+          "g3g4",
+          "f5d6",
+          "g5h6",
+          "a3b2",
+          "e2b2",
+          "e8e7",
+          "h6f8",
+          "a8f8",
+          "b2d2",
+          "d5f6",
+          "d2f4",
+          "f6e4",
+          "f2c2",
+          "f8a8",
+          "a2c4",
+          "a8a3",
+          "e1f1",
+          "e7d8",
+          "h2h4",
+          "d6c4",
+          "c2c4",
+          "e4c3",
+          "f4c7",
+          "c3e2",
+          "g1f2",
+          "d8c7",
+          "c4c7",
+          "b7f3",
+          "b5b6"
+        ]
+      },
+      "humanBefore": {
+        "candidates": [
+          {
+            "probability": 0.7171,
+            "rank": 1,
+            "uci": "b2a3"
+          },
+          {
+            "probability": 0.0988,
+            "rank": 2,
+            "uci": "b2b3"
+          },
+          {
+            "probability": 0.0795,
+            "rank": 3,
+            "uci": "a2d5"
+          },
+          {
+            "probability": 0.0285,
+            "rank": 4,
+            "uci": "g5h6"
+          },
+          {
+            "probability": 0.0208,
+            "rank": 5,
+            "uci": "f3e5"
+          }
+        ],
+        "winProbability": 0.4468
+      },
+      "ply": 51
+    },
+    {
+      "afterMove": {
+        "evaluation": {
+          "kind": "centipawns",
+          "value": -2
+        },
+        "kind": "analyzed",
+        "principal_variation": [
+          "b2a3",
+          "a5a3",
+          "g5h6",
+          "f7f6",
+          "h2h3",
+          "d5c3",
+          "e2b2",
+          "a3a2",
+          "b2c3",
+          "a2f2",
+          "g1f2",
+          "e8d7"
+        ]
+      },
+      "engineBefore": {
+        "bestMove": "d5b4",
+        "depth": 16,
+        "evaluation": {
+          "kind": "centipawns",
+          "value": 82
+        },
+        "principalVariation": [
+          "d5b4",
+          "b2a3",
+          "b4a2",
+          "e2a2",
+          "f7f6",
+          "g5h6",
+          "e8b5",
+          "a2c2",
+          "b5d7",
+          "e1e3",
+          "f8f7",
+          "h2h3",
+          "g7e8",
+          "f4f5",
+          "e6f5",
+          "g4f5",
+          "g6g5",
+          "h3h4",
+          "g5g4",
+          "f3d2",
+          "g8h8"
+        ]
+      },
+      "humanBefore": {
+        "candidates": [
+          {
+            "probability": 0.6931,
+            "rank": 1,
+            "uci": "a3b2"
+          },
+          {
+            "probability": 0.1332,
+            "rank": 2,
+            "uci": "d5b4"
+          },
+          {
+            "probability": 0.0341,
+            "rank": 3,
+            "uci": "c7c6"
+          },
+          {
+            "probability": 0.034,
+            "rank": 4,
+            "uci": "a8a5"
+          },
+          {
+            "probability": 0.0205,
+            "rank": 5,
+            "uci": "f7f6"
+          }
+        ],
+        "winProbability": 0.4384
+      },
+      "ply": 52
+    },
+    {
+      "afterMove": {
+        "evaluation": {
+          "kind": "centipawns",
+          "value": 73
+        },
+        "kind": "analyzed",
+        "principal_variation": [
+          "e8b5",
+          "b2a3",
+          "a5a3",
+          "f3e5",
+          "f7f6",
+          "e1b1",
+          "b5a6",
+          "a2c4",
+          "a6a4",
+          "b1b7",
+          "f6e5",
+          "f4e5",
+          "f8f2",
+          "d2f2"
+        ]
+      },
+      "engineBefore": {
+        "bestMove": "b2a3",
+        "depth": 16,
+        "evaluation": {
+          "kind": "centipawns",
+          "value": -2
+        },
+        "principalVariation": [
+          "b2a3",
+          "a5a3",
+          "g5h6",
+          "f7f6",
+          "h2h3",
+          "d5c3",
+          "e2b2",
+          "a3a2",
+          "b2c3",
+          "a2f2",
+          "g1f2",
+          "e8d7"
+        ]
+      },
+      "humanBefore": {
+        "candidates": [
+          {
+            "probability": 0.611,
+            "rank": 1,
+            "uci": "b2a3"
+          },
+          {
+            "probability": 0.1588,
+            "rank": 2,
+            "uci": "a2d5"
+          },
+          {
+            "probability": 0.0547,
+            "rank": 3,
+            "uci": "a2c4"
+          },
+          {
+            "probability": 0.0339,
+            "rank": 4,
+            "uci": "b2b3"
+          },
+          {
+            "probability": 0.0277,
+            "rank": 5,
+            "uci": "f4f5"
+          }
+        ],
+        "winProbability": 0.4704
+      },
+      "ply": 53
+    },
+    {
+      "afterMove": {
+        "evaluation": {
+          "kind": "centipawns",
+          "value": -97
+        },
+        "kind": "analyzed",
+        "principal_variation": [
+          "b2a3",
+          "a5a3",
+          "f3e5",
+          "f7f6",
+          "e1b1",
+          "b5a6",
+          "a2d5",
+          "b7d5",
+          "e5d7",
+          "f6g5",
+          "d7f8",
+          "a3a2",
+          "d2e3",
+          "a2f2",
+          "e3f2",
+          "a6d3",
+          "b1e1",
+          "g8f8"
+        ]
+      },
+      "engineBefore": {
+        "bestMove": "e8b5",
+        "depth": 16,
+        "evaluation": {
+          "kind": "centipawns",
+          "value": 73
+        },
+        "principalVariation": [
+          "e8b5",
+          "b2a3",
+          "a5a3",
+          "f3e5",
+          "f7f6",
+          "e1b1",
+          "b5a6",
+          "a2c4",
+          "a6a4",
+          "b1b7",
+          "f6e5",
+          "f4e5",
+          "f8f2",
+          "d2f2"
+        ]
+      },
+      "humanBefore": {
+        "candidates": [
+          {
+            "probability": 0.5704,
+            "rank": 1,
+            "uci": "a5b5"
+          },
+          {
+            "probability": 0.136,
+            "rank": 2,
+            "uci": "e8b5"
+          },
+          {
+            "probability": 0.1336,
+            "rank": 3,
+            "uci": "a3b2"
+          },
+          {
+            "probability": 0.0487,
+            "rank": 4,
+            "uci": "a5a8"
+          },
+          {
+            "probability": 0.0412,
+            "rank": 5,
+            "uci": "a5a4"
+          }
+        ],
+        "winProbability": 0.468
+      },
+      "ply": 54
+    },
+    {
+      "afterMove": {
+        "evaluation": {
+          "kind": "centipawns",
+          "value": 92
+        },
+        "kind": "analyzed",
+        "principal_variation": [
+          "b5a6",
+          "f3e5",
+          "f7f6",
+          "e5d7",
+          "f6g5",
+          "d7f8",
+          "d5f4",
+          "f2f4",
+          "g5f4",
+          "f8d7",
+          "a6d6",
+          "b2a3",
+          "a5a4",
+          "d4d5",
+          "d6d7",
+          "b1b7",
+          "d7d6",
+          "b7b8",
+          "g8f7",
+          "b8h8"
+        ]
+      },
+      "engineBefore": {
+        "bestMove": "b2a3",
+        "depth": 16,
+        "evaluation": {
+          "kind": "centipawns",
+          "value": -97
+        },
+        "principalVariation": [
+          "b2a3",
+          "a5a3",
+          "f3e5",
+          "f7f6",
+          "e1b1",
+          "b5a6",
+          "a2d5",
+          "b7d5",
+          "e5d7",
+          "f6g5",
+          "d7f8",
+          "a3a2",
+          "d2e3",
+          "a2f2",
+          "e3f2",
+          "a6d3",
+          "b1e1",
+          "g8f8"
+        ]
+      },
+      "humanBefore": {
+        "candidates": [
+          {
+            "probability": 0.6056,
+            "rank": 1,
+            "uci": "b2a3"
+          },
+          {
+            "probability": 0.1087,
+            "rank": 2,
+            "uci": "a2d5"
+          },
+          {
+            "probability": 0.0907,
+            "rank": 3,
+            "uci": "b2b3"
+          },
+          {
+            "probability": 0.0345,
+            "rank": 4,
+            "uci": "f4f5"
+          },
+          {
+            "probability": 0.0286,
+            "rank": 5,
+            "uci": "e1b1"
+          }
+        ],
+        "winProbability": 0.4612
+      },
+      "ply": 55
+    },
+    {
+      "afterMove": {
+        "evaluation": {
+          "kind": "centipawns",
+          "value": -51
+        },
+        "kind": "analyzed",
+        "principal_variation": [
+          "f3e5",
+          "f7f6",
+          "e5d7",
+          "f6g5",
+          "d7f8",
+          "d5f4",
+          "f2f4",
+          "g5f4",
+          "f8d7",
+          "a6d6",
+          "b2a3",
+          "d6d7",
+          "b1b7",
+          "a5b5",
+          "b7b5",
+          "d7b5",
+          "h2h3",
+          "h7h6",
+          "d2f4",
+          "b5b2",
+          "a2c4",
+          "b2a3",
+          "g1f2",
+          "a3b2",
+          "c4e2"
+        ]
+      },
+      "engineBefore": {
+        "bestMove": "b5a6",
+        "depth": 16,
+        "evaluation": {
+          "kind": "centipawns",
+          "value": 92
+        },
+        "principalVariation": [
+          "b5a6",
+          "f3e5",
+          "f7f6",
+          "e5d7",
+          "f6g5",
+          "d7f8",
+          "d5f4",
+          "f2f4",
+          "g5f4",
+          "f8d7",
+          "a6d6",
+          "b2a3",
+          "a5a4",
+          "d4d5",
+          "d6d7",
+          "b1b7",
+          "d7d6",
+          "b7b8",
+          "g8f7",
+          "b8h8"
+        ]
+      },
+      "humanBefore": {
+        "candidates": [
+          {
+            "probability": 0.3124,
+            "rank": 1,
+            "uci": "d5b4"
+          },
+          {
+            "probability": 0.1944,
+            "rank": 2,
+            "uci": "a3b2"
+          },
+          {
+            "probability": 0.0642,
+            "rank": 3,
+            "uci": "a5a4"
+          },
+          {
+            "probability": 0.0502,
+            "rank": 4,
+            "uci": "f8a8"
+          },
+          {
+            "probability": 0.0463,
+            "rank": 5,
+            "uci": "f7f6"
+          }
+        ],
+        "winProbability": 0.4535
+      },
+      "ply": 56
+    },
+    {
+      "afterMove": {
+        "evaluation": {
+          "kind": "centipawns",
+          "value": 128
+        },
+        "kind": "analyzed",
+        "principal_variation": [
+          "a5a4",
+          "f4f5",
+          "e6f5",
+          "g4f5",
+          "g7f5",
+          "g5h6",
+          "a4b4",
+          "b1b4",
+          "d5b4",
+          "h6f8",
+          "b4a2",
+          "f8c5",
+          "b7d5",
+          "f3e5",
+          "a2b4",
+          "d2b4"
+        ]
+      },
+      "engineBefore": {
+        "bestMove": "f3e5",
+        "depth": 16,
+        "evaluation": {
+          "kind": "centipawns",
+          "value": -51
+        },
+        "principalVariation": [
+          "f3e5",
+          "f7f6",
+          "e5d7",
+          "f6g5",
+          "d7f8",
+          "d5f4",
+          "f2f4",
+          "g5f4",
+          "f8d7",
+          "a6d6",
+          "b2a3",
+          "d6d7",
+          "b1b7",
+          "a5b5",
+          "b7b5",
+          "d7b5",
+          "h2h3",
+          "h7h6",
+          "d2f4",
+          "b5b2",
+          "a2c4",
+          "b2a3",
+          "g1f2",
+          "a3b2",
+          "c4e2"
+        ]
+      },
+      "humanBefore": {
+        "candidates": [
+          {
+            "probability": 0.418,
+            "rank": 1,
+            "uci": "b2a3"
+          },
+          {
+            "probability": 0.1753,
+            "rank": 2,
+            "uci": "b2b3"
+          },
+          {
+            "probability": 0.1272,
+            "rank": 3,
+            "uci": "a2d5"
+          },
+          {
+            "probability": 0.092,
+            "rank": 4,
+            "uci": "b2b4"
+          },
+          {
+            "probability": 0.0584,
+            "rank": 5,
+            "uci": "f3e5"
+          }
+        ],
+        "winProbability": 0.4575
+      },
+      "ply": 57
+    },
+    {
+      "afterMove": {
+        "evaluation": {
+          "kind": "centipawns",
+          "value": -152
+        },
+        "kind": "analyzed",
+        "principal_variation": [
+          "f3e5",
+          "f7f6",
+          "e5d7",
+          "f6g5",
+          "f4g5",
+          "f8f2",
+          "d2f2",
+          "a6d6",
+          "b1f1",
+          "a4a8",
+          "a2d5",
+          "d6d7",
+          "d5b7",
+          "a8d8",
+          "f1a1",
+          "d7d4",
+          "f2d4",
+          "d8d4",
+          "b7f3",
+          "d4d3",
+          "f3e2"
+        ]
+      },
+      "engineBefore": {
+        "bestMove": "a5a4",
+        "depth": 16,
+        "evaluation": {
+          "kind": "centipawns",
+          "value": 128
+        },
+        "principalVariation": [
+          "a5a4",
+          "f4f5",
+          "e6f5",
+          "g4f5",
+          "g7f5",
+          "g5h6",
+          "a4b4",
+          "b1b4",
+          "d5b4",
+          "h6f8",
+          "b4a2",
+          "f8c5",
+          "b7d5",
+          "f3e5",
+          "a2b4",
+          "d2b4"
+        ]
+      },
+      "humanBefore": {
+        "candidates": [
+          {
+            "probability": 0.7098,
+            "rank": 1,
+            "uci": "a5b5"
+          },
+          {
+            "probability": 0.2414,
+            "rank": 2,
+            "uci": "a5a4"
+          },
+          {
+            "probability": 0.0429,
+            "rank": 3,
+            "uci": "d5b4"
+          },
+          {
+            "probability": 0.0015,
+            "rank": 4,
+            "uci": "a6b5"
+          },
+          {
+            "probability": 0.0005,
+            "rank": 5,
+            "uci": "a6d6"
+          }
+        ],
+        "winProbability": 0.4628
+      },
+      "ply": 58
+    },
+    {
+      "afterMove": {
+        "evaluation": {
+          "kind": "centipawns",
+          "value": 170
+        },
+        "kind": "analyzed",
+        "principal_variation": [
+          "e6f5",
+          "g4f5",
+          "g7f5",
+          "g5h6",
+          "d5f6",
+          "h6f8",
+          "f6e4",
+          "d2f4",
+          "e4f2",
+          "g1f2",
+          "b7f3",
+          "b1e1",
+          "a6a8",
+          "f8c5",
+          "f3d5",
+          "a2d5",
+          "a8d5",
+          "e1e8",
+          "g8g7"
+        ]
+      },
+      "engineBefore": {
+        "bestMove": "f3e5",
+        "depth": 16,
+        "evaluation": {
+          "kind": "centipawns",
+          "value": -152
+        },
+        "principalVariation": [
+          "f3e5",
+          "f7f6",
+          "e5d7",
+          "f6g5",
+          "f4g5",
+          "f8f2",
+          "d2f2",
+          "a6d6",
+          "b1f1",
+          "a4a8",
+          "a2d5",
+          "d6d7",
+          "d5b7",
+          "a8d8",
+          "f1a1",
+          "d7d4",
+          "f2d4",
+          "d8d4",
+          "b7f3",
+          "d4d3",
+          "f3e2"
+        ]
+      },
+      "humanBefore": {
+        "candidates": [
+          {
+            "probability": 0.2865,
+            "rank": 1,
+            "uci": "b4b5"
+          },
+          {
+            "probability": 0.1991,
+            "rank": 2,
+            "uci": "f3e5"
+          },
+          {
+            "probability": 0.1697,
+            "rank": 3,
+            "uci": "a2d5"
+          },
+          {
+            "probability": 0.0979,
+            "rank": 4,
+            "uci": "f4f5"
+          },
+          {
+            "probability": 0.0777,
+            "rank": 5,
+            "uci": "g5h6"
+          }
+        ],
+        "winProbability": 0.4559
+      },
+      "ply": 59
+    },
+    {
+      "afterMove": {
+        "evaluation": {
+          "kind": "centipawns",
+          "value": -156
+        },
+        "kind": "analyzed",
+        "principal_variation": [
+          "g4f5",
+          "g7f5",
+          "g5h6",
+          "f8e8",
+          "f3e5",
+          "a6f6",
+          "b1f1",
+          "a4a6",
+          "d2d3",
+          "a6d6",
+          "d3b5",
+          "e8b8",
+          "e5d7",
+          "d6d7",
+          "b5d7",
+          "f6d4",
+          "h6c1",
+          "d4g4",
+          "f2g2"
+        ]
+      },
+      "engineBefore": {
+        "bestMove": "e6f5",
+        "depth": 16,
+        "evaluation": {
+          "kind": "centipawns",
+          "value": 170
+        },
+        "principalVariation": [
+          "e6f5",
+          "g4f5",
+          "g7f5",
+          "g5h6",
+          "d5f6",
+          "h6f8",
+          "f6e4",
+          "d2f4",
+          "e4f2",
+          "g1f2",
+          "b7f3",
+          "b1e1",
+          "a6a8",
+          "f8c5",
+          "f3d5",
+          "a2d5",
+          "a8d5",
+          "e1e8",
+          "g8g7"
+        ]
+      },
+      "humanBefore": {
+        "candidates": [
+          {
+            "probability": 0.6054,
+            "rank": 1,
+            "uci": "e6f5"
+          },
+          {
+            "probability": 0.0821,
+            "rank": 2,
+            "uci": "g6f5"
+          },
+          {
+            "probability": 0.0588,
+            "rank": 3,
+            "uci": "d5b4"
+          },
+          {
+            "probability": 0.0402,
+            "rank": 4,
+            "uci": "f7f6"
+          },
+          {
+            "probability": 0.0324,
+            "rank": 5,
+            "uci": "a4b4"
+          }
+        ],
+        "winProbability": 0.4872
+      },
+      "ply": 60
+    },
+    {
+      "afterMove": {
+        "evaluation": {
+          "kind": "centipawns",
+          "value": 193
+        },
+        "kind": "analyzed",
+        "principal_variation": [
+          "f7f6",
+          "g4f5",
+          "g7f5",
+          "g5h6",
+          "f6e5",
+          "h6f8",
+          "g8f8",
+          "b1e1",
+          "a6f6",
+          "e1e5",
+          "f8g7",
+          "a2d5",
+          "b7d5",
+          "e5d5",
+          "a3a2",
+          "d5d7",
+          "g7h8"
+        ]
+      },
+      "engineBefore": {
+        "bestMove": "g4f5",
+        "depth": 16,
+        "evaluation": {
+          "kind": "centipawns",
+          "value": -156
+        },
+        "principalVariation": [
+          "g4f5",
+          "g7f5",
+          "g5h6",
+          "f8e8",
+          "f3e5",
+          "a6f6",
+          "b1f1",
+          "a4a6",
+          "d2d3",
+          "a6d6",
+          "d3b5",
+          "e8b8",
+          "e5d7",
+          "d6d7",
+          "b5d7",
+          "f6d4",
+          "h6c1",
+          "d4g4",
+          "f2g2"
+        ]
+      },
+      "humanBefore": {
+        "candidates": [
+          {
+            "probability": 0.5512,
+            "rank": 1,
+            "uci": "g4f5"
+          },
+          {
+            "probability": 0.14,
+            "rank": 2,
+            "uci": "b4b5"
+          },
+          {
+            "probability": 0.1051,
+            "rank": 3,
+            "uci": "f3e5"
+          },
+          {
+            "probability": 0.0646,
+            "rank": 4,
+            "uci": "a2d5"
+          },
+          {
+            "probability": 0.0577,
+            "rank": 5,
+            "uci": "g5h6"
+          }
+        ],
+        "winProbability": 0.4165
+      },
+      "ply": 61
+    },
+    {
+      "afterMove": {
+        "evaluation": {
+          "kind": "centipawns",
+          "value": -79
+        },
+        "kind": "analyzed",
+        "principal_variation": [
+          "g5h6",
+          "a6f6",
+          "b1f1",
+          "a4a6",
+          "b4b5",
+          "a6a4",
+          "h2h3",
+          "f6b6",
+          "e5d7",
+          "b6d6",
+          "d7e5",
+          "d6b4",
+          "e5d7",
+          "b4d2",
+          "h6d2",
+          "e8d8",
+          "d7c5",
+          "a4a7",
+          "d2g5",
+          "d8d6",
+          "f2f3"
+        ]
+      },
+      "engineBefore": {
+        "bestMove": "f7f6",
+        "depth": 16,
+        "evaluation": {
+          "kind": "centipawns",
+          "value": 193
+        },
+        "principalVariation": [
+          "f7f6",
+          "g4f5",
+          "g7f5",
+          "g5h6",
+          "f6e5",
+          "h6f8",
+          "g8f8",
+          "b1e1",
+          "a6f6",
+          "e1e5",
+          "f8g7",
+          "a2d5",
+          "b7d5",
+          "e5d5",
+          "a3a2",
+          "d5d7",
+          "g7h8"
+        ]
+      },
+      "humanBefore": {
+        "candidates": [
+          {
+            "probability": 0.38,
+            "rank": 1,
+            "uci": "f5g4"
+          },
+          {
+            "probability": 0.1863,
+            "rank": 2,
+            "uci": "f7f6"
+          },
+          {
+            "probability": 0.0863,
+            "rank": 3,
+            "uci": "g7e6"
+          },
+          {
+            "probability": 0.0476,
+            "rank": 4,
+            "uci": "a6b5"
+          },
+          {
+            "probability": 0.0459,
+            "rank": 5,
+            "uci": "a4b4"
+          }
+        ],
+        "winProbability": 0.4553
+      },
+      "ply": 62
+    },
+    {
+      "afterMove": {
+        "evaluation": {
+          "kind": "centipawns",
+          "value": 112
+        },
+        "kind": "analyzed",
+        "principal_variation": [
+          "g7f5",
+          "b1f1",
+          "a6b6",
+          "a2d5",
+          "b7d5",
+          "e5d7",
+          "b6b5",
+          "d7f6",
+          "g8g7",
+          "f2f5",
+          "g6f5",
+          "f1f5"
+        ]
+      },
+      "engineBefore": {
+        "bestMove": "g5h6",
+        "depth": 16,
+        "evaluation": {
+          "kind": "centipawns",
+          "value": -79
+        },
+        "principalVariation": [
+          "g5h6",
+          "a6f6",
+          "b1f1",
+          "a4a6",
+          "b4b5",
+          "a6a4",
+          "h2h3",
+          "f6b6",
+          "e5d7",
+          "b6d6",
+          "d7e5",
+          "d6b4",
+          "e5d7",
+          "b4d2",
+          "h6d2",
+          "e8d8",
+          "d7c5",
+          "a4a7",
+          "d2g5",
+          "d8d6",
+          "f2f3"
+        ]
+      },
+      "humanBefore": {
+        "candidates": [
+          {
+            "probability": 0.7083,
+            "rank": 1,
+            "uci": "g4f5"
+          },
+          {
+            "probability": 0.1176,
+            "rank": 2,
+            "uci": "b4b5"
+          },
+          {
+            "probability": 0.0357,
+            "rank": 3,
+            "uci": "e5d7"
+          },
+          {
+            "probability": 0.0259,
+            "rank": 4,
+            "uci": "g5h6"
+          },
+          {
+            "probability": 0.0229,
+            "rank": 5,
+            "uci": "a2d5"
+          }
+        ],
+        "winProbability": 0.5311
+      },
+      "ply": 63
+    },
+    {
+      "afterMove": {
+        "evaluation": {
+          "kind": "centipawns",
+          "value": -152
+        },
+        "kind": "analyzed",
+        "principal_variation": [
+          "g5h6",
+          "a6f6",
+          "b1f1",
+          "a4a8",
+          "h6g5",
+          "f6g7",
+          "f2f5",
+          "g6f5",
+          "f1f5",
+          "e8e5",
+          "d4e5",
+          "g7g6",
+          "f5f2",
+          "h7h6",
+          "f2g2",
+          "g6b6",
+          "g1f1"
+        ]
+      },
+      "engineBefore": {
+        "bestMove": "g7f5",
+        "depth": 16,
+        "evaluation": {
+          "kind": "centipawns",
+          "value": 112
+        },
+        "principalVariation": [
+          "g7f5",
+          "b1f1",
+          "a6b6",
+          "a2d5",
+          "b7d5",
+          "e5d7",
+          "b6b5",
+          "d7f6",
+          "g8g7",
+          "f2f5",
+          "g6f5",
+          "f1f5"
+        ]
+      },
+      "humanBefore": {
+        "candidates": [
+          {
+            "probability": 0.3999,
+            "rank": 1,
+            "uci": "g7f5"
+          },
+          {
+            "probability": 0.1521,
+            "rank": 2,
+            "uci": "g6f5"
+          },
+          {
+            "probability": 0.1387,
+            "rank": 3,
+            "uci": "f7f6"
+          },
+          {
+            "probability": 0.0497,
+            "rank": 4,
+            "uci": "a4b4"
+          },
+          {
+            "probability": 0.0364,
+            "rank": 5,
+            "uci": "a6b5"
+          }
+        ],
+        "winProbability": 0.5039
+      },
+      "ply": 64
+    },
+    {
+      "afterMove": {
+        "evaluation": {
+          "kind": "centipawns",
+          "value": 202
+        },
+        "kind": "analyzed",
+        "principal_variation": [
+          "g6f5",
+          "h2h4",
+          "a6d6",
+          "d2g2",
+          "g8f8",
+          "e5d7",
+          "d6d7",
+          "g5h6",
+          "f8e7",
+          "g2g5",
+          "e7d6"
+        ]
+      },
+      "engineBefore": {
+        "bestMove": "g5h6",
+        "depth": 16,
+        "evaluation": {
+          "kind": "centipawns",
+          "value": -152
+        },
+        "principalVariation": [
+          "g5h6",
+          "a6f6",
+          "b1f1",
+          "a4a8",
+          "h6g5",
+          "f6g7",
+          "f2f5",
+          "g6f5",
+          "f1f5",
+          "e8e5",
+          "d4e5",
+          "g7g6",
+          "f5f2",
+          "h7h6",
+          "f2g2",
+          "g6b6",
+          "g1f1"
+        ]
+      },
+      "humanBefore": {
+        "candidates": [
+          {
+            "probability": 0.3206,
+            "rank": 1,
+            "uci": "b4b5"
+          },
+          {
+            "probability": 0.113,
+            "rank": 2,
+            "uci": "e5d7"
+          },
+          {
+            "probability": 0.0953,
+            "rank": 3,
+            "uci": "f2f5"
+          },
+          {
+            "probability": 0.0799,
+            "rank": 4,
+            "uci": "a2d5"
+          },
+          {
+            "probability": 0.0449,
+            "rank": 5,
+            "uci": "a2c4"
+          }
+        ],
+        "winProbability": 0.4439
+      },
+      "ply": 65
+    },
+    {
+      "afterMove": {
+        "evaluation": {
+          "kind": "centipawns",
+          "value": -221
+        },
+        "kind": "analyzed",
+        "principal_variation": [
+          "d2g2",
+          "d5f4",
+          "a2f7",
+          "g8g7",
+          "g5h6",
+          "g7h6",
+          "g2d2",
+          "h6g7",
+          "d2f4",
+          "e8e5",
+          "f4e5",
+          "a6f6",
+          "f7a2",
+          "f6e5",
+          "d4e5",
+          "b7e4",
+          "b1c1",
+          "c7c6",
+          "b4b5",
+          "c6b5",
+          "c1c7",
+          "g7f8",
+          "e5e6",
+          "a4b4",
+          "c7c8",
+          "f8e7",
+          "c8c7",
+          "e7d8",
+          "c7a7",
+          "b4a4",
+          "a7d7",
+          "d8e8",
+          "d7h7",
+          "e4c6",
+          "h7f7",
+          "a4b4"
+        ]
+      },
+      "engineBefore": {
+        "bestMove": "g6f5",
+        "depth": 16,
+        "evaluation": {
+          "kind": "centipawns",
+          "value": 202
+        },
+        "principalVariation": [
+          "g6f5",
+          "h2h4",
+          "a6d6",
+          "d2g2",
+          "g8f8",
+          "e5d7",
+          "d6d7",
+          "g5h6",
+          "f8e7",
+          "g2g5",
+          "e7d6"
+        ]
+      },
+      "humanBefore": {
+        "candidates": [
+          {
+            "probability": 0.8348,
+            "rank": 1,
+            "uci": "g6f5"
+          },
+          {
+            "probability": 0.0426,
+            "rank": 2,
+            "uci": "f7f6"
+          },
+          {
+            "probability": 0.0218,
+            "rank": 3,
+            "uci": "a4b4"
+          },
+          {
+            "probability": 0.0164,
+            "rank": 4,
+            "uci": "a6e6"
+          },
+          {
+            "probability": 0.0143,
+            "rank": 5,
+            "uci": "e8f8"
+          }
+        ],
+        "winProbability": 0.49
+      },
+      "ply": 66
+    },
+    {
+      "afterMove": {
+        "evaluation": {
+          "kind": "centipawns",
+          "value": 257
+        },
+        "kind": "analyzed",
+        "principal_variation": [
+          "e8e5",
+          "d4e5",
+          "a6b6",
+          "g1f1",
+          "b6e3",
+          "d2e3",
+          "d5e3",
+          "f1f2",
+          "b7d5",
+          "f2e3",
+          "f5f4",
+          "e3f4",
+          "d5a2",
+          "b1d1",
+          "a4b4",
+          "f4g3",
+          "b4a4"
+        ]
+      },
+      "engineBefore": {
+        "bestMove": "d2g2",
+        "depth": 16,
+        "evaluation": {
+          "kind": "centipawns",
+          "value": -221
+        },
+        "principalVariation": [
+          "d2g2",
+          "d5f4",
+          "a2f7",
+          "g8g7",
+          "g5h6",
+          "g7h6",
+          "g2d2",
+          "h6g7",
+          "d2f4",
+          "e8e5",
+          "f4e5",
+          "a6f6",
+          "f7a2",
+          "f6e5",
+          "d4e5",
+          "b7e4",
+          "b1c1",
+          "c7c6",
+          "b4b5",
+          "c6b5",
+          "c1c7",
+          "g7f8",
+          "e5e6",
+          "a4b4",
+          "c7c8",
+          "f8e7",
+          "c8c7",
+          "e7d8",
+          "c7a7",
+          "b4a4",
+          "a7d7",
+          "d8e8",
+          "d7h7",
+          "e4c6",
+          "h7f7",
+          "a4b4"
+        ]
+      },
+      "humanBefore": {
+        "candidates": [
+          {
+            "probability": 0.2535,
+            "rank": 1,
+            "uci": "d2g2"
+          },
+          {
+            "probability": 0.195,
+            "rank": 2,
+            "uci": "b4b5"
+          },
+          {
+            "probability": 0.1398,
+            "rank": 3,
+            "uci": "g5h6"
+          },
+          {
+            "probability": 0.0787,
+            "rank": 4,
+            "uci": "e5d7"
+          },
+          {
+            "probability": 0.0487,
+            "rank": 5,
+            "uci": "b1f1"
+          }
+        ],
+        "winProbability": 0.4807
+      },
+      "ply": 67
+    },
+    {
+      "afterMove": {
+        "evaluation": {
+          "kind": "centipawns",
+          "value": -260
+        },
+        "kind": "analyzed",
+        "principal_variation": [
+          "h4g3",
+          "h7h6",
+          "b1b3",
+          "e6g6",
+          "e5g6",
+          "a6g6",
+          "g1f1",
+          "g6g5",
+          "d2e2",
+          "g5c1",
+          "g3e1",
+          "c1f4",
+          "f1g1"
+        ]
+      },
+      "engineBefore": {
+        "bestMove": "e8e5",
+        "depth": 16,
+        "evaluation": {
+          "kind": "centipawns",
+          "value": 257
+        },
+        "principalVariation": [
+          "e8e5",
+          "d4e5",
+          "a6b6",
+          "g1f1",
+          "b6e3",
+          "d2e3",
+          "d5e3",
+          "f1f2",
+          "b7d5",
+          "f2e3",
+          "f5f4",
+          "e3f4",
+          "d5a2",
+          "b1d1",
+          "a4b4",
+          "f4g3",
+          "b4a4"
+        ]
+      },
+      "humanBefore": {
+        "candidates": [
+          {
+            "probability": 0.1944,
+            "rank": 1,
+            "uci": "f7f6"
+          },
+          {
+            "probability": 0.1367,
+            "rank": 2,
+            "uci": "f5f4"
+          },
+          {
+            "probability": 0.1106,
+            "rank": 3,
+            "uci": "a4b4"
+          },
+          {
+            "probability": 0.067,
+            "rank": 4,
+            "uci": "d5b4"
+          },
+          {
+            "probability": 0.0592,
+            "rank": 5,
+            "uci": "e8e6"
+          }
+        ],
+        "winProbability": 0.5259
+      },
+      "ply": 68
+    },
+    {
+      "afterMove": {
+        "evaluation": {
+          "kind": "centipawns",
+          "value": 287
+        },
+        "kind": "analyzed",
+        "principal_variation": [
+          "a6b6",
+          "h4f2",
+          "f5f4",
+          "h2h4",
+          "e6g6",
+          "g1h2",
+          "b6d6",
+          "d2d3",
+          "g6g2",
+          "h2g2",
+          "d5b4",
+          "g2g1",
+          "b4d3"
+        ]
+      },
+      "engineBefore": {
+        "bestMove": "h4g3",
+        "depth": 16,
+        "evaluation": {
+          "kind": "centipawns",
+          "value": -260
+        },
+        "principalVariation": [
+          "h4g3",
+          "h7h6",
+          "b1b3",
+          "e6g6",
+          "e5g6",
+          "a6g6",
+          "g1f1",
+          "g6g5",
+          "d2e2",
+          "g5c1",
+          "g3e1",
+          "c1f4",
+          "f1g1"
+        ]
+      },
+      "humanBefore": {
+        "candidates": [
+          {
+            "probability": 0.6524,
+            "rank": 1,
+            "uci": "d2g5"
+          },
+          {
+            "probability": 0.1168,
+            "rank": 2,
+            "uci": "d2g2"
+          },
+          {
+            "probability": 0.0577,
+            "rank": 3,
+            "uci": "b4b5"
+          },
+          {
+            "probability": 0.0551,
+            "rank": 4,
+            "uci": "h4g5"
+          },
+          {
+            "probability": 0.0239,
+            "rank": 5,
+            "uci": "e5d7"
+          }
+        ],
+        "winProbability": 0.5046
+      },
+      "ply": 69
+    },
+    {
+      "afterMove": {
+        "evaluation": {
+          "kind": "centipawns",
+          "value": -306
+        },
+        "kind": "analyzed",
+        "principal_variation": [
+          "h4g3",
+          "a6f6",
+          "b5b6",
+          "c7b6",
+          "e5g6",
+          "a4d4",
+          "d2e1",
+          "d4e4",
+          "a2d5",
+          "e4e1",
+          "b1e1",
+          "h7g6",
+          "e1e8",
+          "g8g7"
+        ]
+      },
+      "engineBefore": {
+        "bestMove": "a6b6",
+        "depth": 16,
+        "evaluation": {
+          "kind": "centipawns",
+          "value": 287
+        },
+        "principalVariation": [
+          "a6b6",
+          "h4f2",
+          "f5f4",
+          "h2h4",
+          "e6g6",
+          "g1h2",
+          "b6d6",
+          "d2d3",
+          "g6g2",
+          "h2g2",
+          "d5b4",
+          "g2g1",
+          "b4d3"
+        ]
+      },
+      "humanBefore": {
+        "candidates": [
+          {
+            "probability": 0.4081,
+            "rank": 1,
+            "uci": "a6a5"
+          },
+          {
+            "probability": 0.3249,
+            "rank": 2,
+            "uci": "a6b6"
+          },
+          {
+            "probability": 0.1028,
+            "rank": 3,
+            "uci": "a6a7"
+          },
+          {
+            "probability": 0.0786,
+            "rank": 4,
+            "uci": "a6d6"
+          },
+          {
+            "probability": 0.0293,
+            "rank": 5,
+            "uci": "a6a8"
+          }
+        ],
+        "winProbability": 0.4481
+      },
+      "ply": 70
+    },
+    {
+      "afterMove": {
+        "evaluation": {
+          "kind": "centipawns",
+          "value": 346
+        },
+        "kind": "analyzed",
+        "principal_variation": [
+          "a6g6",
+          "h4g3",
+          "f5f4",
+          "b1e1",
+          "a4a8",
+          "a2b1",
+          "g6g7",
+          "b1a2",
+          "f4g3",
+          "h2h3",
+          "g8h8",
+          "e1e5",
+          "a8g8",
+          "a2d5"
+        ]
+      },
+      "engineBefore": {
+        "bestMove": "h4g3",
+        "depth": 16,
+        "evaluation": {
+          "kind": "centipawns",
+          "value": -306
+        },
+        "principalVariation": [
+          "h4g3",
+          "a6f6",
+          "b5b6",
+          "c7b6",
+          "e5g6",
+          "a4d4",
+          "d2e1",
+          "d4e4",
+          "a2d5",
+          "e4e1",
+          "b1e1",
+          "h7g6",
+          "e1e8",
+          "g8g7"
+        ]
+      },
+      "humanBefore": {
+        "candidates": [
+          {
+            "probability": 0.2668,
+            "rank": 1,
+            "uci": "e5g6"
+          },
+          {
+            "probability": 0.1652,
+            "rank": 2,
+            "uci": "g1f2"
+          },
+          {
+            "probability": 0.1583,
+            "rank": 3,
+            "uci": "g1f1"
+          },
+          {
+            "probability": 0.1517,
+            "rank": 4,
+            "uci": "g1h1"
+          },
+          {
+            "probability": 0.1196,
+            "rank": 5,
+            "uci": "h4g3"
+          }
+        ],
+        "winProbability": 0.593
+      },
+      "ply": 71
+    },
+    {
+      "afterMove": {
+        "evaluation": {
+          "kind": "centipawns",
+          "value": -353
+        },
+        "kind": "analyzed",
+        "principal_variation": [
+          "g1f2",
+          "d5f6",
+          "h4f6",
+          "g6f6",
+          "b1g1",
+          "g8f8",
+          "g1g3",
+          "f5f4",
+          "g3h3",
+          "a4d4",
+          "d2a5",
+          "d4d6",
+          "a5b4",
+          "f6b2",
+          "b4b2",
+          "a3b2",
+          "h3h7"
+        ]
+      },
+      "engineBefore": {
+        "bestMove": "a6g6",
+        "depth": 16,
+        "evaluation": {
+          "kind": "centipawns",
+          "value": 346
+        },
+        "principalVariation": [
+          "a6g6",
+          "h4g3",
+          "f5f4",
+          "b1e1",
+          "a4a8",
+          "a2b1",
+          "g6g7",
+          "b1a2",
+          "f4g3",
+          "h2h3",
+          "g8h8",
+          "e1e5",
+          "a8g8",
+          "a2d5"
+        ]
+      },
+      "humanBefore": {
+        "candidates": [
+          {
+            "probability": 0.9045,
+            "rank": 1,
+            "uci": "a6g6"
+          },
+          {
+            "probability": 0.0249,
+            "rank": 2,
+            "uci": "a6b6"
+          },
+          {
+            "probability": 0.0237,
+            "rank": 3,
+            "uci": "a6a5"
+          },
+          {
+            "probability": 0.014,
+            "rank": 4,
+            "uci": "h7g6"
+          },
+          {
+            "probability": 0.0091,
+            "rank": 5,
+            "uci": "f7g6"
+          }
+        ],
+        "winProbability": 0.4678
+      },
+      "ply": 72
+    },
+    {
+      "afterMove": {
+        "evaluation": {
+          "kind": "centipawns",
+          "value": 472
+        },
+        "kind": "analyzed",
+        "principal_variation": [
+          "h7h6",
+          "b1b3",
+          "f5f4",
+          "b3g3",
+          "f4g3",
+          "g5h6",
+          "g3h2",
+          "g1h2",
+          "g6h5",
+          "h2g3",
+          "h5f5",
+          "d2e2",
+          "f5g6",
+          "g3f2",
+          "g6h6"
+        ]
+      },
+      "engineBefore": {
+        "bestMove": "g1f2",
+        "depth": 16,
+        "evaluation": {
+          "kind": "centipawns",
+          "value": -353
+        },
+        "principalVariation": [
+          "g1f2",
+          "d5f6",
+          "h4f6",
+          "g6f6",
+          "b1g1",
+          "g8f8",
+          "g1g3",
+          "f5f4",
+          "g3h3",
+          "a4d4",
+          "d2a5",
+          "d4d6",
+          "a5b4",
+          "f6b2",
+          "b4b2",
+          "a3b2",
+          "h3h7"
+        ]
+      },
+      "humanBefore": {
+        "candidates": [
+          {
+            "probability": 0.2574,
+            "rank": 1,
+            "uci": "h4g3"
+          },
+          {
+            "probability": 0.1727,
+            "rank": 2,
+            "uci": "g1h1"
+          },
+          {
+            "probability": 0.1479,
+            "rank": 3,
+            "uci": "d2g2"
+          },
+          {
+            "probability": 0.1433,
+            "rank": 4,
+            "uci": "g1f1"
+          },
+          {
+            "probability": 0.1038,
+            "rank": 5,
+            "uci": "d2g5"
+          }
+        ],
+        "winProbability": 0.3651
+      },
+      "ply": 73
+    },
+    {
+      "afterMove": {
+        "evaluation": {
+          "kind": "centipawns",
+          "value": -470
+        },
+        "kind": "analyzed",
+        "principal_variation": [
+          "b5b6",
+          "c7b6",
+          "h2h4",
+          "h6g5",
+          "h4g5",
+          "f5f4",
+          "d2g2",
+          "a4d4",
+          "b1e1",
+          "g8g7",
+          "e1e8",
+          "d4d1",
+          "g1h2",
+          "g6h5",
+          "g2h3",
+          "h5h3",
+          "h2h3"
+        ]
+      },
+      "engineBefore": {
+        "bestMove": "h7h6",
+        "depth": 16,
+        "evaluation": {
+          "kind": "centipawns",
+          "value": 472
+        },
+        "principalVariation": [
+          "h7h6",
+          "b1b3",
+          "f5f4",
+          "b3g3",
+          "f4g3",
+          "g5h6",
+          "g3h2",
+          "g1h2",
+          "g6h5",
+          "h2g3",
+          "h5f5",
+          "d2e2",
+          "f5g6",
+          "g3f2",
+          "g6h6"
+        ]
+      },
+      "humanBefore": {
+        "candidates": [
+          {
+            "probability": 0.4446,
+            "rank": 1,
+            "uci": "h7h6"
+          },
+          {
+            "probability": 0.247,
+            "rank": 2,
+            "uci": "f5f4"
+          },
+          {
+            "probability": 0.1414,
+            "rank": 3,
+            "uci": "f7f6"
+          },
+          {
+            "probability": 0.0267,
+            "rank": 4,
+            "uci": "d5f6"
+          },
+          {
+            "probability": 0.0251,
+            "rank": 5,
+            "uci": "a4d4"
+          }
+        ],
+        "winProbability": 0.2398
+      },
+      "ply": 74
+    },
+    {
+      "afterMove": {
+        "evaluation": {
+          "kind": "centipawns",
+          "value": 607
+        },
+        "kind": "analyzed",
+        "principal_variation": [
+          "g6g5",
+          "d2g2",
+          "g5g2",
+          "g1g2",
+          "a4d4",
+          "c1a1",
+          "g8g7",
+          "g2g1",
+          "d4g4",
+          "g1f2",
+          "d5f6",
+          "f2e3"
+        ]
+      },
+      "engineBefore": {
+        "bestMove": "b5b6",
+        "depth": 16,
+        "evaluation": {
+          "kind": "centipawns",
+          "value": -470
+        },
+        "principalVariation": [
+          "b5b6",
+          "c7b6",
+          "h2h4",
+          "h6g5",
+          "h4g5",
+          "f5f4",
+          "d2g2",
+          "a4d4",
+          "b1e1",
+          "g8g7",
+          "e1e8",
+          "d4d1",
+          "g1h2",
+          "g6h5",
+          "g2h3",
+          "h5h3",
+          "h2h3"
+        ]
+      },
+      "humanBefore": {
+        "candidates": [
+          {
+            "probability": 0.3737,
+            "rank": 1,
+            "uci": "h2h4"
+          },
+          {
+            "probability": 0.1746,
+            "rank": 2,
+            "uci": "a2d5"
+          },
+          {
+            "probability": 0.0886,
+            "rank": 3,
+            "uci": "b1e1"
+          },
+          {
+            "probability": 0.0879,
+            "rank": 4,
+            "uci": "d2g2"
+          },
+          {
+            "probability": 0.0528,
+            "rank": 5,
+            "uci": "g1h1"
+          }
+        ],
+        "winProbability": 0.1927
+      },
+      "ply": 75
+    },
+    {
+      "afterMove": {
+        "evaluation": {
+          "kind": "centipawns",
+          "value": -509
+        },
+        "kind": "analyzed",
+        "principal_variation": [
+          "b5b6",
+          "c7b6",
+          "h2h4",
+          "h6g5",
+          "h4g5",
+          "g6h5",
+          "c1e1",
+          "h5g4",
+          "g1h2",
+          "g4h4",
+          "h2g1",
+          "h7g7",
+          "e1e8",
+          "h4d4",
+          "d2d4",
+          "a4d4"
+        ]
+      },
+      "engineBefore": {
+        "bestMove": "g6g5",
+        "depth": 16,
+        "evaluation": {
+          "kind": "centipawns",
+          "value": 607
+        },
+        "principalVariation": [
+          "g6g5",
+          "d2g2",
+          "g5g2",
+          "g1g2",
+          "a4d4",
+          "c1a1",
+          "g8g7",
+          "g2g1",
+          "d4g4",
+          "g1f2",
+          "d5f6",
+          "f2e3"
+        ]
+      },
+      "humanBefore": {
+        "candidates": [
+          {
+            "probability": 0.591,
+            "rank": 1,
+            "uci": "h6g5"
+          },
+          {
+            "probability": 0.3657,
+            "rank": 2,
+            "uci": "g6g5"
+          },
+          {
+            "probability": 0.0082,
+            "rank": 3,
+            "uci": "f5f4"
+          },
+          {
+            "probability": 0.0079,
+            "rank": 4,
+            "uci": "a4b4"
+          },
+          {
+            "probability": 0.0069,
+            "rank": 5,
+            "uci": "f7f6"
+          }
+        ],
+        "winProbability": 0.1572
+      },
+      "ply": 76
+    },
+    {
+      "afterMove": {
+        "evaluation": {
+          "kind": "centipawns",
+          "value": 490
+        },
+        "kind": "analyzed",
+        "principal_variation": [
+          "h6g5",
+          "h4g5",
+          "h7g7",
+          "c1e1",
+          "g6b6",
+          "e1d1",
+          "b6d6",
+          "d2e1",
+          "d6e7",
+          "e1e5",
+          "e7e5",
+          "d4e5",
+          "a4e4",
+          "g5g6",
+          "f7g6",
+          "a2d5",
+          "b7d5",
+          "d1d5",
+          "e4e1",
+          "g1f2"
+        ]
+      },
+      "engineBefore": {
+        "bestMove": "b5b6",
+        "depth": 16,
+        "evaluation": {
+          "kind": "centipawns",
+          "value": -509
+        },
+        "principalVariation": [
+          "b5b6",
+          "c7b6",
+          "h2h4",
+          "h6g5",
+          "h4g5",
+          "g6h5",
+          "c1e1",
+          "h5g4",
+          "g1h2",
+          "g4h4",
+          "h2g1",
+          "h7g7",
+          "e1e8",
+          "h4d4",
+          "d2d4",
+          "a4d4"
+        ]
+      },
+      "humanBefore": {
+        "candidates": [
+          {
+            "probability": 0.3245,
+            "rank": 1,
+            "uci": "h2h4"
+          },
+          {
+            "probability": 0.1951,
+            "rank": 2,
+            "uci": "a2d5"
+          },
+          {
+            "probability": 0.0852,
+            "rank": 3,
+            "uci": "c1c7"
+          },
+          {
+            "probability": 0.0667,
+            "rank": 4,
+            "uci": "d2g2"
+          },
+          {
+            "probability": 0.0496,
+            "rank": 5,
+            "uci": "g1h1"
+          }
+        ],
+        "winProbability": 0.1836
+      },
+      "ply": 77
+    },
+    {
+      "afterMove": {
+        "evaluation": {
+          "kind": "centipawns",
+          "value": -408
+        },
+        "kind": "analyzed",
+        "principal_variation": [
+          "c1d1",
+          "h6g5",
+          "h4g5",
+          "h7g8",
+          "g1f1",
+          "g7h8",
+          "f1g1",
+          "h8h5",
+          "g5g6",
+          "g8g7",
+          "g6f7",
+          "h5g4",
+          "g1f1"
+        ]
+      },
+      "engineBefore": {
+        "bestMove": "h6g5",
+        "depth": 16,
+        "evaluation": {
+          "kind": "centipawns",
+          "value": 490
+        },
+        "principalVariation": [
+          "h6g5",
+          "h4g5",
+          "h7g7",
+          "c1e1",
+          "g6b6",
+          "e1d1",
+          "b6d6",
+          "d2e1",
+          "d6e7",
+          "e1e5",
+          "e7e5",
+          "d4e5",
+          "a4e4",
+          "g5g6",
+          "f7g6",
+          "a2d5",
+          "b7d5",
+          "d1d5",
+          "e4e1",
+          "g1f2"
+        ]
+      },
+      "humanBefore": {
+        "candidates": [
+          {
+            "probability": 0.781,
+            "rank": 1,
+            "uci": "h6g5"
+          },
+          {
+            "probability": 0.0971,
+            "rank": 2,
+            "uci": "f7f6"
+          },
+          {
+            "probability": 0.0328,
+            "rank": 3,
+            "uci": "f5f4"
+          },
+          {
+            "probability": 0.0259,
+            "rank": 4,
+            "uci": "a4b4"
+          },
+          {
+            "probability": 0.0153,
+            "rank": 5,
+            "uci": "d5b4"
+          }
+        ],
+        "winProbability": 0.2136
+      },
+      "ply": 78
+    },
+    {
+      "afterMove": {
+        "evaluation": {
+          "kind": "centipawns",
+          "value": 410
+        },
+        "kind": "analyzed",
+        "principal_variation": [
+          "g7d4",
+          "f2d4",
+          "a4d4",
+          "g5d8",
+          "d4d2",
+          "a2d5",
+          "d2d5",
+          "d8c7",
+          "a3a2",
+          "c1a1",
+          "d5c5",
+          "b5b6",
+          "c5c2",
+          "g1f1",
+          "c2b2",
+          "c7e5",
+          "b2b1",
+          "f1e2"
+        ]
+      },
+      "engineBefore": {
+        "bestMove": "c1d1",
+        "depth": 16,
+        "evaluation": {
+          "kind": "centipawns",
+          "value": -408
+        },
+        "principalVariation": [
+          "c1d1",
+          "h6g5",
+          "h4g5",
+          "h7g8",
+          "g1f1",
+          "g7h8",
+          "f1g1",
+          "h8h5",
+          "g5g6",
+          "g8g7",
+          "g6f7",
+          "h5g4",
+          "g1f1"
+        ]
+      },
+      "humanBefore": {
+        "candidates": [
+          {
+            "probability": 0.2618,
+            "rank": 1,
+            "uci": "a2d5"
+          },
+          {
+            "probability": 0.128,
+            "rank": 2,
+            "uci": "a2b1"
+          },
+          {
+            "probability": 0.1047,
+            "rank": 3,
+            "uci": "c1c7"
+          },
+          {
+            "probability": 0.0874,
+            "rank": 4,
+            "uci": "d2c2"
+          },
+          {
+            "probability": 0.0512,
+            "rank": 5,
+            "uci": "c1f1"
+          }
+        ],
+        "winProbability": 0.2242
+      },
+      "ply": 79
+    },
+    {
+      "afterMove": {
+        "evaluation": {
+          "kind": "centipawns",
+          "value": -402
+        },
+        "kind": "analyzed",
+        "principal_variation": [
+          "f2d4",
+          "a4d4",
+          "g5d8",
+          "d4d2",
+          "a2d5",
+          "d2d5",
+          "d8c7",
+          "a3a2",
+          "c1a1",
+          "d5d2",
+          "h4h5",
+          "d2b2",
+          "c7e5",
+          "b2b5",
+          "e5f6",
+          "b5b6",
+          "f6d4",
+          "b6a6",
+          "g1f2",
+          "a6a4"
+        ]
+      },
+      "engineBefore": {
+        "bestMove": "g7d4",
+        "depth": 16,
+        "evaluation": {
+          "kind": "centipawns",
+          "value": 410
+        },
+        "principalVariation": [
+          "g7d4",
+          "f2d4",
+          "a4d4",
+          "g5d8",
+          "d4d2",
+          "a2d5",
+          "d2d5",
+          "d8c7",
+          "a3a2",
+          "c1a1",
+          "d5c5",
+          "b5b6",
+          "c5c2",
+          "g1f1",
+          "c2b2",
+          "c7e5",
+          "b2b1",
+          "f1e2"
+        ]
+      },
+      "humanBefore": {
+        "candidates": [
+          {
+            "probability": 0.7413,
+            "rank": 1,
+            "uci": "h6g5"
+          },
+          {
+            "probability": 0.1304,
+            "rank": 2,
+            "uci": "a4d4"
+          },
+          {
+            "probability": 0.0311,
+            "rank": 3,
+            "uci": "f7f6"
+          },
+          {
+            "probability": 0.0279,
+            "rank": 4,
+            "uci": "g7d4"
+          },
+          {
+            "probability": 0.0221,
+            "rank": 5,
+            "uci": "g7g6"
+          }
+        ],
+        "winProbability": 0.2075
+      },
+      "ply": 80
+    },
+    {
+      "afterMove": {
+        "evaluation": {
+          "kind": "centipawns",
+          "value": 438
+        },
+        "kind": "analyzed",
+        "principal_variation": [
+          "d4g4",
+          "f2g2",
+          "g4h4",
+          "d2e1",
+          "h4d4",
+          "g1h1",
+          "d4f4",
+          "c1c7",
+          "d5c7",
+          "g2b7",
+          "f4f1",
+          "h1h2",
+          "f1e2",
+          "h2h3",
+          "e2a2"
+        ]
+      },
+      "engineBefore": {
+        "bestMove": "f2d4",
+        "depth": 16,
+        "evaluation": {
+          "kind": "centipawns",
+          "value": -402
+        },
+        "principalVariation": [
+          "f2d4",
+          "a4d4",
+          "g5d8",
+          "d4d2",
+          "a2d5",
+          "d2d5",
+          "d8c7",
+          "a3a2",
+          "c1a1",
+          "d5d2",
+          "h4h5",
+          "d2b2",
+          "c7e5",
+          "b2b5",
+          "e5f6",
+          "b5b6",
+          "f6d4",
+          "b6a6",
+          "g1f2",
+          "a6a4"
+        ]
+      },
+      "humanBefore": {
+        "candidates": [
+          {
+            "probability": 0.4895,
+            "rank": 1,
+            "uci": "f2d4"
+          },
+          {
+            "probability": 0.2413,
+            "rank": 2,
+            "uci": "a2d5"
+          },
+          {
+            "probability": 0.0508,
+            "rank": 3,
+            "uci": "g5e3"
+          },
+          {
+            "probability": 0.0498,
+            "rank": 4,
+            "uci": "a2b1"
+          },
+          {
+            "probability": 0.028,
+            "rank": 5,
+            "uci": "g5d8"
+          }
+        ],
+        "winProbability": 0.2842
+      },
+      "ply": 81
+    },
+    {
+      "afterMove": {
+        "evaluation": {
+          "kind": "centipawns",
+          "value": -483
+        },
+        "kind": "analyzed",
+        "principal_variation": [
+          "f2g2",
+          "g4h4",
+          "a2b1",
+          "h4d4",
+          "g2f2",
+          "d4g4",
+          "g1f1",
+          "d5f4",
+          "c1c7",
+          "b7d5",
+          "f2e3",
+          "g4g2",
+          "f1e1",
+          "g2h1",
+          "e1f2",
+          "h1b1",
+          "e3e8",
+          "f4d3",
+          "f2g3",
+          "b1g1",
+          "g3h3"
+        ]
+      },
+      "engineBefore": {
+        "bestMove": "d4g4",
+        "depth": 16,
+        "evaluation": {
+          "kind": "centipawns",
+          "value": 438
+        },
+        "principalVariation": [
+          "d4g4",
+          "f2g2",
+          "g4h4",
+          "d2e1",
+          "h4d4",
+          "g1h1",
+          "d4f4",
+          "c1c7",
+          "d5c7",
+          "g2b7",
+          "f4f1",
+          "h1h2",
+          "f1e2",
+          "h2h3",
+          "e2a2"
+        ]
+      },
+      "humanBefore": {
+        "candidates": [
+          {
+            "probability": 0.6435,
+            "rank": 1,
+            "uci": "d4g4"
+          },
+          {
+            "probability": 0.1411,
+            "rank": 2,
+            "uci": "d4f2"
+          },
+          {
+            "probability": 0.0947,
+            "rank": 3,
+            "uci": "d4b2"
+          },
+          {
+            "probability": 0.0296,
+            "rank": 4,
+            "uci": "d4g7"
+          },
+          {
+            "probability": 0.022,
+            "rank": 5,
+            "uci": "d4h4"
+          }
+        ],
+        "winProbability": 0.2875
+      },
+      "ply": 82
+    },
+    {
+      "afterMove": {
+        "evaluation": {
+          "kind": "centipawns",
+          "value": 661
+        },
+        "kind": "analyzed",
+        "principal_variation": [
+          "a4e4",
+          "a2d5",
+          "b7d5",
+          "d2e3",
+          "a3a2",
+          "b5b6",
+          "c7b6",
+          "f2e2",
+          "g4h3",
+          "f1f2",
+          "h3h2",
+          "f2e1"
+        ]
+      },
+      "engineBefore": {
+        "bestMove": "f2g2",
+        "depth": 16,
+        "evaluation": {
+          "kind": "centipawns",
+          "value": -483
+        },
+        "principalVariation": [
+          "f2g2",
+          "g4h4",
+          "a2b1",
+          "h4d4",
+          "g2f2",
+          "d4g4",
+          "g1f1",
+          "d5f4",
+          "c1c7",
+          "b7d5",
+          "f2e3",
+          "g4g2",
+          "f1e1",
+          "g2h1",
+          "e1f2",
+          "h1b1",
+          "e3e8",
+          "f4d3",
+          "f2g3",
+          "b1g1",
+          "g3h3"
+        ]
+      },
+      "humanBefore": {
+        "candidates": [
+          {
+            "probability": 0.6678,
+            "rank": 1,
+            "uci": "g1f1"
+          },
+          {
+            "probability": 0.1623,
+            "rank": 2,
+            "uci": "f2g2"
+          },
+          {
+            "probability": 0.1216,
+            "rank": 3,
+            "uci": "g1h2"
+          },
+          {
+            "probability": 0.0466,
+            "rank": 4,
+            "uci": "g1h1"
+          },
+          {
+            "probability": 0.0017,
+            "rank": 5,
+            "uci": "f2g3"
+          }
+        ],
+        "winProbability": 0.2123
+      },
+      "ply": 83
+    },
+    {
+      "afterMove": {
+        "evaluation": {
+          "kind": "centipawns",
+          "value": -605
+        },
+        "kind": "analyzed",
+        "principal_variation": [
+          "f2g2",
+          "g4g2",
+          "f1g2",
+          "e4e2",
+          "g2g1",
+          "e2d2",
+          "c1a1",
+          "h7g6",
+          "a2b3",
+          "f5f4",
+          "a1a3",
+          "g6h5",
+          "b3d5",
+          "d2d5"
+        ]
+      },
+      "engineBefore": {
+        "bestMove": "a4e4",
+        "depth": 16,
+        "evaluation": {
+          "kind": "centipawns",
+          "value": 661
+        },
+        "principalVariation": [
+          "a4e4",
+          "a2d5",
+          "b7d5",
+          "d2e3",
+          "a3a2",
+          "b5b6",
+          "c7b6",
+          "f2e2",
+          "g4h3",
+          "f1f2",
+          "h3h2",
+          "f2e1"
+        ]
+      },
+      "humanBefore": {
+        "candidates": [
+          {
+            "probability": 0.5893,
+            "rank": 1,
+            "uci": "g4h3"
+          },
+          {
+            "probability": 0.1028,
+            "rank": 2,
+            "uci": "d5f4"
+          },
+          {
+            "probability": 0.0532,
+            "rank": 3,
+            "uci": "g4h4"
+          },
+          {
+            "probability": 0.0514,
+            "rank": 4,
+            "uci": "a4f4"
+          },
+          {
+            "probability": 0.0418,
+            "rank": 5,
+            "uci": "f5f4"
+          }
+        ],
+        "winProbability": 0.3075
+      },
+      "ply": 84
+    },
+    {
+      "afterMove": {
+        "evaluation": {
+          "kind": "centipawns",
+          "value": 1117
+        },
+        "kind": "analyzed",
+        "principal_variation": [
+          "d5c3",
+          "a2d5",
+          "b7d5",
+          "f2d4",
+          "g4e2",
+          "f1g1",
+          "e4g4",
+          "d4g4",
+          "e2g4",
+          "g1f2",
+          "g4g2",
+          "f2e3"
+        ]
+      },
+      "engineBefore": {
+        "bestMove": "f2g2",
+        "depth": 16,
+        "evaluation": {
+          "kind": "centipawns",
+          "value": -605
+        },
+        "principalVariation": [
+          "f2g2",
+          "g4g2",
+          "f1g2",
+          "e4e2",
+          "g2g1",
+          "e2d2",
+          "c1a1",
+          "h7g6",
+          "a2b3",
+          "f5f4",
+          "a1a3",
+          "g6h5",
+          "b3d5",
+          "d2d5"
+        ]
+      },
+      "humanBefore": {
+        "candidates": [
+          {
+            "probability": 0.389,
+            "rank": 1,
+            "uci": "a2d5"
+          },
+          {
+            "probability": 0.1644,
+            "rank": 2,
+            "uci": "a2b1"
+          },
+          {
+            "probability": 0.1293,
+            "rank": 3,
+            "uci": "c1e1"
+          },
+          {
+            "probability": 0.0639,
+            "rank": 4,
+            "uci": "c1c7"
+          },
+          {
+            "probability": 0.0465,
+            "rank": 5,
+            "uci": "c1c5"
+          }
+        ],
+        "winProbability": 0.2234
+      },
+      "ply": 85
+    },
+    {
+      "afterMove": {
+        "evaluation": {
+          "kind": "centipawns",
+          "value": -1346
+        },
+        "kind": "analyzed",
+        "principal_variation": [
+          "d2c3",
+          "g4h3",
+          "f2g2",
+          "e4f4",
+          "f1e2",
+          "h3g2",
+          "e2d3",
+          "f4f3",
+          "d3c4",
+          "g2a2",
+          "c4b4",
+          "a2b1",
+          "b4c4",
+          "b1c2",
+          "b5b6",
+          "c2c3",
+          "c4b5"
+        ]
+      },
+      "engineBefore": {
+        "bestMove": "d5c3",
+        "depth": 16,
+        "evaluation": {
+          "kind": "centipawns",
+          "value": 1117
+        },
+        "principalVariation": [
+          "d5c3",
+          "a2d5",
+          "b7d5",
+          "f2d4",
+          "g4e2",
+          "f1g1",
+          "e4g4",
+          "d4g4",
+          "e2g4",
+          "g1f2",
+          "g4g2",
+          "f2e3"
+        ]
+      },
+      "humanBefore": {
+        "candidates": [
+          {
+            "probability": 0.6782,
+            "rank": 1,
+            "uci": "d5c3"
+          },
+          {
+            "probability": 0.2081,
+            "rank": 2,
+            "uci": "g4d1"
+          },
+          {
+            "probability": 0.0316,
+            "rank": 3,
+            "uci": "g4h4"
+          },
+          {
+            "probability": 0.0169,
+            "rank": 4,
+            "uci": "e4f4"
+          },
+          {
+            "probability": 0.0123,
+            "rank": 5,
+            "uci": "f5f4"
+          }
+        ],
+        "winProbability": 0.2389
+      },
+      "ply": 86
+    },
+    {
+      "afterMove": {
+        "evaluation": {
+          "kind": "mateIn",
+          "value": 2
+        },
+        "kind": "analyzed",
+        "principal_variation": [
+          "e4e1",
+          "f2e1",
+          "g4g2"
+        ]
+      },
+      "engineBefore": {
+        "bestMove": "d2c3",
+        "depth": 16,
+        "evaluation": {
+          "kind": "centipawns",
+          "value": -1346
+        },
+        "principalVariation": [
+          "d2c3",
+          "g4h3",
+          "f2g2",
+          "e4f4",
+          "f1e2",
+          "h3g2",
+          "e2d3",
+          "f4f3",
+          "d3c4",
+          "g2a2",
+          "c4b4",
+          "a2b1",
+          "b4c4",
+          "b1c2",
+          "b5b6",
+          "c2c3",
+          "c4b5"
+        ]
+      },
+      "humanBefore": {
+        "candidates": [
+          {
+            "probability": 0.691,
+            "rank": 1,
+            "uci": "d2c3"
+          },
+          {
+            "probability": 0.2292,
+            "rank": 2,
+            "uci": "a2f7"
+          },
+          {
+            "probability": 0.0292,
+            "rank": 3,
+            "uci": "a2b3"
+          },
+          {
+            "probability": 0.0114,
+            "rank": 4,
+            "uci": "a2b1"
+          },
+          {
+            "probability": 0.0085,
+            "rank": 5,
+            "uci": "a2d5"
+          }
+        ],
+        "winProbability": 0.162
+      },
+      "ply": 87
+    },
+    {
+      "afterMove": {
+        "evaluation": {
+          "kind": "mateIn",
+          "value": -1
+        },
+        "kind": "analyzed",
+        "principal_variation": [
+          "f1e1",
+          "g4d1"
+        ]
+      },
+      "engineBefore": {
+        "bestMove": "e4e1",
+        "depth": 16,
+        "evaluation": {
+          "kind": "mateIn",
+          "value": 2
+        },
+        "principalVariation": [
+          "e4e1",
+          "f2e1",
+          "g4g2"
+        ]
+      },
+      "humanBefore": {
+        "candidates": [
+          {
+            "probability": 0.4275,
+            "rank": 1,
+            "uci": "h6g5"
+          },
+          {
+            "probability": 0.2129,
+            "rank": 2,
+            "uci": "c3a2"
+          },
+          {
+            "probability": 0.1261,
+            "rank": 3,
+            "uci": "g4h3"
+          },
+          {
+            "probability": 0.083,
+            "rank": 4,
+            "uci": "g4d1"
+          },
+          {
+            "probability": 0.0579,
+            "rank": 5,
+            "uci": "e4e2"
+          }
+        ],
+        "winProbability": 0.088
+      },
+      "ply": 88
+    },
+    {
+      "afterMove": {
+        "evaluation": {
+          "kind": "mateIn",
+          "value": 1
+        },
+        "kind": "analyzed",
+        "principal_variation": [
+          "g4d1"
+        ]
+      },
+      "engineBefore": {
+        "bestMove": "f1e1",
+        "depth": 16,
+        "evaluation": {
+          "kind": "mateIn",
+          "value": -1
+        },
+        "principalVariation": [
+          "f1e1",
+          "g4d1"
+        ]
+      },
+      "humanBefore": {
+        "candidates": [
+          {
+            "probability": 0.7317,
+            "rank": 1,
+            "uci": "f2e1"
+          },
+          {
+            "probability": 0.2683,
+            "rank": 2,
+            "uci": "f1e1"
+          }
+        ],
+        "winProbability": 0.1596
+      },
+      "ply": 89
+    },
+    {
+      "afterMove": {
+        "kind": "terminal"
+      },
+      "engineBefore": {
+        "bestMove": "g4d1",
+        "depth": 16,
+        "evaluation": {
+          "kind": "mateIn",
+          "value": 1
+        },
+        "principalVariation": [
+          "g4d1"
+        ]
+      },
+      "humanBefore": {
+        "candidates": [
+          {
+            "probability": 0.4782,
+            "rank": 1,
+            "uci": "h6g5"
+          },
+          {
+            "probability": 0.244,
+            "rank": 2,
+            "uci": "c3a2"
+          },
+          {
+            "probability": 0.1172,
+            "rank": 3,
+            "uci": "g4d1"
+          },
+          {
+            "probability": 0.0912,
+            "rank": 4,
+            "uci": "g4e4"
+          },
+          {
+            "probability": 0.0246,
+            "rank": 5,
+            "uci": "c3e4"
+          }
+        ],
+        "winProbability": 0.1281
+      },
+      "ply": 90
+    }
+  ],
+  "id": "full-game",
+  "input": {
+    "elo": 1246,
+    "operation": {
+      "kind": "game",
+      "reviewSide": "black"
+    },
+    "pgn": "[Event \"rated rapid game\"]\n[Site \"https://lichess.org/Synthet1\"]\n[Date \"2026.01.01\"]\n[Round \"-\"]\n[White \"synthetic-white\"]\n[Black \"synthetic-black\"]\n[Result \"0-1\"]\n[GameId \"Synthet1\"]\n[UTCDate \"2026.01.01\"]\n[UTCTime \"00:00:00\"]\n[WhiteElo \"1245\"]\n[BlackElo \"1246\"]\n[Variant \"Standard\"]\n[TimeControl \"600+5\"]\n[ECO \"A00\"]\n[Opening \"Saragossa Opening\"]\n[Termination \"Normal\"]\n\n1. c3 Nf6 2. d4 d6 3. Bf4 g6 4. a4 Bg7 5. Bg3 O-O 6. Nd2 b6 7. e4 Bh6 8. Ngf3 Nbd7 9. Bh4 a6 10. Bc4 Nh5 11. Ng5 b5 12. axb5 Ra7 13. O-O Nb6 14. Bb3 Ra8 15. f4 e6 16. Qg4 Qe8 17. Rf2 a5 18. e5 dxe5 19. Qe2 a4 20. Ba2 exd4 21. cxd4 Bb7 22. Re1 Nd5 23. g3 a3 24. Ndf3 Bxg5 25. Bxg5 Ng7 26. g4 Ra5 27. Qd2 Qxb5 28. Rb1 Qa6 29. b4 Ra4 30. f5 exf5 31. Ne5 Re8 32. gxf5 Nxf5 33. Rxf5 gxf5 34. Bh4 Re6 35. b5 Rg6+ 36. Nxg6 Qxg6+ 37. Bg5 h6 38. Rc1 Kh7 39. h4 Qg7 40. Qf2 Qxd4 41. Bd2 Qg4+ 42. Kf1 Re4 43. Rc3 Nxc3 44. Bg5 Re1+ 45. Kxe1 Qd1# 0-1\n"
+  },
+  "multiPvEvidence": [
+    {
+      "output": {
+        "provenance": {
+          "binarySha256": "bc0cac905ecdf2147fe22055c733bcd999b1e3f7c399fbaf7fb9055786563590",
+          "depth": 16,
+          "hashMib": 16,
+          "threads": 1,
+          "version": "18"
+        },
+        "requestedVariations": 3,
+        "variations": [
+          {
+            "analysis": {
+              "bestMove": "d7b6",
+              "depth": 16,
+              "evaluation": {
+                "kind": "centipawns",
+                "value": -62
+              },
+              "principalVariation": [
+                "d7b6",
+                "c4e2",
+                "e7e5",
+                "g5f3",
+                "g6g5",
+                "h4g5",
+                "h6g5",
+                "f3g5",
+                "h5f4",
+                "g2g3",
+                "f4e2",
+                "g5f3",
+                "e2c3",
+                "b2c3",
+                "a6b5",
+                "a1a8",
+                "b6a8",
+                "d4e5",
+                "d6e5",
+                "f3e5",
+                "d8d6",
+                "d2f3",
+                "d6d1",
+                "e1d1"
+              ]
+            },
+            "rank": 1
+          },
+          {
+            "analysis": {
+              "bestMove": "e7e6",
+              "depth": 16,
+              "evaluation": {
+                "kind": "centipawns",
+                "value": -104
+              },
+              "principalVariation": [
+                "e7e6",
+                "g5f3",
+                "g6g5",
+                "f3g1",
+                "h5f4",
+                "h4g3",
+                "f4g2",
+                "e1f1",
+                "g2h4",
+                "d1h5",
+                "g8g7",
+                "b5a6",
+                "d7b6",
+                "c4b5",
+                "h4g6"
+              ]
+            },
+            "rank": 2
+          },
+          {
+            "analysis": {
+              "bestMove": "d8e8",
+              "depth": 16,
+              "evaluation": {
+                "kind": "centipawns",
+                "value": -119
+              },
+              "principalVariation": [
+                "d8e8",
+                "b5a6",
+                "d7b6",
+                "c4f1",
+                "e7e5",
+                "g5f3",
+                "e5d4",
+                "c3d4",
+                "f7f5",
+                "e4e5",
+                "h5f4",
+                "h4g3",
+                "d6e5",
+                "d4e5",
+                "f4e6",
+                "h2h4",
+                "e8c6",
+                "f1e2",
+                "f8d8",
+                "e1g1",
+                "c6d7",
+                "d1b3"
+              ]
+            },
+            "rank": 3
+          }
+        ]
+      },
+      "ply": 24
+    },
+    {
+      "output": {
+        "provenance": {
+          "binarySha256": "bc0cac905ecdf2147fe22055c733bcd999b1e3f7c399fbaf7fb9055786563590",
+          "depth": 16,
+          "hashMib": 16,
+          "threads": 1,
+          "version": "18"
+        },
+        "requestedVariations": 3,
+        "variations": [
+          {
+            "analysis": {
+              "bestMove": "e8b5",
+              "depth": 16,
+              "evaluation": {
+                "kind": "centipawns",
+                "value": 75
+              },
+              "principalVariation": [
+                "e8b5",
+                "e1b1",
+                "b5a6",
+                "f3e5",
+                "f7f6",
+                "e5d7",
+                "f6g5",
+                "d7f8",
+                "d5f4",
+                "f2f4",
+                "g5f4",
+                "f8d7",
+                "a6d6",
+                "b2a3",
+                "d6d7",
+                "d2a5"
+              ]
+            },
+            "rank": 1
+          },
+          {
+            "analysis": {
+              "bestMove": "e8a8",
+              "depth": 16,
+              "evaluation": {
+                "kind": "centipawns",
+                "value": 56
+              },
+              "principalVariation": [
+                "e8a8",
+                "g5h6",
+                "d5f6",
+                "d4d5",
+                "f6g4",
+                "h6g7",
+                "g8g7",
+                "d2d4",
+                "f7f6",
+                "f3g5",
+                "g4f2",
+                "g5e6",
+                "g7h8",
+                "e6f8"
+              ]
+            },
+            "rank": 2
+          },
+          {
+            "analysis": {
+              "bestMove": "a5a8",
+              "depth": 16,
+              "evaluation": {
+                "kind": "centipawns",
+                "value": 13
+              },
+              "principalVariation": [
+                "a5a8",
+                "g5h6",
+                "e8b5",
+                "b2a3",
+                "a8a3",
+                "f3e5",
+                "f8a8",
+                "e1b1",
+                "b5a6",
+                "a2c4",
+                "a6a7",
+                "e5d7",
+                "f7f5"
+              ]
+            },
+            "rank": 3
+          }
+        ]
+      },
+      "ply": 54
+    },
+    {
+      "output": {
+        "provenance": {
+          "binarySha256": "bc0cac905ecdf2147fe22055c733bcd999b1e3f7c399fbaf7fb9055786563590",
+          "depth": 16,
+          "hashMib": 16,
+          "threads": 1,
+          "version": "18"
+        },
+        "requestedVariations": 3,
+        "variations": [
+          {
+            "analysis": {
+              "bestMove": "f7f6",
+              "depth": 16,
+              "evaluation": {
+                "kind": "centipawns",
+                "value": 192
+              },
+              "principalVariation": [
+                "f7f6",
+                "g4f5",
+                "g7f5",
+                "g5h6",
+                "f6e5",
+                "d4e5",
+                "f8e8",
+                "b1c1",
+                "a6b6",
+                "a2d5",
+                "b7d5",
+                "d2d5",
+                "b6e6",
+                "d5e6",
+                "e8e6"
+              ]
+            },
+            "rank": 1
+          },
+          {
+            "analysis": {
+              "bestMove": "a6d6",
+              "depth": 16,
+              "evaluation": {
+                "kind": "centipawns",
+                "value": 125
+              },
+              "principalVariation": [
+                "a6d6",
+                "e5c4",
+                "d6a6",
+                "b4b5",
+                "a6e6",
+                "b1e1",
+                "e6d7",
+                "g4f5",
+                "d7b5",
+                "e1b1",
+                "a4b4",
+                "b1b4",
+                "d5b4",
+                "c4a3",
+                "b5a4",
+                "g5e7",
+                "b4a2",
+                "e7f8",
+                "g8f8",
+                "f5g6",
+                "h7g6",
+                "d2a2"
+              ]
+            },
+            "rank": 2
+          },
+          {
+            "analysis": {
+              "bestMove": "a6b6",
+              "depth": 16,
+              "evaluation": {
+                "kind": "centipawns",
+                "value": 38
+              },
+              "principalVariation": [
+                "a6b6",
+                "e5d7",
+                "b6d6",
+                "d7f8",
+                "d6f8",
+                "b1e1",
+                "f8d6",
+                "g4f5",
+                "g7f5",
+                "e1e8",
+                "g8g7",
+                "e8d8",
+                "d6b4",
+                "d2b4",
+                "d5b4"
+              ]
+            },
+            "rank": 3
+          }
+        ]
+      },
+      "ply": 62
+    },
+    {
+      "output": {
+        "provenance": {
+          "binarySha256": "bc0cac905ecdf2147fe22055c733bcd999b1e3f7c399fbaf7fb9055786563590",
+          "depth": 16,
+          "hashMib": 16,
+          "threads": 1,
+          "version": "18"
+        },
+        "requestedVariations": 3,
+        "variations": [
+          {
+            "analysis": {
+              "bestMove": "g6f5",
+              "depth": 16,
+              "evaluation": {
+                "kind": "centipawns",
+                "value": 192
+              },
+              "principalVariation": [
+                "g6f5",
+                "h2h4",
+                "e8e6",
+                "h4h5",
+                "a6b6",
+                "g1h2",
+                "a4b4",
+                "d2g2",
+                "d5f6",
+                "b1b4",
+                "b7g2",
+                "b4b6",
+                "e6b6",
+                "a2f7",
+                "g8f8"
+              ]
+            },
+            "rank": 1
+          },
+          {
+            "analysis": {
+              "bestMove": "h7h6",
+              "depth": 16,
+              "evaluation": {
+                "kind": "centipawns",
+                "value": -301
+              },
+              "principalVariation": [
+                "h7h6",
+                "g5h6",
+                "f7f6",
+                "b1f1",
+                "g8h7",
+                "f5f2",
+                "a4b4",
+                "a2d5",
+                "b7d5",
+                "d2b4",
+                "h7h6",
+                "e5g4",
+                "h6g7"
+              ]
+            },
+            "rank": 2
+          },
+          {
+            "analysis": {
+              "bestMove": "a6b5",
+              "depth": 16,
+              "evaluation": {
+                "kind": "centipawns",
+                "value": -328
+              },
+              "principalVariation": [
+                "a6b5",
+                "f5f2",
+                "e8e5",
+                "d4e5",
+                "b5d7",
+                "g5h6",
+                "d7g4",
+                "f2g2",
+                "a4b4",
+                "b1b4"
+              ]
+            },
+            "rank": 3
+          }
+        ]
+      },
+      "ply": 66
+    },
+    {
+      "output": {
+        "provenance": {
+          "binarySha256": "bc0cac905ecdf2147fe22055c733bcd999b1e3f7c399fbaf7fb9055786563590",
+          "depth": 16,
+          "hashMib": 16,
+          "threads": 1,
+          "version": "18"
+        },
+        "requestedVariations": 3,
+        "variations": [
+          {
+            "analysis": {
+              "bestMove": "a6g6",
+              "depth": 16,
+              "evaluation": {
+                "kind": "centipawns",
+                "value": 328
+              },
+              "principalVariation": [
+                "a6g6",
+                "h4g3",
+                "f5f4",
+                "b1b3",
+                "g6g4",
+                "b3d3",
+                "g8f8",
+                "a2d5",
+                "b7d5",
+                "d2f4",
+                "g4f4",
+                "g3f4"
+              ]
+            },
+            "rank": 1
+          },
+          {
+            "analysis": {
+              "bestMove": "a6b6",
+              "depth": 16,
+              "evaluation": {
+                "kind": "centipawns",
+                "value": -132
+              },
+              "principalVariation": [
+                "a6b6",
+                "g6e5",
+                "b6d4",
+                "d2d4",
+                "a4d4",
+                "h4e1",
+                "g8g7",
+                "e5c6",
+                "d4g4",
+                "g1f2",
+                "g4f4",
+                "f2e2",
+                "f4e4",
+                "e2d3",
+                "d5f4",
+                "d3c3"
+              ]
+            },
+            "rank": 2
+          },
+          {
+            "analysis": {
+              "bestMove": "a6d6",
+              "depth": 16,
+              "evaluation": {
+                "kind": "centipawns",
+                "value": -244
+              },
+              "principalVariation": [
+                "a6d6",
+                "g6e5",
+                "g8f8",
+                "h4g5",
+                "f5f4",
+                "b1f1",
+                "d6b4",
+                "g5f4",
+                "d5f4",
+                "d2b4",
+                "a4b4",
+                "f1f4",
+                "b4b5",
+                "f4f7",
+                "f8e8",
+                "f7f2"
+              ]
+            },
+            "rank": 3
+          }
+        ]
+      },
+      "ply": 72
+    },
+    {
+      "output": {
+        "provenance": {
+          "binarySha256": "bc0cac905ecdf2147fe22055c733bcd999b1e3f7c399fbaf7fb9055786563590",
+          "depth": 16,
+          "hashMib": 16,
+          "threads": 1,
+          "version": "18"
+        },
+        "requestedVariations": 3,
+        "variations": [
+          {
+            "analysis": {
+              "bestMove": "h6g5",
+              "depth": 16,
+              "evaluation": {
+                "kind": "centipawns",
+                "value": 515
+              },
+              "principalVariation": [
+                "h6g5",
+                "f2f5",
+                "h7h6",
+                "h4g5",
+                "g7g5",
+                "f5g5",
+                "h6g5",
+                "g1f2",
+                "a4d4",
+                "c1c2",
+                "g5h4"
+              ]
+            },
+            "rank": 1
+          },
+          {
+            "analysis": {
+              "bestMove": "g7d4",
+              "depth": 16,
+              "evaluation": {
+                "kind": "centipawns",
+                "value": 391
+              },
+              "principalVariation": [
+                "g7d4",
+                "g5d2",
+                "d4g4",
+                "g1h2",
+                "a4d4",
+                "a2b1",
+                "b7c8",
+                "d2a5",
+                "c8e6",
+                "a5c7",
+                "d5c7",
+                "c1g1",
+                "g4h4",
+                "f2h4",
+                "d4h4",
+                "h2g3"
+              ]
+            },
+            "rank": 2
+          },
+          {
+            "analysis": {
+              "bestMove": "g7g6",
+              "depth": 16,
+              "evaluation": {
+                "kind": "centipawns",
+                "value": 386
+              },
+              "principalVariation": [
+                "g7g6",
+                "b5b6",
+                "h6g5",
+                "b6c7",
+                "d5f4",
+                "c1c3",
+                "g6h5",
+                "c3b3",
+                "h5g4",
+                "b3g3"
+              ]
+            },
+            "rank": 3
+          }
+        ]
+      },
+      "ply": 80
+    },
+    {
+      "output": {
+        "provenance": {
+          "binarySha256": "bc0cac905ecdf2147fe22055c733bcd999b1e3f7c399fbaf7fb9055786563590",
+          "depth": 16,
+          "hashMib": 16,
+          "threads": 1,
+          "version": "18"
+        },
+        "requestedVariations": 3,
+        "variations": [
+          {
+            "analysis": {
+              "bestMove": "e4e1",
+              "depth": 16,
+              "evaluation": {
+                "kind": "mateIn",
+                "value": 2
+              },
+              "principalVariation": [
+                "e4e1",
+                "f2e1",
+                "g4g2"
+              ]
+            },
+            "rank": 1
+          },
+          {
+            "analysis": {
+              "bestMove": "g4d1",
+              "depth": 16,
+              "evaluation": {
+                "kind": "mateIn",
+                "value": 4
+              },
+              "principalVariation": [
+                "g4d1",
+                "f1g2",
+                "e4g4",
+                "g2h3",
+                "d1h1",
+                "f2h2",
+                "b7g2"
+              ]
+            },
+            "rank": 2
+          },
+          {
+            "analysis": {
+              "bestMove": "g4h3",
+              "depth": 16,
+              "evaluation": {
+                "kind": "mateIn",
+                "value": 4
+              },
+              "principalVariation": [
+                "g4h3",
+                "f2g2",
+                "e4f4",
+                "g5f4",
+                "h3g2",
+                "f1e1",
+                "g2e2"
+              ]
+            },
+            "rank": 3
+          }
+        ]
+      },
+      "ply": 88
+    }
+  ],
+  "provenance": {
+    "maiaImage": "maia-runtime@sha256:ab3b6dc16b75c3602f2e6c4002dc0f99ef77c8c042641cffea66fc1c23482972",
+    "maiaModel": "rapid",
+    "maiaPackage": "maia2==0.11.0",
+    "stockfish": "Stockfish 18 depth 16"
+  }
+}

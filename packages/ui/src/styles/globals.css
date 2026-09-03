@@ -1,0 +1,78 @@
+@import "../theme/foundation.css";
+@import "./base.css" layer(chen-base);
+@import "../workspace/WatercolorBoard.css";
+@import "../workspace/review-session.css";
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* Touch target for the Watercolor buttons inside an Astryx dialog, which is
+   tapped on a phone. */
+.astryx-dialog .astryx-button {
+  min-height: 2.75rem;
+}
+
+.chen-dry-brush-circle {
+  position: absolute;
+  z-index: -1;
+  inset: -5%;
+  border-radius: 50%;
+  background: var(--color-text-primary);
+  mask-repeat: no-repeat;
+  mask-position: center;
+  mask-size: contain;
+}
+
+.chen-pigment-bloom {
+  position: absolute;
+  z-index: 4;
+  width: 12.5%;
+  aspect-ratio: 1;
+  translate: -50% -50%;
+  pointer-events: none;
+  border-radius: 50%;
+  background: var(--color-error);
+  mask-repeat: no-repeat;
+  mask-position: center;
+  mask-size: contain;
+}
+
+.chen-wash-panel {
+  mask-repeat: no-repeat;
+  mask-position: center;
+  mask-size: 115% 115%;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .chen-wash-panel,
+  .chen-pigment-bloom {
+    filter: none !important;
+    mask-image: none !important;
+  }
+
+  .chen-dry-brush-circle {
+    display: none;
+  }
+}
+
+/* The tooltip's torn silhouette. Astryx paints the popover itself, so its ink
+   surface lives on the theme's `tooltip` target (`theme/inkWash.ts`) — but the
+   theme builder cannot author an `@supports` block, so the shape() half of the
+   craft sits here, against the same seam. Browsers without shape() keep the
+   rectangular popover and its box-shadow. */
+@supports (clip-path: shape(from 0% 0%, line to 100% 100%)) {
+  .astryx-tooltip {
+    clip-path: var(--watercolor-shape-tooltip);
+    box-shadow: none;
+    filter: drop-shadow(0 0.5rem 0.9rem rgb(20 43 70 / 0.26));
+  }
+}

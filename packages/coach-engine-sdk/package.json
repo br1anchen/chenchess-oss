@@ -1,0 +1,25 @@
+{
+  "name": "@chenchess/coach-engine-sdk",
+  "private": true,
+  "license": "AGPL-3.0-or-later",
+  "version": "0.2.0",
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts",
+    "./chess-com-url": "./src/chess-com-url.ts",
+    "./contract-runtime": "./src/contract-runtime.ts",
+    "./schema": "./src/review-session.schema.json"
+  },
+  "scripts": {
+    "check": "tsc --project tsconfig.json",
+    "test": "vitest run src/decoder.test.ts src/client.test.ts src/construct.test.ts"
+  },
+  "dependencies": {
+    "chessops": "0.15.0",
+    "valibot": "1.4.2"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.2",
+    "vitest": "^2.1.8"
+  }
+}

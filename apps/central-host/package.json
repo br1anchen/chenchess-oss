@@ -1,0 +1,71 @@
+{
+  "name": "@chenchess/central-host",
+  "version": "0.1.0",
+  "private": true,
+  "license": "AGPL-3.0-or-later",
+  "type": "module",
+  "scripts": {
+    "build": "tsc -b --force && astro build && bun run verify:public-build && bun run build:server",
+    "build:server": "tsc --project tsconfig.server.json --noEmit && esbuild production.ts --bundle --platform=node --format=esm --packages=external --alias:@chenchess/coach-engine-sdk=../../packages/coach-engine-sdk/src --alias:@chenchess/review-projection=../../packages/review-projection/src --alias:@chenchess/shared-assets=../../packages/shared-assets/src --alias:@chenchess/ui/theme/built=../../packages/ui/src/theme/generated/ink-wash.js --outfile=server-dist/server.js && bun run verify:server-bundle",
+    "check": "tsc -b && tsc --project tsconfig.server.json --noEmit",
+    "dev": "bun run dev:runtime",
+    "dev:runtime": "bun --enable-source-maps dev.ts",
+    "emulator:auth": "firebase emulators:start --only auth --project chenchess-storybook",
+    "format": "oxfmt --check .",
+    "lint": "oxlint .",
+    "preview": "astro preview --host 127.0.0.1 --port 4174",
+    "test": "vitest run --minWorkers=1 --maxWorkers=50%",
+    "typecheck": "tsc -b && tsc --project tsconfig.server.json --noEmit",
+    "verify:public-build": "bun scripts/verifyPublicBuild.ts",
+    "verify:server-bundle": "bun scripts/verifyServerBundle.ts"
+  },
+  "dependencies": {
+    "@astrojs/react": "^4.3.0",
+    "@chenchess/coach-engine-sdk": "workspace:*",
+    "@chenchess/review-projection": "workspace:*",
+    "@chenchess/shared-assets": "workspace:*",
+    "@chenchess/ui": "workspace:*",
+    "@modelcontextprotocol/express": "2.0.0",
+    "@modelcontextprotocol/node": "2.0.0",
+    "@modelcontextprotocol/server": "2.0.0",
+    "@valibot/to-json-schema": "1.7.1",
+    "@vitejs/plugin-react": "^5.0.0",
+    "astro": "^5.13.0",
+    "chessops": "0.15.0",
+    "express": "5.2.1",
+    "firebase": "^12.16.0",
+    "firebase-admin": "14.2.0",
+    "jose": "6.2.4",
+    "oidc-provider": "9.10.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "valibot": "1.4.2",
+    "zod": "4.4.3"
+  },
+  "devDependencies": {
+    "@chenchess/coach-app": "workspace:*",
+    "@modelcontextprotocol/client": "2.0.0",
+    "@storybook/react-vite": "10.5.7",
+    "@testing-library/react": "^16.3.2",
+    "@testing-library/user-event": "^14.6.1",
+    "@types/express": "^5.0.6",
+    "@types/node": "^26.1.1",
+    "@types/oidc-provider": "^9.5.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "esbuild": "0.27.0",
+    "jsdom": "^29.1.1",
+    "msw": "2.14.7",
+    "msw-storybook-addon": "2.0.7",
+    "playwright": "1.62.0",
+    "storybook": "10.5.7",
+    "typescript": "^5.7.2",
+    "vite": "^6.0.0",
+    "vitest": "^2.1.8"
+  },
+  "msw": {
+    "workerDirectory": [
+      ".storybook/public"
+    ]
+  }
+}

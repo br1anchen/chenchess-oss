@@ -1,0 +1,83 @@
+{
+  "gameId": "Synthet1",
+  "synthetic": true,
+  "source": {
+    "sideQualifiedUrl": "https://lichess.org/Synthet1Demo/black",
+    "canonicalUrl": "https://lichess.org/Synthet1",
+    "exportRequest": {
+      "url": "https://lichess.org/game/export/Synthet1?clocks=false&evals=false&accuracy=false&literate=false&opening=true",
+      "accept": "application/x-chess-pgn",
+      "followedRedirects": false
+    },
+    "capturedAt": "2026-09-03T00:00:00Z",
+    "response": {
+      "path": "lichess-export.raw.pgn",
+      "bytes": 912,
+      "sha256": "0d104931a04c38c414fa7ba6a2c544ac2d67f70fd3c0acb33ad8074a3c274bd0",
+      "contentType": "application/x-chess-pgn"
+    }
+  },
+  "normalizedPgn": {
+    "path": "lichess-export.pgn",
+    "bytes": 911,
+    "sha256": "7eb4b0803c2b4fca8d80b3968928fe856bf15999626a402d9651694c0e80c799",
+    "normalization": "Removed one trailing blank line from the HTTP response."
+  },
+  "expectedGame": {
+    "variant": "Standard",
+    "speed": "rapid",
+    "timeControl": "600+5",
+    "reviewSide": "black",
+    "playerElo": 1246,
+    "plies": 90,
+    "result": "0-1",
+    "termination": "checkmate",
+    "opening": {
+      "eco": "A00",
+      "name": "Saragossa Opening"
+    }
+  },
+  "providerRecording": {
+    "capturedAt": "2026-09-03T00:00:00Z",
+    "case": {
+      "path": "provider-recordings/full-game.case.json",
+      "bytes": 167971,
+      "sha256": "47777081e8b3363e3ae12196173fb3515dee75fdbeacda8e3d8d507a45b4187a"
+    },
+    "baseline": {
+      "path": "provider-recordings/full-game.baseline.json",
+      "bytes": 55024,
+      "sha256": "f0732b9b546717977d09bf15020d00b64573eb7fd26aecfd4c77cc16d8221664"
+    },
+    "runtime": {
+      "unitVersion": "0.2.0-local-coach.4",
+      "stockfish": {
+        "version": "18",
+        "depth": 16,
+        "threads": 1,
+        "hashMib": 16,
+        "archiveSha256": "4d77c4aa3ad9bd1ea8111f2ac5a4620fe7ebf998d6893bf828d49ccd579c8cb0",
+        "binarySha256": "bc0cac905ecdf2147fe22055c733bcd999b1e3f7c399fbaf7fb9055786563590"
+      },
+      "maia": {
+        "image": "maia-runtime@sha256:ab3b6dc16b75c3602f2e6c4002dc0f99ef77c8c042641cffea66fc1c23482972",
+        "package": "maia2==0.11.0",
+        "model": "rapid",
+        "modelSha256": "65aae8465eed5e65df66a24ea7370715579f9e5435098d06fe18bdb1e267e997",
+        "configSha256": "4b06a5e6917dba8a55defaf3947ce97a73edca3ae2c9d225779a620353c1371b",
+        "playerElo": 1246,
+        "opponentElo": 1246,
+        "zeroProbabilityCandidates": 0
+      }
+    },
+    "multiPvComparison": {
+      "capturedAt": "2026-09-03T00:00:00Z",
+      "requestedVariations": 3,
+      "comparedMoments": 7,
+      "authoritativeRootDisagreements": 1,
+      "note": "MultiPV comparison searches recorded separately from the provider capture above. The Human Move Model is never consulted for a candidate comparison.",
+      "unitVersion": "0.2.0-local-coach.4",
+      "stockfishBinarySha256": "bc0cac905ecdf2147fe22055c733bcd999b1e3f7c399fbaf7fb9055786563590"
+    }
+  }
+}

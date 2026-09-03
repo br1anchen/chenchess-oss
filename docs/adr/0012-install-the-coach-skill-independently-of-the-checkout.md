@@ -1,0 +1,3 @@
+# Install the Coach Skill independently of the checkout
+
+The local installer copies the CLI, portable skill, configuration support, and versioned Local Pipeline Runtime assets into standard user locations so the installed Coach Skill keeps working if the source checkout moves or disappears. Updates stage and verify the complete unit before switching the active installation atomically, retaining the previous unit until checksums, doctor checks, and a live fact smoke test pass. This costs more installer work and disk space than referring back to repository files or updating in place, but a machine-wide skill should not depend on the directory from which it was built or be left broken by a partial update.

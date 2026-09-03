@@ -1,0 +1,307 @@
+{
+  "caseId": "advanced-both-threshold",
+  "decisionExplanations": [
+    {
+      "candidateEvidence": {
+        "authoritativeSinglePv": {
+          "evaluation": {
+            "kind": "centipawns",
+            "perspective": "white",
+            "value": 47
+          },
+          "provenance": {
+            "binaryDigest": "sha256:bc0cac905ecdf2147fe22055c733bcd999b1e3f7c399fbaf7fb9055786563590",
+            "depth": 16,
+            "engine": "18",
+            "hashMib": 16,
+            "threads": 1
+          },
+          "rank": 1,
+          "rootMoveUci": "e2e4",
+          "variation": [
+            "e2e4",
+            "c7c5",
+            "g1f3",
+            "e7e6",
+            "b1c3",
+            "a7a6",
+            "d2d4",
+            "c5d4",
+            "f3d4",
+            "d8c7",
+            "f1d3",
+            "b8c6"
+          ]
+        },
+        "kind": "multiPv",
+        "playerMove": {
+          "evaluation": {
+            "kind": "centipawns",
+            "perspective": "white",
+            "value": -126
+          },
+          "provenance": {
+            "binaryDigest": "sha256:bc0cac905ecdf2147fe22055c733bcd999b1e3f7c399fbaf7fb9055786563590",
+            "depth": 16,
+            "engine": "18",
+            "hashMib": 16,
+            "threads": 1
+          },
+          "retainedVariation": [
+            "g2g4",
+            "d7d5",
+            "h2h3",
+            "h7h5",
+            "g4h5",
+            "e7e5",
+            "d2d4",
+            "e5d4",
+            "g1f3",
+            "c7c5",
+            "c2c3",
+            "b8c6",
+            "c3d4",
+            "h8h5",
+            "d4c5",
+            "f8c5",
+            "b1c3",
+            "d5d4"
+          ],
+          "rootMoveUci": "g2g4"
+        },
+        "rankedAlternatives": [
+          {
+            "gap": {
+              "behindBest": 18,
+              "kind": "centipawns"
+            },
+            "provenance": {
+              "binaryDigest": "sha256:bc0cac905ecdf2147fe22055c733bcd999b1e3f7c399fbaf7fb9055786563590",
+              "depth": 16,
+              "engine": "18",
+              "hashMib": 16,
+              "threads": 1
+            },
+            "rank": 2,
+            "rootMoveUci": "d2d4",
+            "variation": [
+              "d2d4",
+              "g8f6",
+              "c2c4",
+              "e7e6",
+              "g1f3",
+              "d7d5",
+              "c1g5",
+              "f8e7",
+              "e2e3",
+              "e8g8",
+              "b1c3",
+              "h7h6",
+              "g5f6",
+              "e7f6",
+              "a1c1",
+              "b7b6"
+            ]
+          },
+          {
+            "gap": {
+              "behindBest": 19,
+              "kind": "centipawns"
+            },
+            "provenance": {
+              "binaryDigest": "sha256:bc0cac905ecdf2147fe22055c733bcd999b1e3f7c399fbaf7fb9055786563590",
+              "depth": 16,
+              "engine": "18",
+              "hashMib": 16,
+              "threads": 1
+            },
+            "rank": 3,
+            "rootMoveUci": "g1f3",
+            "variation": [
+              "g1f3",
+              "d7d5",
+              "d2d4",
+              "g8f6",
+              "c2c4",
+              "e7e6",
+              "c1g5",
+              "f8e7",
+              "e2e3",
+              "h7h6",
+              "g5h4",
+              "e8g8",
+              "b1c3",
+              "f6e4",
+              "h4e7",
+              "d8e7",
+              "d1c2",
+              "e4c3",
+              "c2c3",
+              "d5c4",
+              "f1c4",
+              "c7c5",
+              "d4c5",
+              "e7c5"
+            ]
+          }
+        ],
+        "requestedCount": 3
+      },
+      "capability": "semanticPreference",
+      "decisionExplanationRef": "sha256:5c1bee3208f7cd1b6d8a37e95953d41ba6cbf42714ea4488ed9c454616a12406",
+      "diagnostics": [],
+      "kind": "durable",
+      "ply": 1,
+      "preference": {
+        "engineComparisons": [
+          {
+            "alternativeAssessmentRef": "sha256:aa9e916968458817d3a67dc431512fa8d143fb7411363b670d9dc192e426568a",
+            "alternativeCandidateRef": "sha256:51967de7a62bcf41a48aa7a0594d535a987f49c21d3d16484d7447fb919fb7ed",
+            "preferredAssessmentRef": "sha256:019c0418c165adc7b209139efcaf4599211c4905f6a959652c0922dde38d82b6",
+            "preferredCandidateRef": "sha256:62e5a53ab71abf2efbf1a18cf48d6b58dfb7d2acf2d88269ce95a21a7ed78f6f"
+          },
+          {
+            "alternativeAssessmentRef": "sha256:926a28bb90807e4b97bf4358e69874b9be3bd4bb09d50cb9c3553716572eb2ba",
+            "alternativeCandidateRef": "sha256:53f746ca43bf54e26c6ae682ced8fe828915788f169dc008feba304e554a7054",
+            "preferredAssessmentRef": "sha256:019c0418c165adc7b209139efcaf4599211c4905f6a959652c0922dde38d82b6",
+            "preferredCandidateRef": "sha256:62e5a53ab71abf2efbf1a18cf48d6b58dfb7d2acf2d88269ce95a21a7ed78f6f"
+          },
+          {
+            "alternativeAssessmentRef": "sha256:517b267bcd1caf7b43d111daf26de53caacd6bf76853d0abaac9c312ec718563",
+            "alternativeCandidateRef": "sha256:b09c4ed6c09fbe618b92b6a221c57c969900640fcc7151c26e0e2eb86ef7a410",
+            "preferredAssessmentRef": "sha256:019c0418c165adc7b209139efcaf4599211c4905f6a959652c0922dde38d82b6",
+            "preferredCandidateRef": "sha256:62e5a53ab71abf2efbf1a18cf48d6b58dfb7d2acf2d88269ce95a21a7ed78f6f"
+          }
+        ],
+        "preferredCandidateRef": "sha256:62e5a53ab71abf2efbf1a18cf48d6b58dfb7d2acf2d88269ce95a21a7ed78f6f",
+        "semanticComparisons": [
+          {
+            "alternativeOutcomeRef": "sha256:5c5fc670a3126ac239741e22dbcc5143495a631cd4ae874e641ca4579058ca11",
+            "preferredOutcomeRef": "sha256:927b94e05b420b25c0f8d810b07f572fe87045d03d81a908a96f4d510763eddb",
+            "relation": "refutes"
+          },
+          {
+            "alternativeOutcomeRef": "sha256:c45533a5b0a2e09fae1631d546f8c9ac92f7953d0de9584fb7a4778b2ba2c3b4",
+            "preferredOutcomeRef": "sha256:927b94e05b420b25c0f8d810b07f572fe87045d03d81a908a96f4d510763eddb",
+            "relation": "refutes"
+          },
+          {
+            "alternativeOutcomeRef": "sha256:722d4052e03e10eb4c85966cf4bb27527ef58206570da53aab6597c9001959d3",
+            "preferredOutcomeRef": "sha256:927b94e05b420b25c0f8d810b07f572fe87045d03d81a908a96f4d510763eddb",
+            "relation": "refutes"
+          }
+        ]
+      }
+    }
+  ],
+  "facts": {
+    "criticalMoments": [
+      {
+        "category": "positional",
+        "classification": {
+          "correction": {
+            "betterMoveSan": "e4",
+            "betterMoveUci": "e2e4",
+            "outcome": {
+              "betterEvaluation": {
+                "kind": "centipawns",
+                "perspective": "white",
+                "value": 47
+              },
+              "kind": "improvedAnalyzed"
+            }
+          },
+          "kind": "improvementOpportunity"
+        },
+        "effects": [],
+        "human": {
+          "mostLikelyMove": "g1f3",
+          "mostLikelyProbability": 0.4393,
+          "playedMoveIsHumanLikely": false,
+          "playedMoveProbability": null,
+          "playedMoveRank": null
+        },
+        "mechanism": null,
+        "moveNumber": 1,
+        "objective": {
+          "bestEvaluation": {
+            "kind": "centipawns",
+            "value": 47
+          },
+          "bestMove": "e2e4",
+          "centipawnLoss": 173,
+          "playedEvaluation": {
+            "kind": "centipawns",
+            "value": -126
+          },
+          "playedMove": "g2g4",
+          "principalVariation": [
+            "e2e4",
+            "c7c5",
+            "g1f3",
+            "e7e6",
+            "b1c3",
+            "a7a6",
+            "d2d4",
+            "c5d4",
+            "f3d4",
+            "d8c7",
+            "f1d3",
+            "b8c6"
+          ]
+        },
+        "playedSan": "g4",
+        "ply": 1,
+        "positionPhase": {
+          "phase": "opening",
+          "policyVersion": "position-phase/v1"
+        },
+        "residualOutcome": {
+          "classification": "nowWorse",
+          "standingAfter": "unfavorable",
+          "standingBefore": "balanced"
+        },
+        "side": "white",
+        "teaching": {
+          "openingPrinciples": [
+            "occupyTheCenter"
+          ],
+          "themes": [],
+          "vocabularyVersion": "teaching-facts/v1"
+        }
+      }
+    ],
+    "playerProfile": {
+      "coachingFocus": "Focus on calculation depth, prophylaxis, move-order nuance, structural tradeoffs, and practical decision quality.",
+      "elo": 1900,
+      "level": "advanced"
+    },
+    "summary": "Analyzed 1 plies and selected 1 Critical Moments for Elo 1900."
+  },
+  "provenance": {
+    "maiaImage": "maia-runtime@sha256:ab3b6dc16b75c3602f2e6c4002dc0f99ef77c8c042641cffea66fc1c23482972",
+    "maiaModel": "rapid",
+    "maiaPackage": "maia2==0.11.0",
+    "stockfish": "Stockfish 18 depth 16"
+  },
+  "selectorTrace": {
+    "adaptiveTarget": 3,
+    "candidates": [
+      {
+        "episode": null,
+        "episodeOutcome": "retained",
+        "evidenceStrength": 43,
+        "gameOrderPosition": 1,
+        "kind": "nowWorse",
+        "ply": 1,
+        "priority": 773,
+        "priorityRank": 1,
+        "selected": true
+      }
+    ],
+    "diversityPenalty": 0,
+    "gamePlies": 1,
+    "hardMaximum": 10,
+    "positiveReservationRequired": false
+  }
+}

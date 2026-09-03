@@ -1,0 +1,24 @@
+/**
+ * The container-surface backdrops: the square ink blot behind a chat bubble,
+ * and the cloud painting behind a dialog.
+ *
+ * These live outside `chenTokens.css` on purpose. Both are rasters, and every
+ * `url()` in a global stylesheet is inlined into each single-file Coach App
+ * artifact whether or not the widget renders the surface that uses it —
+ * roughly 200 KB gzip for two decorations no widget shows. An app that renders
+ * chat bubbles or dialogs imports `@chenchess/ui/surfaces.css` alongside the
+ * theme; the widgets skip it.
+ *
+ * Degradation is silent and safe: with the properties undefined, the backdrop
+ * pseudo-element paints nothing and the surface keeps its paper and its frame.
+ */
+@layer chen-tokens {
+  :root {
+    --watercolor-ink-square: url("../assets/brand/brush/ink-square.webp");
+    --watercolor-cloud-wash: url("../assets/brand/brush/cloud-wash.webp");
+    /* The splash sheets (card `splash`, bubble `patch`) fill their whole
+       background with the painting wherever this file is loaded; widgets
+       fall back to the plain pigment fill. */
+    --watercolor-splash-texture: var(--watercolor-cloud-wash);
+  }
+}

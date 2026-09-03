@@ -1,0 +1,8 @@
+{
+  "name": "@chenchess/maia",
+  "private": true,
+  "license": "AGPL-3.0-or-later",
+  "scripts": {
+    "test": "python3 -m unittest discover"
+  }
+}

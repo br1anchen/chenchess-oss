@@ -1,0 +1,85 @@
+[
+  {
+    "requestId": "request:fixture:web-import",
+    "operationId": "operation:fixture:web-import",
+    "surface": "web",
+    "command": {
+      "kind": "importGame",
+      "source": {
+        "kind": "lichessUrl",
+        "url": "https://lichess.org/Synthet1Demo/black"
+      },
+      "reviewSide": {
+        "kind": "fromQualifiedUrl"
+      },
+      "eloProfile": {
+        "kind": "fromImportedMetadata"
+      }
+    }
+  },
+  {
+    "requestId": "request:fixture:coach-import",
+    "operationId": "operation:fixture:coach-import",
+    "surface": "coachSkill",
+    "command": {
+      "kind": "importGame",
+      "source": {
+        "kind": "localPgnFile",
+        "path": "/private/player/game.pgn"
+      },
+      "reviewSide": {
+        "kind": "selected",
+        "reviewSide": "black"
+      },
+      "eloProfile": {
+        "kind": "playerProvided",
+        "rating": 1246
+      }
+    }
+  },
+  {
+    "requestId": "request:fixture:coach-app-import",
+    "operationId": "operation:fixture:coach-app-import",
+    "surface": "coachApp",
+    "command": {
+      "kind": "importGame",
+      "source": {
+        "kind": "chessComUrl",
+        "url": "https://www.chess.com/game/computer/1403674481"
+      },
+      "reviewSide": {
+        "kind": "selected",
+        "reviewSide": "white"
+      },
+      "eloProfile": {
+        "kind": "fromImportedMetadata"
+      }
+    }
+  },
+  {
+    "requestId": "request:fixture:start",
+    "operationId": "operation:fixture:start",
+    "surface": "coachApp",
+    "command": {
+      "kind": "startReviewSession",
+      "gameImportId": "game-import:aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa:bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"
+    }
+  },
+  {
+    "requestId": "request:fixture:host-turn",
+    "operationId": "operation:fixture:host-turn",
+    "surface": "web",
+    "command": {
+      "kind": "startHostTurn",
+      "gameImportId": "game-import:aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa:bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+      "message": "Why was this move a mistake?",
+      "priorTurns": [
+        {
+          "message": "What should I have played instead?",
+          "answer": "Nf6 keeps the knight on a stable square."
+        }
+      ],
+      "idempotencyKey": "idempotency-key:fixture:host-turn"
+    }
+  }
+]

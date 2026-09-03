@@ -1,0 +1,67 @@
+{
+  "description": "A Player-selected stalemate blunder: the mover throws away mate in one and ends the Game non-instructionally.",
+  "evidence": [
+    {
+      "afterMove": {
+        "kind": "terminal"
+      },
+      "engineBefore": {
+        "bestMove": "h2h8",
+        "depth": 16,
+        "evaluation": {
+          "kind": "mateIn",
+          "value": 1
+        },
+        "principalVariation": [
+          "h2h8"
+        ]
+      },
+      "humanBefore": {
+        "candidates": [
+          {
+            "probability": 0.5345,
+            "rank": 1,
+            "uci": "h2h8"
+          },
+          {
+            "probability": 0.1261,
+            "rank": 2,
+            "uci": "h2g2"
+          },
+          {
+            "probability": 0.0793,
+            "rank": 3,
+            "uci": "h2c7"
+          },
+          {
+            "probability": 0.0569,
+            "rank": 4,
+            "uci": "a6b6"
+          },
+          {
+            "probability": 0.0504,
+            "rank": 5,
+            "uci": "h2h1"
+          }
+        ],
+        "winProbability": 0.9542
+      },
+      "ply": 1
+    }
+  ],
+  "id": "selected-terminal-noninstructional",
+  "input": {
+    "elo": 1500,
+    "operation": {
+      "kind": "selectedMoment",
+      "selectedPly": 1
+    },
+    "pgn": "[FEN \"k7/8/K7/8/8/8/7Q/8 w - - 0 1\"]\n\n1. Qc7 *"
+  },
+  "provenance": {
+    "maiaImage": "maia-runtime@sha256:ab3b6dc16b75c3602f2e6c4002dc0f99ef77c8c042641cffea66fc1c23482972",
+    "maiaModel": "rapid",
+    "maiaPackage": "maia2==0.11.0",
+    "stockfish": "Stockfish 18 depth 16"
+  }
+}

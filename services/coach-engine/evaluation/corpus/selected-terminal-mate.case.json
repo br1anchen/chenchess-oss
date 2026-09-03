@@ -1,0 +1,67 @@
+{
+  "description": "A player-selected checkmate records terminal evidence without inventing a post-move score.",
+  "evidence": [
+    {
+      "afterMove": {
+        "kind": "terminal"
+      },
+      "engineBefore": {
+        "bestMove": "h5e8",
+        "depth": 16,
+        "evaluation": {
+          "kind": "mateIn",
+          "value": 1
+        },
+        "principalVariation": [
+          "h5e8"
+        ]
+      },
+      "humanBefore": {
+        "candidates": [
+          {
+            "probability": 0.4725,
+            "rank": 1,
+            "uci": "h5e8"
+          },
+          {
+            "probability": 0.1048,
+            "rank": 2,
+            "uci": "h5a5"
+          },
+          {
+            "probability": 0.0451,
+            "rank": 3,
+            "uci": "h5f7"
+          },
+          {
+            "probability": 0.0383,
+            "rank": 4,
+            "uci": "h5e5"
+          },
+          {
+            "probability": 0.0366,
+            "rank": 5,
+            "uci": "h5f5"
+          }
+        ],
+        "winProbability": 0.8464
+      },
+      "ply": 1
+    }
+  ],
+  "id": "selected-terminal-mate",
+  "input": {
+    "elo": 1200,
+    "operation": {
+      "kind": "selectedMoment",
+      "selectedPly": 1
+    },
+    "pgn": "[FEN \"7k/6pp/8/7Q/8/8/8/4K3 w - - 0 1\"]\n\n1. Qe8# *"
+  },
+  "provenance": {
+    "maiaImage": "maia-runtime@sha256:ab3b6dc16b75c3602f2e6c4002dc0f99ef77c8c042641cffea66fc1c23482972",
+    "maiaModel": "rapid",
+    "maiaPackage": "maia2==0.11.0",
+    "stockfish": "Stockfish 18 depth 16"
+  }
+}

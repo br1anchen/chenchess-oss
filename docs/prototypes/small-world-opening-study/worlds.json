@@ -1,0 +1,633 @@
+[
+  {
+    "id": "giuoco-piano",
+    "eco": "C53",
+    "name": "Italian Game: Giuoco Piano",
+    "path": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. c3 Nf6 5. d3 d6",
+    "side": "white",
+    "decisionMove": null,
+    "plan": "Build the big centre slowly. Tuck the king away, prepare d3–d4, and keep the light-squared bishop pointed at f7.",
+    "rubric": [
+      "Names d4 as the break the position is built toward",
+      "Explains that c3 exists to support d4, not to develop",
+      "Keeps the c4 bishop on the a2–g8 diagonal aimed at f7",
+      "Castles before opening the centre"
+    ],
+    "slots": [
+      {
+        "square": "c4",
+        "accepts": [
+          "c4",
+          "b3"
+        ],
+        "why": "The bishop's whole job is the a2–g8 diagonal. When Black plays …Na5 to trade it off, retreat to b3 rather than allow the swap."
+      },
+      {
+        "square": "c3",
+        "accepts": [
+          "c3"
+        ],
+        "why": "The c3 pawn is not developing — it is buying d4. Without it, d3–d4 never gets support."
+      },
+      {
+        "square": "f3",
+        "accepts": [
+          "f3"
+        ],
+        "why": "The king's knight holds e5 and covers d4. It is the piece …Bg4 pins, which is why the pin has to be answered before d3–d4."
+      }
+    ],
+    "breaks": [
+      {
+        "san": "d4",
+        "verdict": "primary",
+        "why": "The break the whole set-up was built for. c3 supports it and the centre opens while Black's king is still deciding.",
+        "fen": "r1bqk2r/ppp2ppp/2np1n2/2b1p3/2BPP3/2P2N2/PP3PPP/RNBQK2R b KQkq - 0 6"
+      },
+      {
+        "san": "b4",
+        "verdict": "situational",
+        "why": "Gains queenside space and hits the c5 bishop, but it loosens c4 and only works once the centre is settled.",
+        "fen": "r1bqk2r/ppp2ppp/2np1n2/2b1p3/1PB1P3/2PP1N2/P4PPP/RNBQK2R b KQkq - 0 6"
+      },
+      {
+        "san": "g4",
+        "verdict": "mistake",
+        "why": "Grabs space on the side where your own king is heading, before castling, and abandons the slow centre plan the set-up asked for.",
+        "fen": "r1bqk2r/ppp2ppp/2np1n2/2b1p3/2B1P1P1/2PP1N2/PP3P1P/RNBQK2R b KQkq - 0 6"
+      }
+    ],
+    "deviations": [
+      {
+        "after": "O-O",
+        "san": "Bg4",
+        "distractors": [
+          {
+            "san": "d4",
+            "why": "The right plan at the wrong moment. The knight holding d4 is pinned, so the break loses its support."
+          },
+          {
+            "san": "Qe2",
+            "why": "Passive. It unpins nothing and hands Black a free tempo to finish developing."
+          }
+        ],
+        "principle": "Black pins the knight that defends d4. Break the pin before you break the centre — the plan is unchanged, the order is not.",
+        "answer": "h3",
+        "rootFen": "r1bqk2r/ppp2ppp/2np1n2/2b1p3/2B1P3/2PP1N2/PP3PPP/RNBQ1RK1 b kq - 1 6",
+        "askFen": "r2qk2r/ppp2ppp/2np1n2/2b1p3/2B1P1b1/2PP1N2/PP3PPP/RNBQ1RK1 w kq - 2 7",
+        "answerFen": "r2qk2r/ppp2ppp/2np1n2/2b1p3/2B1P1b1/2PP1N1P/PP3PP1/RNBQ1RK1 b kq - 0 7"
+      },
+      {
+        "after": "O-O",
+        "san": "Na5",
+        "distractors": [
+          {
+            "san": "Bxf7+",
+            "why": "A sacrifice with nothing behind it. The king walks to f7 and White has given up the bishop the plan depended on."
+          },
+          {
+            "san": "Bd5",
+            "why": "Keeps the bishop but on a square Black can challenge with …c6, losing the diagonal anyway."
+          }
+        ],
+        "principle": "Black wants to trade your best piece. Save the bishop's diagonal; retreat rather than allow the exchange.",
+        "answer": "Bb3",
+        "rootFen": "r1bqk2r/ppp2ppp/2np1n2/2b1p3/2B1P3/2PP1N2/PP3PPP/RNBQ1RK1 b kq - 1 6",
+        "askFen": "r1bqk2r/ppp2ppp/3p1n2/n1b1p3/2B1P3/2PP1N2/PP3PPP/RNBQ1RK1 w kq - 2 7",
+        "answerFen": "r1bqk2r/ppp2ppp/3p1n2/n1b1p3/4P3/1BPP1N2/PP3PPP/RNBQ1RK1 b kq - 3 7"
+      },
+      {
+        "after": "O-O",
+        "san": "Ng4",
+        "distractors": [
+          {
+            "san": "h3",
+            "why": "Answering a threat that is not there. f2 is already covered twice, and h3 spends a tempo loosening your own king."
+          },
+          {
+            "san": "Qe2",
+            "why": "Defends a square that needs no defending and blocks the bishop's own file."
+          }
+        ],
+        "principle": "A one-piece raid at f2 with nothing behind it — castling already defended the square twice. Ignore it and let the wasted tempi pay for your centre.",
+        "answer": "d4",
+        "rootFen": "r1bqk2r/ppp2ppp/2np1n2/2b1p3/2B1P3/2PP1N2/PP3PPP/RNBQ1RK1 b kq - 1 6",
+        "askFen": "r1bqk2r/ppp2ppp/2np4/2b1p3/2B1P1n1/2PP1N2/PP3PPP/RNBQ1RK1 w kq - 2 7",
+        "answerFen": "r1bqk2r/ppp2ppp/2np4/2b1p3/2BPP1n1/2P2N2/PP3PPP/RNBQ1RK1 b kq - 0 7"
+      }
+    ],
+    "decisionFen": "r1bqk2r/ppp2ppp/2np1n2/2b1p3/2B1P3/2PP1N2/PP3PPP/RNBQK2R w KQkq - 0 6",
+    "moves": [
+      {
+        "san": "e4",
+        "ply": 1,
+        "fen": "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1"
+      },
+      {
+        "san": "e5",
+        "ply": 2,
+        "fen": "rnbqkbnr/pppp1ppp/8/4p3/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2"
+      },
+      {
+        "san": "Nf3",
+        "ply": 3,
+        "fen": "rnbqkbnr/pppp1ppp/8/4p3/4P3/5N2/PPPP1PPP/RNBQKB1R b KQkq - 1 2"
+      },
+      {
+        "san": "Nc6",
+        "ply": 4,
+        "fen": "r1bqkbnr/pppp1ppp/2n5/4p3/4P3/5N2/PPPP1PPP/RNBQKB1R w KQkq - 2 3"
+      },
+      {
+        "san": "Bc4",
+        "ply": 5,
+        "fen": "r1bqkbnr/pppp1ppp/2n5/4p3/2B1P3/5N2/PPPP1PPP/RNBQK2R b KQkq - 3 3"
+      },
+      {
+        "san": "Bc5",
+        "ply": 6,
+        "fen": "r1bqk1nr/pppp1ppp/2n5/2b1p3/2B1P3/5N2/PPPP1PPP/RNBQK2R w KQkq - 4 4"
+      },
+      {
+        "san": "c3",
+        "ply": 7,
+        "fen": "r1bqk1nr/pppp1ppp/2n5/2b1p3/2B1P3/2P2N2/PP1P1PPP/RNBQK2R b KQkq - 0 4"
+      },
+      {
+        "san": "Nf6",
+        "ply": 8,
+        "fen": "r1bqk2r/pppp1ppp/2n2n2/2b1p3/2B1P3/2P2N2/PP1P1PPP/RNBQK2R w KQkq - 1 5"
+      },
+      {
+        "san": "d3",
+        "ply": 9,
+        "fen": "r1bqk2r/pppp1ppp/2n2n2/2b1p3/2B1P3/2PP1N2/PP3PPP/RNBQK2R b KQkq - 0 5"
+      },
+      {
+        "san": "d6",
+        "ply": 10,
+        "fen": "r1bqk2r/ppp2ppp/2np1n2/2b1p3/2B1P3/2PP1N2/PP3PPP/RNBQK2R w KQkq - 0 6"
+      }
+    ],
+    "tabiyaFen": "r1bqk2r/ppp2ppp/2np1n2/2b1p3/2B1P3/2PP1N2/PP3PPP/RNBQK2R w KQkq - 0 6",
+    "pieces": [
+      {
+        "square": "a1",
+        "role": "rook",
+        "color": "white"
+      },
+      {
+        "square": "b1",
+        "role": "knight",
+        "color": "white"
+      },
+      {
+        "square": "c1",
+        "role": "bishop",
+        "color": "white"
+      },
+      {
+        "square": "d1",
+        "role": "queen",
+        "color": "white"
+      },
+      {
+        "square": "e1",
+        "role": "king",
+        "color": "white"
+      },
+      {
+        "square": "h1",
+        "role": "rook",
+        "color": "white"
+      },
+      {
+        "square": "a2",
+        "role": "pawn",
+        "color": "white"
+      },
+      {
+        "square": "b2",
+        "role": "pawn",
+        "color": "white"
+      },
+      {
+        "square": "f2",
+        "role": "pawn",
+        "color": "white"
+      },
+      {
+        "square": "g2",
+        "role": "pawn",
+        "color": "white"
+      },
+      {
+        "square": "h2",
+        "role": "pawn",
+        "color": "white"
+      },
+      {
+        "square": "c3",
+        "role": "pawn",
+        "color": "white"
+      },
+      {
+        "square": "d3",
+        "role": "pawn",
+        "color": "white"
+      },
+      {
+        "square": "f3",
+        "role": "knight",
+        "color": "white"
+      },
+      {
+        "square": "c4",
+        "role": "bishop",
+        "color": "white"
+      },
+      {
+        "square": "e4",
+        "role": "pawn",
+        "color": "white"
+      },
+      {
+        "square": "c5",
+        "role": "bishop",
+        "color": "black"
+      },
+      {
+        "square": "e5",
+        "role": "pawn",
+        "color": "black"
+      },
+      {
+        "square": "c6",
+        "role": "knight",
+        "color": "black"
+      },
+      {
+        "square": "d6",
+        "role": "pawn",
+        "color": "black"
+      },
+      {
+        "square": "f6",
+        "role": "knight",
+        "color": "black"
+      },
+      {
+        "square": "a7",
+        "role": "pawn",
+        "color": "black"
+      },
+      {
+        "square": "b7",
+        "role": "pawn",
+        "color": "black"
+      },
+      {
+        "square": "c7",
+        "role": "pawn",
+        "color": "black"
+      },
+      {
+        "square": "f7",
+        "role": "pawn",
+        "color": "black"
+      },
+      {
+        "square": "g7",
+        "role": "pawn",
+        "color": "black"
+      },
+      {
+        "square": "h7",
+        "role": "pawn",
+        "color": "black"
+      },
+      {
+        "square": "a8",
+        "role": "rook",
+        "color": "black"
+      },
+      {
+        "square": "c8",
+        "role": "bishop",
+        "color": "black"
+      },
+      {
+        "square": "d8",
+        "role": "queen",
+        "color": "black"
+      },
+      {
+        "square": "e8",
+        "role": "king",
+        "color": "black"
+      },
+      {
+        "square": "h8",
+        "role": "rook",
+        "color": "black"
+      }
+    ]
+  },
+  {
+    "id": "najdorf",
+    "eco": "B90",
+    "name": "Sicilian Defense: Najdorf Variation",
+    "path": "1. e4 c5 2. Nf3 d6 3. d4 cxd4 4. Nxd4 Nf6 5. Nc3 a6",
+    "side": "black",
+    "decisionMove": "Be3",
+    "plan": "…a6 takes b5 away from White's pieces first, then Black chooses a centre: …e5 to grab d4, or …e6 for a flexible Scheveningen shape.",
+    "rubric": [
+      "Explains …a6 as prophylaxis against b5, not development",
+      "Names …e5 and …e6 as the two centre choices",
+      "Mentions the d5 hole as the price of …e5",
+      "Connects the queenside plan to …b5 later"
+    ],
+    "slots": [
+      {
+        "square": "f6",
+        "accepts": [
+          "f6"
+        ],
+        "why": "The f6 knight is the one piece that contests e4 immediately. Every Najdorf debate is about how White dislodges it."
+      },
+      {
+        "square": "a6",
+        "accepts": [
+          "a6"
+        ],
+        "why": "The move that names the variation. It is prophylaxis, not development — b5 is denied to White's knight and bishop before Black commits the centre."
+      }
+    ],
+    "breaks": [
+      {
+        "san": "e5",
+        "verdict": "primary",
+        "why": "Hits d4 and claims the centre at once, at the cost of a permanent hole on d5.",
+        "fen": "rnbqkb1r/1p3ppp/p2p1n2/4p3/3NP3/2N1B3/PPP2PPP/R2QKB1R w KQkq - 0 7"
+      },
+      {
+        "san": "e6",
+        "verdict": "situational",
+        "why": "The flexible choice. Keeps d5 covered and transposes toward Scheveningen structures.",
+        "fen": "rnbqkb1r/1p3ppp/p2ppn2/8/3NP3/2N1B3/PPP2PPP/R2QKB1R w KQkq - 0 7"
+      },
+      {
+        "san": "g6",
+        "verdict": "situational",
+        "why": "The Dragondorf. Playable, but it gives up on the …a6/…b5 queenside plan the last move prepared.",
+        "fen": "rnbqkb1r/1p2pp1p/p2p1np1/8/3NP3/2N1B3/PPP2PPP/R2QKB1R w KQkq - 0 7"
+      }
+    ],
+    "deviations": [
+      {
+        "after": null,
+        "san": "Bg5",
+        "distractors": [
+          {
+            "san": "h6",
+            "why": "Kicking before deciding the centre. After Bh4 the pawn on h6 is a target in every line Black later wants."
+          },
+          {
+            "san": "Nbd7",
+            "why": "Develops, but leaves f6 pinned against the queen with the centre still unresolved."
+          }
+        ],
+        "principle": "White targets the f6 knight, the piece holding e4 in check. Answer the pressure on f6 before continuing with the queenside plan.",
+        "answer": "e6",
+        "rootFen": "rnbqkb1r/1p2pppp/p2p1n2/8/3NP3/2N5/PPP2PPP/R1BQKB1R w KQkq - 0 6",
+        "askFen": "rnbqkb1r/1p2pppp/p2p1n2/6B1/3NP3/2N5/PPP2PPP/R2QKB1R b KQkq - 1 6",
+        "answerFen": "rnbqkb1r/1p3ppp/p2ppn2/6B1/3NP3/2N5/PPP2PPP/R2QKB1R w KQkq - 0 7"
+      },
+      {
+        "after": null,
+        "san": "a4",
+        "distractors": [
+          {
+            "san": "b5",
+            "why": "The move a4 was played to stop. It simply drops a pawn to axb5."
+          },
+          {
+            "san": "Nc6",
+            "why": "Blocks the c-pawn in a Sicilian and abandons the queenside plan without taking the centre in return."
+          }
+        ],
+        "principle": "White spends a move to stop …b5 — the very plan …a6 prepared. With the queenside slowed, take the centre instead.",
+        "answer": "e5",
+        "rootFen": "rnbqkb1r/1p2pppp/p2p1n2/8/3NP3/2N5/PPP2PPP/R1BQKB1R w KQkq - 0 6",
+        "askFen": "rnbqkb1r/1p2pppp/p2p1n2/8/P2NP3/2N5/1PP2PPP/R1BQKB1R b KQkq - 0 6",
+        "answerFen": "rnbqkb1r/1p3ppp/p2p1n2/4p3/P2NP3/2N5/1PP2PPP/R1BQKB1R w KQkq - 0 7"
+      }
+    ],
+    "decisionFen": "rnbqkb1r/1p2pppp/p2p1n2/8/3NP3/2N1B3/PPP2PPP/R2QKB1R b KQkq - 1 6",
+    "moves": [
+      {
+        "san": "e4",
+        "ply": 1,
+        "fen": "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1"
+      },
+      {
+        "san": "c5",
+        "ply": 2,
+        "fen": "rnbqkbnr/pp1ppppp/8/2p5/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2"
+      },
+      {
+        "san": "Nf3",
+        "ply": 3,
+        "fen": "rnbqkbnr/pp1ppppp/8/2p5/4P3/5N2/PPPP1PPP/RNBQKB1R b KQkq - 1 2"
+      },
+      {
+        "san": "d6",
+        "ply": 4,
+        "fen": "rnbqkbnr/pp2pppp/3p4/2p5/4P3/5N2/PPPP1PPP/RNBQKB1R w KQkq - 0 3"
+      },
+      {
+        "san": "d4",
+        "ply": 5,
+        "fen": "rnbqkbnr/pp2pppp/3p4/2p5/3PP3/5N2/PPP2PPP/RNBQKB1R b KQkq - 0 3"
+      },
+      {
+        "san": "cxd4",
+        "ply": 6,
+        "fen": "rnbqkbnr/pp2pppp/3p4/8/3pP3/5N2/PPP2PPP/RNBQKB1R w KQkq - 0 4"
+      },
+      {
+        "san": "Nxd4",
+        "ply": 7,
+        "fen": "rnbqkbnr/pp2pppp/3p4/8/3NP3/8/PPP2PPP/RNBQKB1R b KQkq - 0 4"
+      },
+      {
+        "san": "Nf6",
+        "ply": 8,
+        "fen": "rnbqkb1r/pp2pppp/3p1n2/8/3NP3/8/PPP2PPP/RNBQKB1R w KQkq - 1 5"
+      },
+      {
+        "san": "Nc3",
+        "ply": 9,
+        "fen": "rnbqkb1r/pp2pppp/3p1n2/8/3NP3/2N5/PPP2PPP/R1BQKB1R b KQkq - 2 5"
+      },
+      {
+        "san": "a6",
+        "ply": 10,
+        "fen": "rnbqkb1r/1p2pppp/p2p1n2/8/3NP3/2N5/PPP2PPP/R1BQKB1R w KQkq - 0 6"
+      }
+    ],
+    "tabiyaFen": "rnbqkb1r/1p2pppp/p2p1n2/8/3NP3/2N5/PPP2PPP/R1BQKB1R w KQkq - 0 6",
+    "pieces": [
+      {
+        "square": "a1",
+        "role": "rook",
+        "color": "white"
+      },
+      {
+        "square": "c1",
+        "role": "bishop",
+        "color": "white"
+      },
+      {
+        "square": "d1",
+        "role": "queen",
+        "color": "white"
+      },
+      {
+        "square": "e1",
+        "role": "king",
+        "color": "white"
+      },
+      {
+        "square": "f1",
+        "role": "bishop",
+        "color": "white"
+      },
+      {
+        "square": "h1",
+        "role": "rook",
+        "color": "white"
+      },
+      {
+        "square": "a2",
+        "role": "pawn",
+        "color": "white"
+      },
+      {
+        "square": "b2",
+        "role": "pawn",
+        "color": "white"
+      },
+      {
+        "square": "c2",
+        "role": "pawn",
+        "color": "white"
+      },
+      {
+        "square": "f2",
+        "role": "pawn",
+        "color": "white"
+      },
+      {
+        "square": "g2",
+        "role": "pawn",
+        "color": "white"
+      },
+      {
+        "square": "h2",
+        "role": "pawn",
+        "color": "white"
+      },
+      {
+        "square": "c3",
+        "role": "knight",
+        "color": "white"
+      },
+      {
+        "square": "d4",
+        "role": "knight",
+        "color": "white"
+      },
+      {
+        "square": "e4",
+        "role": "pawn",
+        "color": "white"
+      },
+      {
+        "square": "a6",
+        "role": "pawn",
+        "color": "black"
+      },
+      {
+        "square": "d6",
+        "role": "pawn",
+        "color": "black"
+      },
+      {
+        "square": "f6",
+        "role": "knight",
+        "color": "black"
+      },
+      {
+        "square": "b7",
+        "role": "pawn",
+        "color": "black"
+      },
+      {
+        "square": "e7",
+        "role": "pawn",
+        "color": "black"
+      },
+      {
+        "square": "f7",
+        "role": "pawn",
+        "color": "black"
+      },
+      {
+        "square": "g7",
+        "role": "pawn",
+        "color": "black"
+      },
+      {
+        "square": "h7",
+        "role": "pawn",
+        "color": "black"
+      },
+      {
+        "square": "a8",
+        "role": "rook",
+        "color": "black"
+      },
+      {
+        "square": "b8",
+        "role": "knight",
+        "color": "black"
+      },
+      {
+        "square": "c8",
+        "role": "bishop",
+        "color": "black"
+      },
+      {
+        "square": "d8",
+        "role": "queen",
+        "color": "black"
+      },
+      {
+        "square": "e8",
+        "role": "king",
+        "color": "black"
+      },
+      {
+        "square": "f8",
+        "role": "bishop",
+        "color": "black"
+      },
+      {
+        "square": "h8",
+        "role": "rook",
+        "color": "black"
+      }
+    ]
+  }
+]

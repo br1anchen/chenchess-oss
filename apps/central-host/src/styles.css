@@ -1,0 +1,6 @@
+/* The React mount node. StyleX styles elements React renders; the mount is
+   the host element above them, so this one document rule stays CSS.
+   Every page surface claims its own height inside it. */
+#root {
+  min-height: 100vh;
+}

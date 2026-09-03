@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title">
+  <title id="title">Coaching board app icon on ink navy</title>
+  <rect width="512" height="512" rx="112" fill="#142B46"/>
+  <g fill="#F7F2E8">
+    <rect x="96" y="96" width="80" height="80"/>
+    <rect x="256" y="96" width="80" height="80"/>
+    <rect x="176" y="176" width="80" height="80"/>
+    <rect x="336" y="176" width="80" height="80"/>
+    <rect x="96" y="256" width="80" height="80"/>
+    <rect x="256" y="256" width="80" height="80"/>
+    <rect x="176" y="336" width="80" height="80"/>
+    <rect x="336" y="336" width="80" height="80"/>
+  </g>
+  <rect x="96" y="96" width="320" height="320" fill="none" stroke="#F7F2E8" stroke-width="16"/>
+</svg>

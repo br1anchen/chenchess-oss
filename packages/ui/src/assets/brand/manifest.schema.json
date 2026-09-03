@@ -1,0 +1,58 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.test/schemas/brand-asset-manifest.schema.json",
+  "title": "ChenChess brand asset manifest",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "version",
+    "identity",
+    "palette",
+    "appIcons",
+    "boardSurfaces",
+    "chessPieces",
+    "valueIcons",
+    "illustrations",
+    "motionMasks"
+  ],
+  "properties": {
+    "version": {
+      "const": 1
+    },
+    "identity": {
+      "$ref": "#/$defs/stringMap"
+    },
+    "palette": {
+      "$ref": "#/$defs/stringMap"
+    },
+    "appIcons": {
+      "$ref": "#/$defs/stringMap"
+    },
+    "boardSurfaces": {
+      "$ref": "#/$defs/stringMap"
+    },
+    "chessPieces": {
+      "type": "object"
+    },
+    "valueIcons": {
+      "$ref": "#/$defs/stringMap"
+    },
+    "illustrations": {
+      "type": "object"
+    },
+    "motionMasks": {
+      "$ref": "#/$defs/stringMap"
+    },
+    "brushStrokes": {
+      "$ref": "#/$defs/stringMap"
+    }
+  },
+  "$defs": {
+    "stringMap": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "string"
+      }
+    }
+  }
+}

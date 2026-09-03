@@ -1,0 +1,276 @@
+{
+  "caseId": "tactical-white-human-likely",
+  "decisionExplanations": [
+    {
+      "candidateEvidence": {
+        "authoritativeSinglePv": {
+          "evaluation": {
+            "kind": "centipawns",
+            "perspective": "white",
+            "value": 126
+          },
+          "provenance": {
+            "binaryDigest": "sha256:bc0cac905ecdf2147fe22055c733bcd999b1e3f7c399fbaf7fb9055786563590",
+            "depth": 16,
+            "engine": "18",
+            "hashMib": 16,
+            "threads": 1
+          },
+          "rank": 1,
+          "rootMoveUci": "f3d4",
+          "variation": [
+            "f3d4",
+            "e5d4",
+            "e1g1",
+            "g8f6",
+            "f1e1",
+            "d7d6",
+            "c2c3",
+            "f8e7",
+            "c3d4",
+            "d6d5",
+            "e4d5",
+            "f6d5",
+            "b1c3",
+            "d5b6",
+            "d4d5",
+            "b6c4",
+            "d1a4",
+            "c8d7",
+            "a4c4"
+          ]
+        },
+        "kind": "multiPv",
+        "playerMove": {
+          "evaluation": {
+            "kind": "centipawns",
+            "perspective": "white",
+            "value": 22
+          },
+          "provenance": {
+            "binaryDigest": "sha256:bc0cac905ecdf2147fe22055c733bcd999b1e3f7c399fbaf7fb9055786563590",
+            "depth": 16,
+            "engine": "18",
+            "hashMib": 16,
+            "threads": 1
+          },
+          "retainedVariation": [
+            "f3e5",
+            "d8g5",
+            "c4f7",
+            "e8d8",
+            "e1g1",
+            "g5e5",
+            "c2c3",
+            "d4e6",
+            "d2d3",
+            "e5f6",
+            "f7h5",
+            "g7g6",
+            "h5f3",
+            "f6f7",
+            "b1d2",
+            "d7d6"
+          ],
+          "rootMoveUci": "f3e5"
+        },
+        "rankedAlternatives": [
+          {
+            "gap": {
+              "behindBest": 21,
+              "kind": "centipawns"
+            },
+            "provenance": {
+              "binaryDigest": "sha256:bc0cac905ecdf2147fe22055c733bcd999b1e3f7c399fbaf7fb9055786563590",
+              "depth": 16,
+              "engine": "18",
+              "hashMib": 16,
+              "threads": 1
+            },
+            "rank": 2,
+            "rootMoveUci": "e1g1",
+            "variation": [
+              "e1g1",
+              "d4f3",
+              "d1f3",
+              "d8f6",
+              "f3g3",
+              "f8c5",
+              "b1c3",
+              "c7c6",
+              "d2d3",
+              "g8e7",
+              "c1g5",
+              "f6g6",
+              "g3e5",
+              "c5d6",
+              "e5a5"
+            ]
+          },
+          {
+            "gap": {
+              "behindBest": 52,
+              "kind": "centipawns"
+            },
+            "provenance": {
+              "binaryDigest": "sha256:bc0cac905ecdf2147fe22055c733bcd999b1e3f7c399fbaf7fb9055786563590",
+              "depth": 16,
+              "engine": "18",
+              "hashMib": 16,
+              "threads": 1
+            },
+            "rank": 3,
+            "rootMoveUci": "b1c3",
+            "variation": [
+              "b1c3",
+              "c7c6",
+              "e1g1",
+              "d4f3",
+              "d1f3",
+              "d8f6",
+              "f3g3",
+              "h7h5",
+              "h2h4",
+              "b7b5",
+              "c4b3",
+              "a7a5",
+              "a2a4",
+              "b5b4",
+              "c3e2",
+              "f8d6",
+              "d2d3"
+            ]
+          }
+        ],
+        "requestedCount": 3
+      },
+      "capability": "validationOnly",
+      "decisionExplanationRef": "sha256:2c87f4df62562f7635ae3f4ceccae751aa0bbd29e85b0734c6218f660c34121e",
+      "diagnostics": [],
+      "kind": "durable",
+      "ply": 1,
+      "preference": null
+    }
+  ],
+  "facts": {
+    "criticalMoments": [
+      {
+        "category": "tactical",
+        "classification": {
+          "correction": {
+            "betterMoveSan": "Nxd4",
+            "betterMoveUci": "f3d4",
+            "outcome": {
+              "betterEvaluation": {
+                "kind": "centipawns",
+                "perspective": "white",
+                "value": 126
+              },
+              "kind": "improvedAnalyzed"
+            }
+          },
+          "kind": "improvementOpportunity"
+        },
+        "effects": [
+          {
+            "kind": "capturedPiece",
+            "role": "pawn",
+            "square": "e5"
+          }
+        ],
+        "human": {
+          "mostLikelyMove": "f3e5",
+          "mostLikelyProbability": 0.3705,
+          "playedMoveIsHumanLikely": true,
+          "playedMoveProbability": 0.3705,
+          "playedMoveRank": 1
+        },
+        "mechanism": null,
+        "moveNumber": 4,
+        "objective": {
+          "bestEvaluation": {
+            "kind": "centipawns",
+            "value": 126
+          },
+          "bestMove": "f3d4",
+          "centipawnLoss": 104,
+          "playedEvaluation": {
+            "kind": "centipawns",
+            "value": 22
+          },
+          "playedMove": "f3e5",
+          "principalVariation": [
+            "f3d4",
+            "e5d4",
+            "e1g1",
+            "g8f6",
+            "f1e1",
+            "d7d6",
+            "c2c3",
+            "f8e7",
+            "c3d4",
+            "d6d5",
+            "e4d5",
+            "f6d5",
+            "b1c3",
+            "d5b6",
+            "d4d5",
+            "b6c4",
+            "d1a4",
+            "c8d7",
+            "a4c4"
+          ]
+        },
+        "playedSan": "Nxe5",
+        "ply": 1,
+        "positionPhase": {
+          "phase": "opening",
+          "policyVersion": "position-phase/v1"
+        },
+        "residualOutcome": {
+          "classification": "advantageLost",
+          "standingAfter": "balanced",
+          "standingBefore": "favorable"
+        },
+        "side": "white",
+        "teaching": {
+          "openingPrinciples": [],
+          "themes": [],
+          "vocabularyVersion": "teaching-facts/v1"
+        }
+      }
+    ],
+    "playerProfile": {
+      "coachingFocus": "Focus on candidate moves, tactical motifs, pawn breaks, and converting advantages into plans.",
+      "elo": 1200,
+      "level": "intermediate"
+    },
+    "summary": "Analyzed 1 plies and selected 1 Critical Moments for Elo 1200."
+  },
+  "provenance": {
+    "maiaImage": "maia-runtime@sha256:ab3b6dc16b75c3602f2e6c4002dc0f99ef77c8c042641cffea66fc1c23482972",
+    "maiaModel": "rapid",
+    "maiaPackage": "maia2==0.11.0",
+    "stockfish": "Stockfish 18 depth 16"
+  },
+  "selectorTrace": {
+    "adaptiveTarget": 3,
+    "candidates": [
+      {
+        "episode": null,
+        "episodeOutcome": "retained",
+        "evidenceStrength": 10,
+        "gameOrderPosition": 1,
+        "kind": "advantageLost",
+        "ply": 1,
+        "priority": 840,
+        "priorityRank": 1,
+        "selected": true
+      }
+    ],
+    "diversityPenalty": 0,
+    "gamePlies": 1,
+    "hardMaximum": 10,
+    "positiveReservationRequired": false
+  }
+}

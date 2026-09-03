@@ -1,0 +1,38 @@
+---
+import BrandHead from "./BrandHead.astro"
+
+interface Props {
+  title: string
+}
+
+const { title } = Astro.props
+---
+
+<!doctype html>
+<html lang="en" data-astryx-theme="ink-wash" data-theme="light">
+  <head>
+    <BrandHead indexable={false} title={title} />
+  </head>
+  <body>
+    <div id="root"></div>
+    {/* Every page on this layout mounts React from its own entry script
+        rather than from an Astro island, and `@astrojs/react` emits the Fast
+        Refresh preamble only for pages that hydrate one. Without it the dev
+        server serves entries whose refresh wrapper throws "can't detect
+        preamble", and the root stays empty. This is the preamble that
+        integration injects, carried by the layout every such entry shares.
+        Inline and dev-only: `/@react-refresh` is the dev server's own route,
+        and a bundled import is pre-bundled to an empty module instead. */}
+    {import.meta.env.DEV && (
+      <script
+        is:inline
+        type="module"
+        set:html={`import { injectIntoGlobalHook } from "/@react-refresh"
+injectIntoGlobalHook(window)
+window.$RefreshReg$ = () => {}
+window.$RefreshSig$ = () => (type) => type`}
+      />
+    )}
+    <slot />
+  </body>
+</html>

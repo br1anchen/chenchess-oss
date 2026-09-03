@@ -1,0 +1,92 @@
+{
+  "caseId": "selected-terminal-mate",
+  "facts": {
+    "playerProfile": {
+      "coachingFocus": "Focus on candidate moves, tactical motifs, pawn breaks, and converting advantages into plans.",
+      "elo": 1200,
+      "level": "intermediate"
+    },
+    "selectedMoment": {
+      "category": "tactical",
+      "classification": {
+        "grade": "good",
+        "kind": "positiveHighlight",
+        "qualification": {
+          "achievements": [
+            {
+              "kind": "tacticalPayoff",
+              "payoff": {
+                "kind": "mate"
+              }
+            },
+            {
+              "kind": "completedCheckmate"
+            }
+          ],
+          "reasons": [
+            {
+              "lane": "objective",
+              "reason": "completedCheckmate"
+            }
+          ]
+        }
+      },
+      "effects": [],
+      "human": {
+        "mostLikelyMove": "h5e8",
+        "mostLikelyProbability": 0.4725,
+        "playedMoveIsHumanLikely": true,
+        "playedMoveProbability": 0.4725,
+        "playedMoveRank": 1
+      },
+      "mechanism": {
+        "forcingIndex": 0,
+        "moves": [
+          {
+            "san": "Qe8#",
+            "uci": "h5e8"
+          }
+        ],
+        "payoff": {
+          "kind": "mate"
+        }
+      },
+      "moveNumber": 1,
+      "objective": {
+        "bestEvaluation": {
+          "kind": "mateIn",
+          "value": 1
+        },
+        "bestMove": "h5e8",
+        "centipawnLoss": null,
+        "playedEvaluation": null,
+        "playedMove": "h5e8",
+        "principalVariation": [
+          "h5e8"
+        ]
+      },
+      "playedSan": "Qe8#",
+      "ply": 1,
+      "positionPhase": {
+        "phase": "endgame",
+        "policyVersion": "position-phase/v1"
+      },
+      "residualOutcome": null,
+      "side": "white",
+      "teaching": {
+        "openingPrinciples": [],
+        "themes": [
+          "forcedMateConversion"
+        ],
+        "vocabularyVersion": "teaching-facts/v1"
+      }
+    },
+    "summary": "Analyzed Player-Selected Moment at ply 1 for Elo 1200."
+  },
+  "provenance": {
+    "maiaImage": "maia-runtime@sha256:ab3b6dc16b75c3602f2e6c4002dc0f99ef77c8c042641cffea66fc1c23482972",
+    "maiaModel": "rapid",
+    "maiaPackage": "maia2==0.11.0",
+    "stockfish": "Stockfish 18 depth 16"
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "caseId": "selected-forced-and-sound",
+  "facts": {
+    "playerProfile": {
+      "coachingFocus": "Focus on candidate moves, tactical motifs, pawn breaks, and converting advantages into plans.",
+      "elo": 1500,
+      "level": "intermediate"
+    },
+    "selectedMoment": {
+      "category": "positional",
+      "classification": {
+        "kind": "neutral",
+        "reasons": [
+          "mechanicallyForcedMove",
+          "soundWithoutConcreteAchievement"
+        ]
+      },
+      "effects": [],
+      "human": {
+        "mostLikelyMove": "h1h2",
+        "mostLikelyProbability": 1.0,
+        "playedMoveIsHumanLikely": true,
+        "playedMoveProbability": 1.0,
+        "playedMoveRank": 1
+      },
+      "mechanism": null,
+      "moveNumber": 1,
+      "objective": {
+        "bestEvaluation": {
+          "kind": "centipawns",
+          "value": -384
+        },
+        "bestMove": "h1h2",
+        "centipawnLoss": 2,
+        "playedEvaluation": {
+          "kind": "centipawns",
+          "value": -386
+        },
+        "playedMove": "h1h2",
+        "principalVariation": [
+          "h1h2",
+          "a8b7",
+          "h2g3",
+          "b7c6",
+          "g3g4",
+          "a1a2",
+          "g4g3",
+          "c6c5",
+          "g3h2",
+          "c5d5",
+          "h2h1",
+          "d5e5",
+          "h1g1"
+        ]
+      },
+      "playedSan": "Kh2",
+      "ply": 1,
+      "positionPhase": {
+        "phase": "endgame",
+        "policyVersion": "position-phase/v1"
+      },
+      "residualOutcome": {
+        "classification": "standingKept",
+        "standingAfter": "losing",
+        "standingBefore": "losing"
+      },
+      "side": "white",
+      "teaching": {
+        "openingPrinciples": [],
+        "themes": [],
+        "vocabularyVersion": "teaching-facts/v1"
+      }
+    },
+    "summary": "Analyzed Player-Selected Moment at ply 1 for Elo 1500."
+  },
+  "provenance": {
+    "maiaImage": "maia-runtime@sha256:ab3b6dc16b75c3602f2e6c4002dc0f99ef77c8c042641cffea66fc1c23482972",
+    "maiaModel": "rapid",
+    "maiaPackage": "maia2==0.11.0",
+    "stockfish": "Stockfish 18 depth 16"
+  }
+}

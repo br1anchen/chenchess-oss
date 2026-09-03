@@ -1,0 +1,102 @@
+{
+  "caseId": "selected-forced-recapture",
+  "facts": {
+    "playerProfile": {
+      "coachingFocus": "Focus on candidate moves, tactical motifs, pawn breaks, and converting advantages into plans.",
+      "elo": 1500,
+      "level": "intermediate"
+    },
+    "selectedMoment": {
+      "category": "tactical",
+      "classification": {
+        "kind": "neutral",
+        "reasons": [
+          "mechanicallyForcedMove"
+        ]
+      },
+      "effects": [
+        {
+          "kind": "capturedPiece",
+          "role": "queen",
+          "square": "g1"
+        }
+      ],
+      "human": {
+        "mostLikelyMove": "h1g1",
+        "mostLikelyProbability": 1.0,
+        "playedMoveIsHumanLikely": true,
+        "playedMoveProbability": 1.0,
+        "playedMoveRank": 1
+      },
+      "mechanism": {
+        "forcingIndex": 0,
+        "moves": [
+          {
+            "san": "Kxg1",
+            "uci": "h1g1"
+          }
+        ],
+        "payoff": {
+          "kind": "winsMaterialOutright",
+          "role": "queen"
+        }
+      },
+      "moveNumber": 1,
+      "objective": {
+        "bestEvaluation": {
+          "kind": "centipawns",
+          "value": 561
+        },
+        "bestMove": "h1g1",
+        "centipawnLoss": 0,
+        "playedEvaluation": {
+          "kind": "centipawns",
+          "value": 584
+        },
+        "playedMove": "h1g1",
+        "principalVariation": [
+          "h1g1",
+          "b7b5",
+          "h8c8",
+          "a5b6",
+          "g1f2",
+          "b6b7",
+          "c8f8",
+          "b5b4",
+          "f2e2",
+          "c7c5",
+          "f8f1",
+          "c5c4",
+          "f1b1",
+          "b4b3",
+          "e2d2",
+          "b7a6"
+        ]
+      },
+      "playedSan": "Kxg1",
+      "ply": 1,
+      "positionPhase": {
+        "phase": "endgame",
+        "policyVersion": "position-phase/v1"
+      },
+      "residualOutcome": {
+        "classification": "advantageKept",
+        "standingAfter": "winning",
+        "standingBefore": "winning"
+      },
+      "side": "white",
+      "teaching": {
+        "openingPrinciples": [],
+        "themes": [],
+        "vocabularyVersion": "teaching-facts/v1"
+      }
+    },
+    "summary": "Analyzed Player-Selected Moment at ply 1 for Elo 1500."
+  },
+  "provenance": {
+    "maiaImage": "maia-runtime@sha256:ab3b6dc16b75c3602f2e6c4002dc0f99ef77c8c042641cffea66fc1c23482972",
+    "maiaModel": "rapid",
+    "maiaPackage": "maia2==0.11.0",
+    "stockfish": "Stockfish 18 depth 16"
+  }
+}

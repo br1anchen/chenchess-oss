@@ -1,0 +1,79 @@
+{
+  "description": "A Player-selected recapture that is the only legal move, so it qualifies as forced despite winning material.",
+  "evidence": [
+    {
+      "afterMove": {
+        "evaluation": {
+          "kind": "centipawns",
+          "value": -584
+        },
+        "kind": "analyzed",
+        "principal_variation": [
+          "b7b5",
+          "g1f2",
+          "a5a6",
+          "h2h4",
+          "b5b4",
+          "f2e3",
+          "c7c5",
+          "e3d2",
+          "a6b7",
+          "h4h5",
+          "b4b3"
+        ]
+      },
+      "engineBefore": {
+        "bestMove": "h1g1",
+        "depth": 16,
+        "evaluation": {
+          "kind": "centipawns",
+          "value": 561
+        },
+        "principalVariation": [
+          "h1g1",
+          "b7b5",
+          "h8c8",
+          "a5b6",
+          "g1f2",
+          "b6b7",
+          "c8f8",
+          "b5b4",
+          "f2e2",
+          "c7c5",
+          "f8f1",
+          "c5c4",
+          "f1b1",
+          "b4b3",
+          "e2d2",
+          "b7a6"
+        ]
+      },
+      "humanBefore": {
+        "candidates": [
+          {
+            "probability": 1.0,
+            "rank": 1,
+            "uci": "h1g1"
+          }
+        ],
+        "winProbability": 0.8945
+      },
+      "ply": 1
+    }
+  ],
+  "id": "selected-forced-recapture",
+  "input": {
+    "elo": 1500,
+    "operation": {
+      "kind": "selectedMoment",
+      "selectedPly": 1
+    },
+    "pgn": "[FEN \"7R/1pp5/8/k7/8/8/6PP/6qK w - - 0 1\"]\n\n1. Kxg1 *"
+  },
+  "provenance": {
+    "maiaImage": "maia-runtime@sha256:ab3b6dc16b75c3602f2e6c4002dc0f99ef77c8c042641cffea66fc1c23482972",
+    "maiaModel": "rapid",
+    "maiaPackage": "maia2==0.11.0",
+    "stockfish": "Stockfish 18 depth 16"
+  }
+}

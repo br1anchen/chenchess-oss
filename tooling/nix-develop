@@ -1,0 +1,124 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+usage() {
+  cat <<'EOF'
+Usage:
+  ./tooling/nix-develop [.|.#default|.#mbx|.#vanilla] [nix-develop-options...]
+
+Examples:
+  ./tooling/nix-develop
+  ./tooling/nix-develop --command cargo test --workspace
+  ./tooling/nix-develop .#vanilla --command bun run test
+
+The launcher prevents native Jujutsu workspaces from being copied wholesale
+into /nix/store as path: flake sources. It refreshes the current ignore-aware
+Jujutsu commit and gives Nix that exact Git-backed source instead.
+EOF
+}
+
+fail() {
+  printf 'ChenChess Nix launcher: %s\n' "$*" >&2
+  exit 1
+}
+
+canonical_directory() {
+  local directory="$1"
+  (
+    cd "$directory"
+    pwd -P
+  )
+}
+
+encode_file_url_path() {
+  local input="$1"
+  local encoded=""
+  local character
+  local encoded_byte
+  local index
+  local LC_ALL=C
+
+  for ((index = 0; index < ${#input}; index++)); do
+    character="${input:index:1}"
+    case "$character" in
+      [a-zA-Z0-9._~/-])
+        encoded+="$character"
+        ;;
+      *)
+        printf -v encoded_byte '%%%02X' "'$character"
+        encoded+="$encoded_byte"
+        ;;
+    esac
+  done
+
+  printf '%s' "$encoded"
+}
+
+flake_fragment=""
+case "${1-}" in
+  -h|--help)
+    usage
+    exit 0
+    ;;
+  .)
+    shift
+    ;;
+  .#default|.#mbx|.#vanilla)
+    flake_fragment="${1#.}"
+    shift
+    ;;
+  .#*)
+    fail "unsupported dev shell ${1}; expected .#default, .#mbx, or .#vanilla"
+    ;;
+  path:*|git+file:*|/*)
+    fail "custom flake references are not accepted; the launcher owns source selection"
+    ;;
+esac
+
+current_directory="$(pwd -P)"
+
+if git_root="$(
+  git -C "$current_directory" rev-parse --show-toplevel 2>/dev/null
+)"; then
+  flake_reference="$(canonical_directory "$git_root")"
+  [[ -f "$flake_reference/flake.nix" ]] || {
+    fail "Git root does not contain flake.nix: ${flake_reference}"
+  }
+else
+  git_directory="$(jj git root --ignore-working-copy 2>/dev/null)" || {
+    fail "current directory is neither a Git worktree nor a Git-backed Jujutsu workspace"
+  }
+  git_directory="$(canonical_directory "$git_directory")"
+  [[ "$(basename "$git_directory")" == ".git" ]] || {
+    fail "Jujutsu Git backend is not attached to a colocated checkout: ${git_directory}"
+  }
+
+  candidate_root="$(canonical_directory "$(dirname "$git_directory")")"
+  canonical_git_root="$(
+    git -C "$candidate_root" rev-parse --show-toplevel 2>/dev/null
+  )" || {
+    fail "Jujutsu backing checkout is not Git-aware: ${candidate_root}"
+  }
+  canonical_git_root="$(canonical_directory "$canonical_git_root")"
+  [[ "$canonical_git_root" == "$candidate_root" ]] || {
+    fail "Jujutsu Git root does not identify its checkout root: ${git_directory}"
+  }
+
+  workspace_revision="$(
+    jj log -r @ --no-graph -T commit_id 2>/dev/null
+  )" || {
+    fail "could not snapshot the current Jujutsu working copy"
+  }
+  [[ "$workspace_revision" =~ ^[0-9a-f]{40,64}$ ]] || {
+    fail "Jujutsu returned an invalid Git commit ID"
+  }
+
+  encoded_git_root="$(encode_file_url_path "$canonical_git_root")"
+  flake_reference="git+file://${encoded_git_root}?rev=${workspace_revision}"
+fi
+
+command -v nix >/dev/null 2>&1 || {
+  fail "nix is unavailable"
+}
+
+exec nix develop "${flake_reference}${flake_fragment}" "$@"

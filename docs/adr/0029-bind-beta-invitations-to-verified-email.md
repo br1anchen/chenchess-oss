@@ -1,0 +1,28 @@
+---
+status: accepted
+---
+
+# Bind beta invitations to verified email
+
+ADR 0055 supersedes the anonymous waitlist submission and honeypot in this
+decision. Beta Access Requests now require a verified Firebase identity and
+derive the email from its token claims; the remaining invitation binding,
+rate-limit, delivery, and retention decisions stay in force.
+
+The Beta Back Office issues each single-use Beta Invitation to one normalized Invitation Email. Firebase first authenticates the Player through a Supported Sign-In Method; redemption requires both the code and an exact match to the Firebase-verified account email, then atomically binds the invitation to that Player ID, grants Beta Access, and prevents reuse. Code possession alone is insufficient, and V1 supports no phone-number invitation path. Coach Engine enforces verified email and Beta Access for the web product and Coach OAuth identity bridge rather than attempting to prevent Firebase identity creation. V1 invitations do not expire automatically: each remains valid until redeemed or explicitly revoked.
+
+Granting a Beta Access Request creates one Invitation Delivery through Resend from `invite@example.test`, with `support@example.test` as its reply address. ImprovMX forwards inbound mail for both addresses to the Administrator's private mailbox; it does not send invitations or participate in authorization. Vercel remains authoritative for DNS: root MX records route inbound mail to ImprovMX, while Resend uses its own generated DKIM and `send.example` return-path records. Resend Inbound is not enabled, and no catch-all address is configured.
+
+The beta accepts Resend's standard 30-day retention of sent-email data because disabling message-content storage is not practical at beta volume. Resend is disclosed as an email processor, open and link tracking remain disabled, and the invitation code appears only where required in the email body and one-click link—not in Resend tags, application telemetry, or logs. An Administrator may revoke an unredeemed invitation or the Beta Access created by a redeemed invitation.
+
+The V1 Beta Back Office is intentionally narrow: it lists and filters access requests, grants a request and sends its invitation, retries failed delivery without rotating the code, revokes an unredeemed invitation, revokes active Beta Access, and displays delivery, redemption, and access status. Revoking Beta Access deletes the Player's live authorization grant atomically while preserving the redeemed invitation as audit history; replaying that invitation cannot restore access. Coach Engine checks the same grant for web, OAuth identity bridging, and MCP commands. The back office cannot edit an invitation email after submission, delete Firebase users, read coaching data, restore revoked Beta Access, or grant the Administrator role.
+
+The first Administrator is bootstrapped outside the web product by a repository operator CLI. The command requires both an explicit Firebase UID and the expected verified email, reads the target account before mutation, refuses an unverified or mismatched target, preserves unrelated custom claims, and grants or revokes only `chenchessAdmin`. Email-only targeting is unsupported, and a changed account must obtain a fresh Firebase ID token before the new authorization state takes effect.
+
+The public waitlist stores at most one Beta Access Request per normalized email. New, duplicate, and previously handled submissions return the same generic success response; duplicate submissions neither create another record nor send mail. The endpoint rate-limits by normalized email and source IP and silently rejects an invisible honeypot. V1 adds no CAPTCHA unless observed abuse demonstrates that the simpler controls are insufficient.
+
+Each invitation receives an independently random 128-bit single-use code. Coach Engine stores a versioned keyed HMAC over a canonical encoding of the invitation ID, normalized Invitation Email, and code, then uses constant-time comparison during redemption. Including the email cryptographically binds the authenticator to the same address that Firebase must verify; the email itself is not treated as a secret or password-hashing salt. A separately encrypted copy of the code, authenticated with the invitation ID and normalized email as associated data, is accessible only to Invitation Delivery so a failed send can retry the same code. The plaintext code is never stored, logged, or displayed in the Beta Back Office.
+
+Invitation Delivery includes a copyable code and a one-click `/join` link. The link carries the secret in its URL fragment, which is not sent in the HTTP request or referrer; the join client captures it locally, immediately removes it from the visible URL, and retains it only long enough to complete authentication, email verification, and redemption. A Player opening the message on another device may enter the visible code manually.
+
+The waitlist, invitation gate, and Beta Access records exist only in staging; production registration is direct and beta records are never promoted. Access requests, invitations, delivery status, and Beta Access remain only until revoked, a verified support deletion request is completed, or the beta closes, at which point they are erased. Rate limiting persists only keyed IP identifiers with a 24-hour TTL. Application security and operational logs have a maximum 30-day retention and never contain form bodies, emails, invitation codes, Firebase tokens, or OAuth secrets. This rejects forwarded-code redemption without introducing SMS authentication, while still requiring codes to remain secret, rate-limited, and revocable.

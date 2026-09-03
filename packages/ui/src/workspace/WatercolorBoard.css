@@ -1,0 +1,225 @@
+:where(.coach-presentational-board, .chen-workspace-board) {
+  --board-frame-width: 0px;
+  overflow: hidden;
+  padding: 0;
+  border: 0;
+  border-radius: 0.12rem;
+  background: transparent;
+  box-shadow:
+    0 0.18rem 0.35rem color-mix(in srgb, var(--color-ink) 10%, transparent),
+    0 1.25rem 3rem color-mix(in srgb, var(--color-ink) 13%, transparent);
+}
+
+/* The square textures are opaque RGB with no alpha channel, so these colours
+   are seen only if a .webp fails to load. They name the board tokens rather
+   than literals so that fallback lands on the palette the seating surface
+   chose, instead of a third hardcoded pair. */
+:where(.coach-board-square, .chen-workspace-square-light) {
+  background-color: var(--color-board-light);
+  background-image: url("../assets/brand/board/watercolor-square-light.webp");
+  background-position: center;
+  background-size: cover;
+}
+
+.coach-board-square:nth-child(16n + 2),
+.coach-board-square:nth-child(16n + 4),
+.coach-board-square:nth-child(16n + 6),
+.coach-board-square:nth-child(16n + 8),
+.coach-board-square:nth-child(16n + 9),
+.coach-board-square:nth-child(16n + 11),
+.coach-board-square:nth-child(16n + 13),
+.coach-board-square:nth-child(16n + 15),
+.chen-workspace-square-dark {
+  background-color: var(--color-board-dark);
+  background-image: url("../assets/brand/board/watercolor-square-dark.webp");
+  background-position: center;
+  background-size: cover;
+}
+
+.coach-board-piece,
+.chen-workspace-piece {
+  background-position: var(--coach-piece-x) var(--coach-piece-y);
+  background-repeat: no-repeat;
+  background-size: 600% 200%;
+  filter: none;
+  transform: none;
+}
+
+.coach-board-piece {
+  position: absolute;
+  z-index: 2;
+  inset: 0;
+}
+
+.chen-workspace-piece {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.coach-board-piece[data-piece-role="king"],
+.chen-workspace-piece[data-piece-role="king"] {
+  --coach-piece-x: 0%;
+}
+
+.coach-board-piece[data-piece-role="queen"],
+.chen-workspace-piece[data-piece-role="queen"] {
+  --coach-piece-x: 20%;
+}
+
+.coach-board-piece[data-piece-role="bishop"],
+.chen-workspace-piece[data-piece-role="bishop"] {
+  --coach-piece-x: 40%;
+}
+
+.coach-board-piece[data-piece-role="knight"],
+.chen-workspace-piece[data-piece-role="knight"] {
+  --coach-piece-x: 60%;
+}
+
+.coach-board-piece[data-piece-role="rook"],
+.chen-workspace-piece[data-piece-role="rook"] {
+  --coach-piece-x: 80%;
+}
+
+.coach-board-piece[data-piece-role="pawn"],
+.chen-workspace-piece[data-piece-role="pawn"] {
+  --coach-piece-x: 100%;
+}
+
+.coach-board-piece[data-piece-color="white"],
+.chen-workspace-piece[data-piece-color="white"] {
+  --coach-piece-y: 0%;
+}
+
+.coach-board-piece[data-piece-color="black"],
+.chen-workspace-piece[data-piece-color="black"] {
+  --coach-piece-y: 100%;
+}
+
+/* The watercolor wrapper's skin over the shared board internals. The wrapper's
+   own frame is StyleX (`chessboardStyles` in watercolor.styles.ts); these
+   descendant rules stay CSS because they reach into PresentationalChessboard's
+   shared `.coach-board-*` markup. */
+.chen-watercolor-chessboard .coach-presentational-board {
+  position: relative;
+  isolation: isolate;
+  width: 100%;
+  aspect-ratio: 1;
+  overflow: hidden;
+  margin-inline: auto;
+  border-radius: 0.12rem;
+  background: transparent;
+  box-shadow: none;
+}
+
+.coach-board-grid {
+  position: relative;
+  display: grid;
+  width: 100%;
+  height: 100%;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(8, 1fr);
+}
+
+.coach-board-grid::before {
+  position: absolute;
+  z-index: 1;
+  inset: 0;
+  background:
+    radial-gradient(
+      ellipse at 12% 18%,
+      color-mix(in srgb, var(--color-ink-soft) 13%, transparent),
+      transparent 24%
+    ),
+    radial-gradient(
+      ellipse at 84% 27%,
+      color-mix(in srgb, var(--color-paper-raised) 20%, transparent),
+      transparent 20%
+    ),
+    radial-gradient(
+      ellipse at 42% 73%,
+      color-mix(in srgb, var(--color-ink-soft) 9%, transparent),
+      transparent 29%
+    ),
+    linear-gradient(
+      112deg,
+      transparent 48%,
+      color-mix(in srgb, var(--color-ink) 3.5%, transparent) 76%
+    );
+  content: "";
+  mix-blend-mode: multiply;
+  pointer-events: none;
+}
+
+.coach-board-square {
+  position: relative;
+  min-width: 0;
+}
+
+.coach-board-square[data-last-move="true"] {
+  box-shadow: inset 0 0 0 100vmax var(--color-board-last-move);
+}
+
+.coach-board-square[data-check="true"]::after {
+  position: absolute;
+  z-index: 1;
+  inset: 8%;
+  border: 0.2rem solid var(--color-board-check);
+  border-radius: 50%;
+  box-shadow: inset 0 0 1rem rgb(194 47 55 / 0.58);
+  content: "";
+}
+
+.chen-watercolor-chessboard[data-board-density="preview"]
+  .coach-board-coordinate {
+  display: none;
+}
+
+.coach-board-coordinate {
+  position: absolute;
+  z-index: 3;
+  color: color-mix(in srgb, var(--color-ink) 62%, transparent);
+  font-size: clamp(0.46rem, 1.4vw, 0.72rem);
+  font-weight: 800;
+  letter-spacing: -0.05em;
+  pointer-events: none;
+}
+
+.coach-board-coordinate[data-axis="rank"] {
+  inset: 0.1rem auto auto 0.15rem;
+}
+
+.coach-board-coordinate[data-axis="file"] {
+  inset: auto 0.15rem 0.1rem auto;
+}
+
+.coach-board-mark-layer {
+  position: absolute;
+  z-index: 3;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.coach-board-arrow-layer {
+  position: absolute;
+  z-index: 4;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  filter: drop-shadow(0 1px 1px rgb(0 0 0 / 0.5));
+  pointer-events: none;
+}
+
+.chen-watercolor-chessboard .coach-sr-only,
+.chen-workspace-board .coach-sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  white-space: nowrap;
+}

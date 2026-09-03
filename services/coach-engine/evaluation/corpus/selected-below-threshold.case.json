@@ -1,0 +1,112 @@
+{
+  "description": "A Player-selected gambit move that is too costly to be sound yet too cheap to correct, producing the fallback Neutral.",
+  "evidence": [
+    {
+      "afterMove": {
+        "evaluation": {
+          "kind": "centipawns",
+          "value": 81
+        },
+        "kind": "analyzed",
+        "principal_variation": [
+          "d4e5",
+          "g8e7",
+          "g2g3",
+          "b8c6",
+          "g1f3",
+          "c8e6",
+          "f1g2",
+          "d5c4",
+          "e1g1",
+          "d8d1",
+          "f1d1",
+          "e7g6",
+          "b1c3",
+          "f8c5",
+          "f3g5",
+          "g6e5",
+          "c1f4",
+          "e6g4",
+          "h2h3",
+          "g4d7",
+          "g5e4",
+          "c5b6",
+          "c3d5"
+        ]
+      },
+      "engineBefore": {
+        "bestMove": "e7e6",
+        "depth": 16,
+        "evaluation": {
+          "kind": "centipawns",
+          "value": -28
+        },
+        "principalVariation": [
+          "e7e6",
+          "b1c3",
+          "g8f6",
+          "g1f3",
+          "c7c5",
+          "c4d5",
+          "c5d4",
+          "d1d4",
+          "e6d5",
+          "e2e4",
+          "d5e4",
+          "d4d8",
+          "e8d8",
+          "f3g5",
+          "c8e6",
+          "g5e6",
+          "f7e6"
+        ]
+      },
+      "humanBefore": {
+        "candidates": [
+          {
+            "probability": 0.4307,
+            "rank": 1,
+            "uci": "d5c4"
+          },
+          {
+            "probability": 0.1764,
+            "rank": 2,
+            "uci": "e7e6"
+          },
+          {
+            "probability": 0.1289,
+            "rank": 3,
+            "uci": "g8f6"
+          },
+          {
+            "probability": 0.1215,
+            "rank": 4,
+            "uci": "c7c6"
+          },
+          {
+            "probability": 0.0355,
+            "rank": 5,
+            "uci": "b8c6"
+          }
+        ],
+        "winProbability": 0.5753
+      },
+      "ply": 4
+    }
+  ],
+  "id": "selected-below-threshold",
+  "input": {
+    "elo": 1500,
+    "operation": {
+      "kind": "selectedMoment",
+      "selectedPly": 4
+    },
+    "pgn": "1. d4 d5 2. c4 e5 *"
+  },
+  "provenance": {
+    "maiaImage": "maia-runtime@sha256:ab3b6dc16b75c3602f2e6c4002dc0f99ef77c8c042641cffea66fc1c23482972",
+    "maiaModel": "rapid",
+    "maiaPackage": "maia2==0.11.0",
+    "stockfish": "Stockfish 18 depth 16"
+  }
+}

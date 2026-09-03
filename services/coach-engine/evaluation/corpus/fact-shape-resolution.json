@@ -1,0 +1,46 @@
+{
+  "resolvedAt": "2026-09-03T20:08:20Z",
+  "corpusDigest": "sha256:d94dca88f79b5e258a8aead7fd125af588e2d16bcdd1ced32d7e8f9aaa797eaa",
+  "exemplars": {
+    "Improvement/improvedAnalyzed/advantageLost/analyzed +moveTarget +opponentResource +playedPopularity": {
+      "caseId": "tactical-white-human-likely",
+      "ply": 1,
+      "factsDigest": "sha256:441310804627af46bb9cd6f41dc4a36ad68cb4e25a56772597eaf79ca3c08cc6"
+    },
+    "Improvement/improvedAnalyzed/nowWorse/analyzed +takeaway": {
+      "caseId": "advanced-both-threshold",
+      "ply": 1,
+      "factsDigest": "sha256:7767e1e50cb206051816506340fb1be0319e4af5bfc474bc22107e34f779c95f"
+    },
+    "Neutral/belowImprovementThreshold/analyzed": {
+      "caseId": "selected-below-threshold",
+      "ply": 4,
+      "factsDigest": "sha256:3564bf90722f52ca8b0a0a1be09b22b5f16af914910254c5e2c05018edfa6724"
+    },
+    "Neutral/mechanicallyForcedMove+soundWithoutConcreteAchievement/analyzed +playedPopularity": {
+      "caseId": "selected-forced-and-sound",
+      "ply": 1,
+      "factsDigest": "sha256:7ab4ce4e8cff9c3b6f7ab86770c47d6910acf7b86c8ac7a1ec50d93f5fb6a55e"
+    },
+    "Neutral/mechanicallyForcedMove/analyzed +playedPopularity": {
+      "caseId": "selected-forced-recapture",
+      "ply": 1,
+      "factsDigest": "sha256:b190ee556322d813b61167bb8b897e33ee350e7be88634d5247ac298367d218a"
+    },
+    "Neutral/nonInstructionalTerminalOutcome/terminal +playedPopularity": {
+      "caseId": "selected-terminal-noninstructional",
+      "ply": 1,
+      "factsDigest": "sha256:477ac7381dd666aa2ad2e1799ac4b8c05fb26c19585230f035a3ced479a1b103"
+    },
+    "Neutral/soundWithoutConcreteAchievement/analyzed": {
+      "caseId": "selected-nonautomatic",
+      "ply": 1,
+      "factsDigest": "sha256:caabb7c32919393835a670d30b0949e5472756a190f53d5e56fa0ddc34916eb6"
+    },
+    "Positive/good/objectiveOnly/tacticalPayoff/mate/terminal +playedPopularity +takeaway": {
+      "caseId": "selected-terminal-mate",
+      "ply": 1,
+      "factsDigest": "sha256:0937b31117dec3a3119bf9cfaf257ba82ecc73b21d9ae64b938fd22c77d9620c"
+    }
+  }
+}

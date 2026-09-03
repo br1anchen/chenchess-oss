@@ -1,0 +1,253 @@
+{
+  "positionRef": "sha256:2c55d5e9e097a7260627790634ba70ac5193b58e816768d67b0685ac46e3be2d",
+  "variant": "standard",
+  "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+  "occupied": [
+    {
+      "square": "a1",
+      "piece": {
+        "color": "white",
+        "role": "rook"
+      }
+    },
+    {
+      "square": "b1",
+      "piece": {
+        "color": "white",
+        "role": "knight"
+      }
+    },
+    {
+      "square": "c1",
+      "piece": {
+        "color": "white",
+        "role": "bishop"
+      }
+    },
+    {
+      "square": "d1",
+      "piece": {
+        "color": "white",
+        "role": "queen"
+      }
+    },
+    {
+      "square": "e1",
+      "piece": {
+        "color": "white",
+        "role": "king"
+      }
+    },
+    {
+      "square": "f1",
+      "piece": {
+        "color": "white",
+        "role": "bishop"
+      }
+    },
+    {
+      "square": "g1",
+      "piece": {
+        "color": "white",
+        "role": "knight"
+      }
+    },
+    {
+      "square": "h1",
+      "piece": {
+        "color": "white",
+        "role": "rook"
+      }
+    },
+    {
+      "square": "a2",
+      "piece": {
+        "color": "white",
+        "role": "pawn"
+      }
+    },
+    {
+      "square": "b2",
+      "piece": {
+        "color": "white",
+        "role": "pawn"
+      }
+    },
+    {
+      "square": "c2",
+      "piece": {
+        "color": "white",
+        "role": "pawn"
+      }
+    },
+    {
+      "square": "d2",
+      "piece": {
+        "color": "white",
+        "role": "pawn"
+      }
+    },
+    {
+      "square": "e2",
+      "piece": {
+        "color": "white",
+        "role": "pawn"
+      }
+    },
+    {
+      "square": "f2",
+      "piece": {
+        "color": "white",
+        "role": "pawn"
+      }
+    },
+    {
+      "square": "g2",
+      "piece": {
+        "color": "white",
+        "role": "pawn"
+      }
+    },
+    {
+      "square": "h2",
+      "piece": {
+        "color": "white",
+        "role": "pawn"
+      }
+    },
+    {
+      "square": "a7",
+      "piece": {
+        "color": "black",
+        "role": "pawn"
+      }
+    },
+    {
+      "square": "b7",
+      "piece": {
+        "color": "black",
+        "role": "pawn"
+      }
+    },
+    {
+      "square": "c7",
+      "piece": {
+        "color": "black",
+        "role": "pawn"
+      }
+    },
+    {
+      "square": "d7",
+      "piece": {
+        "color": "black",
+        "role": "pawn"
+      }
+    },
+    {
+      "square": "e7",
+      "piece": {
+        "color": "black",
+        "role": "pawn"
+      }
+    },
+    {
+      "square": "f7",
+      "piece": {
+        "color": "black",
+        "role": "pawn"
+      }
+    },
+    {
+      "square": "g7",
+      "piece": {
+        "color": "black",
+        "role": "pawn"
+      }
+    },
+    {
+      "square": "h7",
+      "piece": {
+        "color": "black",
+        "role": "pawn"
+      }
+    },
+    {
+      "square": "a8",
+      "piece": {
+        "color": "black",
+        "role": "rook"
+      }
+    },
+    {
+      "square": "b8",
+      "piece": {
+        "color": "black",
+        "role": "knight"
+      }
+    },
+    {
+      "square": "c8",
+      "piece": {
+        "color": "black",
+        "role": "bishop"
+      }
+    },
+    {
+      "square": "d8",
+      "piece": {
+        "color": "black",
+        "role": "queen"
+      }
+    },
+    {
+      "square": "e8",
+      "piece": {
+        "color": "black",
+        "role": "king"
+      }
+    },
+    {
+      "square": "f8",
+      "piece": {
+        "color": "black",
+        "role": "bishop"
+      }
+    },
+    {
+      "square": "g8",
+      "piece": {
+        "color": "black",
+        "role": "knight"
+      }
+    },
+    {
+      "square": "h8",
+      "piece": {
+        "color": "black",
+        "role": "rook"
+      }
+    }
+  ],
+  "sideToMove": "white",
+  "castlingRights": {
+    "whiteKingSide": true,
+    "whiteQueenSide": true,
+    "blackKingSide": true,
+    "blackQueenSide": true
+  },
+  "enPassant": {
+    "kind": "none"
+  },
+  "halfmoveClock": 0,
+  "fullmoveNumber": 1,
+  "repetition": {
+    "kind": "firstOccurrence"
+  },
+  "status": {
+    "kind": "ongoing",
+    "drawClaims": {
+      "kind": "none"
+    }
+  },
+  "historyDigest": "sha256:e6b11f5202047c82c171c4ee3cbebba472b082f9684d736ecffcef143f7973a8"
+}

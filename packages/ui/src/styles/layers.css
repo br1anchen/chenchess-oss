@@ -1,0 +1,13 @@
+/**
+ * Canonical cascade layer order. Every stylesheet entry point imports this
+ * first, before any other `@import`, because a layer's rank comes from where
+ * the name is first seen — not from where the rules land. Later layers win.
+ *
+ * `chen-tokens` and `chen-base` sit *before* Astryx so element rules cannot
+ * silently strip padding, borders, or `display: none` off Astryx components.
+ * `reset` `astryx-base` `astryx-theme` stay in the order Astryx declares them.
+ *
+ * StyleX layers are appended after this list by `chenStylexVitePlugin`.
+ */
+/* Keep in lockstep with `cascadeLayers.mjs`. */
+@layer reset, chen-tokens, chen-base, astryx-base, astryx-theme, surfaces;

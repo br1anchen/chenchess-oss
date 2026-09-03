@@ -1,0 +1,24 @@
+{
+  "name": "@chenchess/scripts",
+  "version": "0.1.0",
+  "private": true,
+  "license": "AGPL-3.0-or-later",
+  "type": "module",
+  "scripts": {
+    "test": "bun test .",
+    "typecheck": "bun x tsc --project tsconfig.json",
+    "lint": "oxlint .",
+    "format": "oxfmt --check ."
+  },
+  "dependencies": {
+    "@chenchess/coach-app": "workspace:*",
+    "@chenchess/coach-engine-sdk": "workspace:*",
+    "@chenchess/tooling-fixtures": "workspace:*",
+    "@firebase/rules-unit-testing": "5.0.1",
+    "@lichess-org/types": "2.0.162",
+    "@modelcontextprotocol/client": "2.0.0",
+    "firebase": "12.16.0",
+    "valibot": "1.4.2",
+    "zod": "4.4.3"
+  }
+}

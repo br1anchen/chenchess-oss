@@ -1,0 +1,18 @@
+{
+  "name": "@chenchess/oxlint-anti-slop",
+  "version": "0.1.0",
+  "private": true,
+  "license": "AGPL-3.0-or-later",
+  "description": "ChenChess-adapted Oxlint rules from dmmulroy/anti-slop.",
+  "type": "module",
+  "exports": "./index.ts",
+  "scripts": {
+    "build": "bun build ./index.ts --outfile ./plugin.js --target=node --format=esm --packages=external",
+    "verify:plugin": "bun scripts/verifyPlugin.ts",
+    "check": "bun run test && bun run typecheck && bun run verify:plugin",
+    "typecheck": "tsc --project tsconfig.json --noEmit",
+    "lint": "oxlint .",
+    "format": "oxfmt --check .",
+    "test": "bash -c 'for f in rules/*.test.ts shared/*.test.ts; do node --experimental-strip-types --experimental-transform-types --disable-warning=ExperimentalWarning \"$f\" || exit 1; done'"
+  }
+}

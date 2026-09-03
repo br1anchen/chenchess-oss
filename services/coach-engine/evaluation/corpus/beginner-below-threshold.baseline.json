@@ -1,0 +1,26 @@
+{
+  "caseId": "beginner-below-threshold",
+  "facts": {
+    "criticalMoments": [],
+    "playerProfile": {
+      "coachingFocus": "Focus on forcing moves, one-move threats, hanging pieces, and simple opening principles.",
+      "elo": 1199,
+      "level": "beginner"
+    },
+    "summary": "Analyzed 2 plies and selected 0 Critical Moments for Elo 1199."
+  },
+  "provenance": {
+    "maiaImage": "maia-runtime@sha256:ab3b6dc16b75c3602f2e6c4002dc0f99ef77c8c042641cffea66fc1c23482972",
+    "maiaModel": "rapid",
+    "maiaPackage": "maia2==0.11.0",
+    "stockfish": "Stockfish 18 depth 16"
+  },
+  "selectorTrace": {
+    "adaptiveTarget": 3,
+    "candidates": [],
+    "diversityPenalty": 0,
+    "gamePlies": 2,
+    "hardMaximum": 10,
+    "positiveReservationRequired": false
+  }
+}

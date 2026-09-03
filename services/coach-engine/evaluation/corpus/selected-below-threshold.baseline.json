@@ -1,0 +1,146 @@
+{
+  "caseId": "selected-below-threshold",
+  "facts": {
+    "playerProfile": {
+      "coachingFocus": "Focus on candidate moves, tactical motifs, pawn breaks, and converting advantages into plans.",
+      "elo": 1500,
+      "level": "intermediate"
+    },
+    "selectedMoment": {
+      "category": "positional",
+      "classification": {
+        "kind": "neutral",
+        "reasons": [
+          "belowImprovementThreshold"
+        ]
+      },
+      "effects": [],
+      "human": {
+        "mostLikelyMove": "d5c4",
+        "mostLikelyProbability": 0.4307,
+        "playedMoveIsHumanLikely": false,
+        "playedMoveProbability": null,
+        "playedMoveRank": null
+      },
+      "mechanism": {
+        "forcingIndex": 6,
+        "moves": [
+          {
+            "san": "e6",
+            "uci": "e7e6"
+          },
+          {
+            "san": "Nc3",
+            "uci": "b1c3"
+          },
+          {
+            "san": "Nf6",
+            "uci": "g8f6"
+          },
+          {
+            "san": "Nf3",
+            "uci": "g1f3"
+          },
+          {
+            "san": "c5",
+            "uci": "c7c5"
+          },
+          {
+            "san": "cxd5",
+            "uci": "c4d5"
+          },
+          {
+            "san": "cxd4",
+            "uci": "c5d4"
+          },
+          {
+            "san": "Qxd4",
+            "uci": "d1d4"
+          },
+          {
+            "san": "exd5",
+            "uci": "e6d5"
+          },
+          {
+            "san": "e4",
+            "uci": "e2e4"
+          },
+          {
+            "san": "dxe4",
+            "uci": "d5e4"
+          },
+          {
+            "san": "Qxd8+",
+            "uci": "d4d8"
+          },
+          {
+            "san": "Kxd8",
+            "uci": "e8d8"
+          }
+        ],
+        "payoff": {
+          "kind": "queenExchange"
+        }
+      },
+      "moveNumber": 2,
+      "objective": {
+        "bestEvaluation": {
+          "kind": "centipawns",
+          "value": -28
+        },
+        "bestMove": "e7e6",
+        "centipawnLoss": 53,
+        "playedEvaluation": {
+          "kind": "centipawns",
+          "value": -81
+        },
+        "playedMove": "e7e5",
+        "principalVariation": [
+          "e7e6",
+          "b1c3",
+          "g8f6",
+          "g1f3",
+          "c7c5",
+          "c4d5",
+          "c5d4",
+          "d1d4",
+          "e6d5",
+          "e2e4",
+          "d5e4",
+          "d4d8",
+          "e8d8",
+          "f3g5",
+          "c8e6",
+          "g5e6",
+          "f7e6"
+        ]
+      },
+      "playedSan": "e5",
+      "ply": 4,
+      "positionPhase": {
+        "phase": "opening",
+        "policyVersion": "position-phase/v1"
+      },
+      "residualOutcome": {
+        "classification": "standingKept",
+        "standingAfter": "balanced",
+        "standingBefore": "balanced"
+      },
+      "side": "black",
+      "teaching": {
+        "openingPrinciples": [],
+        "themes": [
+          "queenExchange"
+        ],
+        "vocabularyVersion": "teaching-facts/v1"
+      }
+    },
+    "summary": "Analyzed Player-Selected Moment at ply 4 for Elo 1500."
+  },
+  "provenance": {
+    "maiaImage": "maia-runtime@sha256:ab3b6dc16b75c3602f2e6c4002dc0f99ef77c8c042641cffea66fc1c23482972",
+    "maiaModel": "rapid",
+    "maiaPackage": "maia2==0.11.0",
+    "stockfish": "Stockfish 18 depth 16"
+  }
+}

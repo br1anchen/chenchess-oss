@@ -1,0 +1,102 @@
+{
+  "description": "A player-selected sound opening move remains reviewable without automatic selection.",
+  "evidence": [
+    {
+      "afterMove": {
+        "evaluation": {
+          "kind": "centipawns",
+          "value": -45
+        },
+        "kind": "analyzed",
+        "principal_variation": [
+          "e7e5",
+          "g1f3",
+          "b8c6",
+          "f1b5",
+          "a7a6",
+          "b5a4",
+          "g8f6",
+          "e1g1",
+          "b7b5",
+          "a4b3",
+          "f8e7",
+          "f1e1",
+          "d7d6",
+          "c2c3",
+          "c8g4",
+          "h2h3",
+          "g4h5",
+          "g2g4"
+        ]
+      },
+      "engineBefore": {
+        "bestMove": "e2e4",
+        "depth": 16,
+        "evaluation": {
+          "kind": "centipawns",
+          "value": 47
+        },
+        "principalVariation": [
+          "e2e4",
+          "c7c5",
+          "g1f3",
+          "e7e6",
+          "b1c3",
+          "a7a6",
+          "d2d4",
+          "c5d4",
+          "f3d4",
+          "d8c7",
+          "f1d3",
+          "b8c6"
+        ]
+      },
+      "humanBefore": {
+        "candidates": [
+          {
+            "probability": 0.3344,
+            "rank": 1,
+            "uci": "g1f3"
+          },
+          {
+            "probability": 0.2407,
+            "rank": 2,
+            "uci": "b1c3"
+          },
+          {
+            "probability": 0.076,
+            "rank": 3,
+            "uci": "b1a3"
+          },
+          {
+            "probability": 0.0746,
+            "rank": 4,
+            "uci": "d2d4"
+          },
+          {
+            "probability": 0.0523,
+            "rank": 5,
+            "uci": "g1h3"
+          }
+        ],
+        "winProbability": 0.4093
+      },
+      "ply": 1
+    }
+  ],
+  "id": "selected-nonautomatic",
+  "input": {
+    "elo": 1500,
+    "operation": {
+      "kind": "selectedMoment",
+      "selectedPly": 1
+    },
+    "pgn": "1. e4 *"
+  },
+  "provenance": {
+    "maiaImage": "maia-runtime@sha256:ab3b6dc16b75c3602f2e6c4002dc0f99ef77c8c042641cffea66fc1c23482972",
+    "maiaModel": "rapid",
+    "maiaPackage": "maia2==0.11.0",
+    "stockfish": "Stockfish 18 depth 16"
+  }
+}

@@ -1,0 +1,75 @@
+{
+  "caseId": "selected-terminal-noninstructional",
+  "facts": {
+    "playerProfile": {
+      "coachingFocus": "Focus on candidate moves, tactical motifs, pawn breaks, and converting advantages into plans.",
+      "elo": 1500,
+      "level": "intermediate"
+    },
+    "selectedMoment": {
+      "category": "positional",
+      "classification": {
+        "kind": "neutral",
+        "reasons": [
+          "nonInstructionalTerminalOutcome"
+        ]
+      },
+      "effects": [],
+      "human": {
+        "mostLikelyMove": "h2h8",
+        "mostLikelyProbability": 0.5345,
+        "playedMoveIsHumanLikely": false,
+        "playedMoveProbability": 0.0793,
+        "playedMoveRank": 3
+      },
+      "mechanism": {
+        "forcingIndex": 0,
+        "moves": [
+          {
+            "san": "Qh8#",
+            "uci": "h2h8"
+          }
+        ],
+        "payoff": {
+          "kind": "mate"
+        }
+      },
+      "moveNumber": 1,
+      "objective": {
+        "bestEvaluation": {
+          "kind": "mateIn",
+          "value": 1
+        },
+        "bestMove": "h2h8",
+        "centipawnLoss": null,
+        "playedEvaluation": null,
+        "playedMove": "h2c7",
+        "principalVariation": [
+          "h2h8"
+        ]
+      },
+      "playedSan": "Qc7",
+      "ply": 1,
+      "positionPhase": {
+        "phase": "endgame",
+        "policyVersion": "position-phase/v1"
+      },
+      "residualOutcome": null,
+      "side": "white",
+      "teaching": {
+        "openingPrinciples": [],
+        "themes": [
+          "forcedMateConversion"
+        ],
+        "vocabularyVersion": "teaching-facts/v1"
+      }
+    },
+    "summary": "Analyzed Player-Selected Moment at ply 1 for Elo 1500."
+  },
+  "provenance": {
+    "maiaImage": "maia-runtime@sha256:ab3b6dc16b75c3602f2e6c4002dc0f99ef77c8c042641cffea66fc1c23482972",
+    "maiaModel": "rapid",
+    "maiaPackage": "maia2==0.11.0",
+    "stockfish": "Stockfish 18 depth 16"
+  }
+}

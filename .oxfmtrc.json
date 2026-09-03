@@ -1,0 +1,32 @@
+{
+  "$schema": "./node_modules/oxfmt/configuration_schema.json",
+  "printWidth": 80,
+  "semi": false,
+  "singleQuote": false,
+  "sortImports": false,
+  "sortPackageJson": false,
+  "sortTailwindcss": false,
+  "overrides": [
+    {
+      "files": ["tooling/scripts/**/*.{js,mjs,ts}"],
+      "options": {
+        "semi": true
+      }
+    }
+  ],
+  "ignorePatterns": [
+    ".jj/**",
+    ".layout-verify/**",
+    "target/**",
+    "**/dist/**",
+    "**/move-sequence-dist/**",
+    "**/node_modules/**",
+    "**/vitest.config.ts.timestamp-*.mjs",
+    "packages/coach-engine-sdk/**",
+    "packages/ui/src/theme/generated/**",
+    "packages/shared-assets/fixtures/**",
+    "services/coach-engine/certification-fixtures/**",
+    "services/coach-engine/evaluation/**",
+    "tooling/oxlint/plugin.js"
+  ]
+}

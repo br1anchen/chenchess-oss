@@ -1,0 +1,121 @@
+/**
+ * The ChenChess tokens Astryx cannot express. Its `tokens` field only accepts
+ * its own token names, and its typography roles are body, heading and code —
+ * there is no fourth role for the seal.
+ *
+ * None of these collide: nothing in Astryx declares a board colour or a seal
+ * family.
+ */
+/**
+ * How far the dry-brush hover highlight has travelled across a control.
+ *
+ * Registered rather than plain: the value drives `background-size` on the
+ * hover-wash element and, on pale stroke controls, the `clip-path: inset(...)`
+ * that cuts the resting frame away under it while it fades, and an
+ * unregistered custom property has no type to interpolate — the stroke would
+ * snap to full coverage instead of being painted on. With a `<percentage>`
+ * syntax the browser can animate it, and both readers repaint frame by
+ * frame. Declared outside the layer — `@property` is not layered.
+ */
+@property --watercolor-hover-sweep {
+  syntax: "<percentage>";
+  inherits: true;
+  initial-value: 0%;
+}
+
+/**
+ * How far the ink drop behind a card-sized control has spread. Registered for
+ * the same reason as the sweep: it sizes the pigment gradient on the
+ * hover-wash element, and an unregistered custom property has no type to
+ * interpolate, so the drop would snap to its full spread instead of blooming
+ * into the paper. Declared outside the layer — `@property` is not layered.
+ */
+@property --watercolor-hover-bloom {
+  syntax: "<percentage>";
+  inherits: true;
+  initial-value: 12%;
+}
+
+@layer chen-tokens {
+  :root {
+    /* The watercolor craft masks. Values compose through
+       `--watercolor-brush-weight`, which each primitive sets locally; the
+       StyleX styles in `watercolor.styles.ts` reference these vars. */
+    --watercolor-brush-h: url("../assets/brand/motion/watercolor-brush-h.svg");
+    --watercolor-brush-v: url("../assets/brand/motion/watercolor-brush-v.svg");
+    --watercolor-brush-circle: url("../assets/brand/motion/brush-circle.svg");
+    --watercolor-brush-frame:
+      var(--watercolor-brush-h) left top / 100%
+        var(--watercolor-brush-weight, 0.42rem) no-repeat,
+      var(--watercolor-brush-v) right top /
+        var(--watercolor-brush-weight, 0.42rem) 100% no-repeat,
+      var(--watercolor-brush-h) left bottom / 100%
+        var(--watercolor-brush-weight, 0.42rem) no-repeat,
+      var(--watercolor-brush-v) left top /
+        var(--watercolor-brush-weight, 0.42rem) 100% no-repeat;
+    --watercolor-brush-sizes:
+      100% var(--watercolor-brush-weight, 0.42rem),
+      var(--watercolor-brush-weight, 0.42rem) 100%,
+      100% var(--watercolor-brush-weight, 0.42rem),
+      var(--watercolor-brush-weight, 0.42rem) 100%;
+    --watercolor-control-frame: url("../assets/brand/motion/watercolor-control-frame.svg");
+    --watercolor-control-frame-wide: url("../assets/brand/motion/watercolor-control-frame-wide.svg");
+    --watercolor-dot: url("../assets/brand/motion/watercolor-dot.svg");
+
+    /* Real dry-brush artwork (see assets/brand/brush/). The slab carries
+       plaques, the wide stroke carries filled block controls, the ink blot is
+       a raster alpha mask for soft stamp silhouettes. */
+    --watercolor-brush-slab: url("../assets/brand/brush/brush-banner-slab.svg");
+    --watercolor-brush-stroke-wide: url("../assets/brand/brush/brush-stroke-wide.svg");
+    --watercolor-ink-blot: url("../assets/brand/brush/ink-blot.webp");
+    --watercolor-splash: url("../assets/brand/motion/watercolor-splash.svg");
+
+    /* The brand palette, named the way the craft talks about it. Each alias
+       points at the Astryx token that already holds the value, so
+       `theme/inkWash.ts` stays the only place a ChenChess colour is written —
+       an alias renames, it never redefines. */
+    --color-ink: var(--color-text-primary); /* watercolor navy */
+    --color-ink-soft: var(--color-text-secondary); /* slate blue */
+    --color-paper: var(--color-background-body); /* rice paper */
+    --color-paper-raised: var(--color-background-surface); /* card paper */
+    --color-mist: var(--color-border); /* mountain mist */
+    --color-bamboo: var(--color-success);
+    --color-vermilion: var(--color-error);
+
+    --color-board-light: #eee5d5;
+    --color-board-dark: #a8bac8;
+    --color-board-last-move: rgb(212 184 112 / 0.56);
+    --color-board-check: #ad2f33;
+
+    /* Board arrows read by tone, never by colour: a producer says which kind
+       of move it is drawing and the theme decides what that looks like. */
+    /* Depth stops the palette does not carry: a wash needs somewhere darker
+       and lighter to run to, and those endpoints have to move when the colour
+       they extend moves. */
+    --color-ink-deep: #101f32;
+    --color-vermilion-shadow: #4a1d16;
+    --color-vermilion-highlight: #e08a6f;
+
+    /* Review Moment tones. Deliberately off the shared success/error pair:
+       these sit beside a Critical Moment's own vermilion and must stay
+       distinguishable from it. */
+    --color-moment-positive: #7f9274;
+    --color-moment-improvement: #b85c45;
+
+    --color-board-arrow-engine: var(--color-ink-soft);
+    /* The peer arrow shares the positive Review Moment green: both mean "the
+       other reasonable move", and they are drawn on the same board. */
+    --color-board-arrow-peer: var(--color-moment-positive);
+    --color-board-arrow-candidate: var(--color-vermilion);
+    /* Ink for what the coach drew: a muted gold, kept clear of the
+       slate engine, the green peer and the vermilion candidate so a
+       Player can tell an agent's claim from their own exploration. */
+    --color-board-arrow-coach: #a8843c;
+
+    /* The seal draws a CJK glyph, so it leads with a Chinese serif where the
+       heading stack leads with a Latin one. */
+    --font-family-seal:
+      "Songti SC", "Noto Serif CJK SC", "Iowan Old Style", "Palatino Linotype",
+      Georgia, serif;
+  }
+}

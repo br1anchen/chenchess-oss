@@ -1,0 +1,28 @@
+{
+  "firestore": [
+    {
+      "database": "coach-app-staging",
+      "rules": "firestore.rules",
+      "indexes": "firestore.indexes.json"
+    },
+    {
+      "database": "coach-app-production",
+      "rules": "firestore.rules",
+      "indexes": "firestore.indexes.json"
+    },
+    {
+      "database": "coach-quality",
+      "rules": "firestore.rules",
+      "indexes": "firestore.quality.indexes.json"
+    }
+  ],
+  "emulators": {
+    "storage": {
+      "host": "127.0.0.1",
+      "port": 9199
+    },
+    "ui": {
+      "enabled": false
+    }
+  }
+}
